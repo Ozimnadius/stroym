@@ -1,0 +1,15 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 55.63 74.99">
+  <defs>
+    <style>
+      .cls-1 {
+        fill: #fc6969;
+      }
+    </style>
+  </defs>
+  <title>Ресурс 1</title>
+  <g id="Слой_2" data-name="Слой 2">
+    <g id="Слой_1-2" data-name="Слой 1">
+      <path class="cls-1" d="M3,67a8,8,0,0,0,8,8H44.65a8,8,0,0,0,8-8V16.7H3ZM39.88,4.38,37.25,0H18.38L15.74,4.38H0v9.7H55.63V4.38Z"/>
+    </g>
+  </g>
+</svg>
