@@ -28,7 +28,8 @@
     "jquery.maskedinput": "^1.4.1",
     "normalize.css": "^7.0.0",
     "run-sequence": "^2.2.1",
-    "smart-grid": "^1.1.0"
+    "smart-grid": "^1.1.0",
+    "swiper": "^4.3.5"
   },
   "dependencies": {}
 }

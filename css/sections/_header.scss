@@ -1,4 +1,6 @@
 .header {
+  position: relative;
+  z-index: 10;
 
   &__top {
     padding: 25px 0 30px 0;
@@ -91,9 +93,14 @@
     right: 1px;
     border: none;
     outline: none;
-
+    cursor: pointer;
     color: $bg;
     font-weight: 700;
+    transition: .3s;
+
+    &:hover {
+      background-color: #d99b27;
+    }
   }
 }
 
@@ -105,6 +112,12 @@
 .callorder-button {
   color: $blue;
   border-bottom: 1px solid $blue;
+  cursor: pointer;
+  transition: .3s;
+
+  &:hover {
+    border-bottom: 1px solid transparent;
+  }
 }
 
 .enter {
@@ -116,6 +129,14 @@
   border: 1px solid $text;
   padding: 3px;
   margin-right: 20px;
+  transition: .3s;
+
+  &:hover {
+    background-color: $violet;
+    .enter__text {
+      color: $bg;
+    }
+  }
 
   &__img {
     width: 32px;
@@ -133,7 +154,12 @@
   }
 
   &__text {
+    max-width: 85px;
     margin: 0 auto;
+    transition: .3s;
+    white-space: nowrap;
+    text-overflow: ellipsis;
+    overflow: hidden;
   }
 }
 
@@ -152,21 +178,37 @@
   align-items: center;
   justify-content: center;
   margin-right: 20px;
+  transition: .3s;
 
   &:last-child {
     margin-right: 0;
+  }
+
+  &:hover {
+    border: 1px solid $text;
+
+    svg {
+      fill: $text;
+    }
   }
 
   &__svg {
     max-width: 22px;
     max-height: 22px;
     fill: rgba($text, .5);
+    transition: .3s;
   }
 }
 
 .cart {
   background-color: $violet;
   position: relative;
+
+  &:hover {
+    svg {
+      fill: $bg
+    }
+  }
 
   &__svg {
     fill: $bg
@@ -194,6 +236,9 @@
   position: relative;
 
   &:hover {
+    .menu__link {
+      background-color: #d99b27;
+    }
     .menu__drop {
       left: 0;
     }
@@ -360,6 +405,7 @@
     font-weight: 500;
     display: flex;
     align-items: center;
+    height: 100%;
 
   }
 
