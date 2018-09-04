@@ -60,7 +60,7 @@
 
 .addr {
   font-size: 12px;
-  margin-bottom: 10px;
+  margin-bottom: 9px;
 }
 
 .search {
@@ -69,7 +69,7 @@
   background-repeat: no-repeat;
   background-position: 20px center;
 
-  padding: 10px 110px 10px 45px;
+  padding: 7px 110px 7px 45px;
 
   border-radius: 3px;
   border: 1px solid rgba($violet, .5);
@@ -176,8 +176,8 @@
     position: absolute;
     bottom: calc(100% - 9px);
 
-    width: 18px;
-    height: 18px;
+    width: 22px;
+    height: 22px;
     border-radius: 50%;
     border: 2px solid $bg;
     background-color: $yellow;
@@ -262,7 +262,7 @@
 
   &__item {
     background-color: $yellow;
-    width: 175px;
+    width: 200px;
     height: 185px;
     border-right: 1px solid $bg;
     padding: 40px 20px 20px 20px;
@@ -272,6 +272,20 @@
 
     &:last-child {
       border-right: none;
+    }
+
+    &:hover {
+      background-color: rgba($yellow, .8);
+
+      .menu__item-pic {
+        display: none;
+      }
+      .menu__item-pic_active {
+        display: block;
+      }
+      .menu__item-text {
+        color: $violet;
+      }
     }
 
     &-img {
@@ -383,6 +397,10 @@
       font-weight: 500;
       padding: 13px 20px;
       background-color: $violet;
+
+      &:hover {
+        background-color: rgba($violet, .9);
+      }
     }
   }
 }
