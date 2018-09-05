@@ -1,10 +1,147 @@
 .banner {
-
+  position: relative;
 
   &__slide {
-    min-height: 495px;
+    //min-height: 495px;
+    height: 495px;
     background-repeat: no-repeat;
     background-position: center center;
     background-size: cover;
+
+    .container {
+      height: 100%;
+    }
+    .row {
+      height: 100%;
+    }
+
+    &-left {
+      @include col;
+      @include size(12);
+      @include offset-left(12);
+
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+      justify-content: center;
+    }
+
+    &-content {
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+      margin-bottom: 30px;
+    }
+
+    &-title {
+      font-size: 60px;
+      font-weight: 500;
+      text-transform: uppercase;
+
+      stroke: $bg;
+      fill: transparent;
+    }
+
+    &-percent {
+      color: $bg;
+      font-size: 130px;
+      font-weight: 800;
+      line-height: 1;
+    }
+
+    &-text {
+      text-align: center;
+      font-size: 28px;
+      font-weight: 500;
+    }
+
+    &-button {
+      padding: 0 30px;
+    }
+  }
+
+  &__nav {
+    position: absolute;
+    z-index: 20;
+    top: 0;
+    bottom: 0;
+    left: 0;
+    right: 0;
+    pointer-events: none;
+
+    .container{
+      height: 100%;
+    }
+
+    &-container {
+      height: 100%;
+      position: relative;
+      width: 100%;
+    }
+  }
+
+  &__pagination {
+    display: flex;
+    flex-direction: column;
+    position: absolute;
+    right: 0;
+    top: 160px;
+    pointer-events: visible;
+
+    span {
+      width: 11px;
+      height: 11px;
+      border: 1px solid rgba($text, .7);
+      background: none;
+      opacity: 1;
+      margin-bottom: 15px;
+      outline: none;
+      transition: .3s;
+
+      &:last-child {
+        margin-bottom: 0;
+      }
+
+      &.swiper-pagination-bullet-active {
+        background: rgba($text, .7);
+      }
+    }
+  }
+
+  &__arrows {
+    display: flex;
+    position: absolute;
+    right: 0;
+    bottom: 95px;
+    pointer-events: visible;
+  }
+
+  &__prev {
+    margin-right: 20px;
+  }
+
+  &__arrow {
+    width: 40px;
+    height: 40px;
+    border-radius: 50%;
+    border: 1px solid $text;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    transition: .3s;
+    outline: none;
+    cursor: pointer;
+
+    &:hover {
+      background-color: $bg;
+      border: 1px solid $bg;
+      box-shadow: 0px 5px 5px 0px rgba($text, 0.5);
+    }
+  }
+
+  &__svg {
+    width: 20px;
+    height: 14px;
+    fill: $text;
   }
 }
