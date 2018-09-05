@@ -1,0 +1,132 @@
+.cats {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+
+  .row {
+    width: 100%;
+  }
+}
+.cat {
+  @include col;
+  @include size(12);
+  border-radius: 6px;
+  overflow: hidden;
+  border: 1px solid transparent;
+  height: 250px;
+  position: relative;
+  margin-bottom: 30px;
+  transition: .5s;
+
+  &_3 {
+    @include size(8);
+  }
+
+  &:hover {
+    border: 1px solid $violet;
+    box-shadow: 0 7px 26px rgba(0, 0, 0, 0.3);
+    .subcats {
+      height: 65%;
+    }
+  }
+
+
+  &__bg {
+    position: absolute;
+    z-index: 9;
+    top: 0;
+    bottom: 0;
+    left: 0;
+    right: 0;
+    background-repeat: no-repeat;
+    background-size: contain;
+    background-position: center 0;
+    //filter: blur(2.5px);
+    filter: url('#blur');
+  }
+  &__img {
+    position: absolute;
+    z-index: 10;
+    bottom: -10px;
+    right: 0;
+  }
+
+  &__link {
+    position: absolute;
+    z-index: 20;
+    top: 0;
+    bottom: 0;
+    left: 0;
+    right: 0;
+
+    color: $bg;
+    font-size: 24px;
+    font-weight: 500;
+    padding: 25px 30px;
+
+    display: flex;
+    align-items: flex-end;
+  }
+}
+
+.subcats {
+  position: absolute;
+  z-index: 30;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  height: 0;
+  overflow: hidden;
+  transition: .5s;
+
+  &.active {
+    height: 65%;
+  }
+
+  &__blur {
+    //filter: blur(2.5px);
+    filter: url('#blur');
+    background-position: 0 bottom;
+    position: absolute;
+    z-index: 10;
+    top: 0;
+    bottom: 0;
+    right: 0;
+    left: 0;
+  }
+
+  &__content {
+    position: relative;
+    z-index: 20;
+    background: rgba($bg, .7);
+    padding: 25px 0 10px 0;
+    max-height: 100%;
+    display: flex;
+    flex-direction: column;
+  }
+
+  &__list {
+    display: flex;
+    flex-wrap: wrap;
+    flex-direction: column;
+  }
+
+  &__title {
+    padding-left: 30px;
+    color: $violet;
+    font-size: 24px;
+    font-weight: 500;
+  }
+}
+.subcat {
+  width: 50%;
+  opacity: 0.8;
+  color: $text;
+  margin-bottom: 5px;
+  padding-left: 30px;
+  transition: .3s;
+
+  &:hover {
+    opacity: 1;
+  }
+}

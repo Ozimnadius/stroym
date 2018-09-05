@@ -19,3 +19,30 @@
     transition: .3s;
   }
 }
+
+.link {
+  color: $violet !important;
+  opacity: 1 !important;
+  display: flex;
+  align-items: center;
+  transition: .3s;
+
+  &:hover {
+    .link__text {
+      border-bottom: 1px dashed transparent;
+    }
+  }
+
+  &__text {
+    border-bottom: 1px dashed $violet;
+    transition: .3s;
+  }
+
+  &__svg {
+    width: 20px;
+    height: 14px;
+    fill: $violet;
+    margin-left: 10px;
+    transition: .3s;
+  }
+}

@@ -1,0 +1,81 @@
+.main-tabs {
+  background: url(/images/bg/bg-tabs.jpg) center 0 no-repeat;
+  background-attachment: fixed;
+  background-size: 100% auto;
+  padding: 100px 0;
+}
+
+.switches {
+  margin-bottom: 50px;
+  &__list {
+    @include col;
+    @include size(16);
+    @include offset(4);
+
+    height: 70px;
+    border-radius: 35px;
+    border: 1px solid rgba($text, .5);
+    padding: 6px;
+
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+  }
+}
+.switch {
+  width: 240px;
+  height: 56px;
+  border-radius: 28px;
+  background-color: transparent;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  transition: .3s;
+
+  &:hover {
+    .switch__svg {
+      fill: $text;
+    }
+    .switch__text{
+      color: $text;
+    }
+  }
+
+  &.active {
+    background-color: $yellow;
+
+    .switch__svg {
+      fill: $bg;
+    }
+    .switch__text{
+      color: $bg;
+    }
+  }
+
+  &__svg {
+    max-width: 20px;
+    max-height: 20px;
+    fill: #929292;
+    transition: .3s;
+    margin-right: 10px;
+  }
+
+  &__text {
+    font-size: 24px;
+    font-weight: 500;
+    color: #929292;
+    transition: .3s;
+  }
+}
+
+
+.tabs {
+
+}
+.tab {
+  display: none;
+
+  &.active {
+    display: block;
+  }
+}
