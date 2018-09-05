@@ -121,7 +121,7 @@
             <div class="switches">
                 <div class="row">
                     <div class="switches__list">
-                        <a href="#tab1" role="button" class="switch active">
+                        <a href="#tab1" role="button" class="switch">
                             <svg class="switch__svg">
                                 <use xlink:href="images/icons/sprite.svg#main"></use>
                             </svg>
@@ -137,7 +137,7 @@
                     Каталог
                 </span>
                         </a>
-                        <a href="#tab3" role="button" class="switch">
+                        <a href="#tab3" role="button" class="switch active">
                             <svg class="switch__svg">
                                 <use xlink:href="images/icons/sprite.svg#actions"></use>
                             </svg>
@@ -152,7 +152,7 @@
 
             <!-- tabs -->
             <div class="tabs">
-                <div class="tab active" id="tab1">
+                <div class="tab" id="tab1">
                     <svg hidden xmlns="http://www.w3.org/2000/svg">
                         <filter id="blur">
                             <feGaussianBlur in="SourgeGraphic" stdDeviation="2"></feGaussianBlur>
@@ -574,36 +574,244 @@
                     </div>
                 </div>
                 <div class="tab" id="tab2">
-                    Lorem ipsum dolor sit amet, consectetur adipisicing elit. Assumenda consequuntur culpa error
-                    excepturi illo inventore minima provident quibusdam repellat unde? Eius magni nesciunt officia
-                    reprehenderit similique veritatis! Delectus deleniti, dolore error et ex facere in ipsa, libero
-                    magni provident quaerat qui sint veritatis! Adipisci, animi hic neque numquam sed voluptatum.
+                    <div class="main-catalog">
+                        <div class="folders">
+                            <div class="row">
+                                <div class="folder">
+                                    <a href="" class="folder__link" title="Светильники светодиодные">
+                                        <span class="folder__img">
+                                            <img src="/images/content/menu/menu1-active.png" alt="Светильники светодиодные"
+                                                 class="folder__pic">
+                                        </span>
+                                        <span class="folder__link-text">
+                                          Светильники светодиодные
+                                        </span>
+                                    </a>
+
+                                    <div class="subfolders">
+                                        <a href="" class="subfolder" title="Светильники светодиодные">
+                                            Энергосберигающие лампы
+                                        </a>
+                                        <a href="" class="subfolder" title="Светильники светодиодные">
+                                            Энергосберигающие лампы
+                                        </a>
+                                        <a href="" class="subfolder" title="Светильники светодиодные">
+                                            Энергосберигающие лампы
+                                        </a>
+                                        <a href="" class="subfolder" title="Светильники светодиодные">
+                                            Энергосберигающие лампы
+                                        </a>
+                                        <a href="" class="subfolder" title="Светильники светодиодные">
+                                            Энергосберигающие лампы
+                                        </a>
+                                        <a href="" class="subfolder link" title="Светильники светодиодные">
+                                        <span class="link__text">
+                                            Ещё 13
+                                        </span>
+                                            <svg class="link__svg">
+                                                <use xlink:href="images/icons/sprite.svg#right"></use>
+                                            </svg>
+                                        </a>
+
+                                    </div>
+                                </div>
+                                <div class="folder">
+                                    <a href="" class="folder__link" title="Светильники светодиодные">
+                                        <span class="folder__img">
+                                            <img src="/images/content/menu/menu1-active.png" alt="Светильники светодиодные"
+                                                 class="folder__pic">
+                                        </span>
+                                        <span class="folder__link-text">
+                                          Светильники светодиодные
+                                        </span>
+                                    </a>
+
+                                    <div class="subfolders">
+                                        <a href="" class="subfolder" title="Светильники светодиодные">
+                                            Энергосберигающие лампы
+                                        </a>
+                                        <a href="" class="subfolder" title="Светильники светодиодные">
+                                            Энергосберигающие лампы
+                                        </a>
+                                        <a href="" class="subfolder" title="Светильники светодиодные">
+                                            Энергосберигающие лампы
+                                        </a>
+                                        <a href="" class="subfolder" title="Светильники светодиодные">
+                                            Энергосберигающие лампы
+                                        </a>
+                                        <a href="" class="subfolder" title="Светильники светодиодные">
+                                            Энергосберигающие лампы
+                                        </a>
+                                        <a href="" class="subfolder link" title="Светильники светодиодные">
+                                        <span class="link__text">
+                                            Ещё 13
+                                        </span>
+                                            <svg class="link__svg">
+                                                <use xlink:href="images/icons/sprite.svg#right"></use>
+                                            </svg>
+                                        </a>
+
+                                    </div>
+                                </div>
+                                <div class="folder">
+                                    <a href="" class="folder__link" title="Светильники светодиодные">
+                                        <span class="folder__img">
+                                            <img src="/images/content/menu/menu1-active.png" alt="Светильники светодиодные"
+                                                 class="folder__pic">
+                                        </span>
+                                        <span class="folder__link-text">
+                                          Светильники светодиодные
+                                        </span>
+                                    </a>
+
+                                    <div class="subfolders">
+                                        <a href="" class="subfolder" title="Светильники светодиодные">
+                                            Энергосберигающие лампы
+                                        </a>
+                                        <a href="" class="subfolder" title="Светильники светодиодные">
+                                            Энергосберигающие лампы
+                                        </a>
+                                        <a href="" class="subfolder" title="Светильники светодиодные">
+                                            Энергосберигающие лампы
+                                        </a>
+                                        <a href="" class="subfolder" title="Светильники светодиодные">
+                                            Энергосберигающие лампы
+                                        </a>
+                                        <a href="" class="subfolder" title="Светильники светодиодные">
+                                            Энергосберигающие лампы
+                                        </a>
+                                        <a href="" class="subfolder link" title="Светильники светодиодные">
+                                        <span class="link__text">
+                                            Ещё 13
+                                        </span>
+                                            <svg class="link__svg">
+                                                <use xlink:href="images/icons/sprite.svg#right"></use>
+                                            </svg>
+                                        </a>
+
+                                    </div>
+                                </div>
+                                <div class="folder">
+                                    <a href="" class="folder__link" title="Светильники светодиодные">
+                                        <span class="folder__img">
+                                            <img src="/images/content/menu/menu1-active.png" alt="Светильники светодиодные"
+                                                 class="folder__pic">
+                                        </span>
+                                        <span class="folder__link-text">
+                                          Светильники светодиодные
+                                        </span>
+                                    </a>
+
+                                    <div class="subfolders">
+                                        <a href="" class="subfolder" title="Светильники светодиодные">
+                                            Энергосберигающие лампы
+                                        </a>
+                                        <a href="" class="subfolder" title="Светильники светодиодные">
+                                            Энергосберигающие лампы
+                                        </a>
+                                        <a href="" class="subfolder" title="Светильники светодиодные">
+                                            Энергосберигающие лампы
+                                        </a>
+                                        <a href="" class="subfolder" title="Светильники светодиодные">
+                                            Энергосберигающие лампы
+                                        </a>
+                                        <a href="" class="subfolder" title="Светильники светодиодные">
+                                            Энергосберигающие лампы
+                                        </a>
+                                        <a href="" class="subfolder link" title="Светильники светодиодные">
+                                        <span class="link__text">
+                                            Ещё 13
+                                        </span>
+                                            <svg class="link__svg">
+                                                <use xlink:href="images/icons/sprite.svg#right"></use>
+                                            </svg>
+                                        </a>
+
+                                    </div>
+                                </div>
+                                <div class="folder">
+                                    <a href="" class="folder__link" title="Светильники светодиодные">
+                                        <span class="folder__img">
+                                            <img src="/images/content/menu/menu1-active.png" alt="Светильники светодиодные"
+                                                 class="folder__pic">
+                                        </span>
+                                        <span class="folder__link-text">
+                                          Светильники светодиодные
+                                        </span>
+                                    </a>
+
+                                    <div class="subfolders">
+                                        <a href="" class="subfolder" title="Светильники светодиодные">
+                                            Энергосберигающие лампы
+                                        </a>
+                                        <a href="" class="subfolder" title="Светильники светодиодные">
+                                            Энергосберигающие лампы
+                                        </a>
+                                        <a href="" class="subfolder" title="Светильники светодиодные">
+                                            Энергосберигающие лампы
+                                        </a>
+                                        <a href="" class="subfolder" title="Светильники светодиодные">
+                                            Энергосберигающие лампы
+                                        </a>
+                                        <a href="" class="subfolder" title="Светильники светодиодные">
+                                            Энергосберигающие лампы
+                                        </a>
+                                        <a href="" class="subfolder link" title="Светильники светодиодные">
+                                        <span class="link__text">
+                                            Ещё 13
+                                        </span>
+                                            <svg class="link__svg">
+                                                <use xlink:href="images/icons/sprite.svg#right"></use>
+                                            </svg>
+                                        </a>
+
+                                    </div>
+                                </div>
+                                <div class="folder">
+                                    <a href="" class="folder__link" title="Светильники светодиодные">
+                                        <span class="folder__img">
+                                            <img src="/images/content/menu/menu1-active.png" alt="Светильники светодиодные"
+                                                 class="folder__pic">
+                                        </span>
+                                        <span class="folder__link-text">
+                                          Светильники светодиодные
+                                        </span>
+                                    </a>
+
+                                    <div class="subfolders">
+                                        <a href="" class="subfolder" title="Светильники светодиодные">
+                                            Энергосберигающие лампы
+                                        </a>
+                                        <a href="" class="subfolder" title="Светильники светодиодные">
+                                            Энергосберигающие лампы
+                                        </a>
+                                        <a href="" class="subfolder" title="Светильники светодиодные">
+                                            Энергосберигающие лампы
+                                        </a>
+                                        <a href="" class="subfolder" title="Светильники светодиодные">
+                                            Энергосберигающие лампы
+                                        </a>
+                                        <a href="" class="subfolder" title="Светильники светодиодные">
+                                            Энергосберигающие лампы
+                                        </a>
+                                        <a href="" class="subfolder link" title="Светильники светодиодные">
+                                        <span class="link__text">
+                                            Ещё 13
+                                        </span>
+                                            <svg class="link__svg">
+                                                <use xlink:href="images/icons/sprite.svg#right"></use>
+                                            </svg>
+                                        </a>
+
+                                    </div>
+                                </div>
+
+                            </div>
+                        </div>
+                    </div>
                 </div>
-                <div class="tab" id="tab3">
-                    Lorem ipsum dolor sit amet, consectetur adipisicing elit. Aut culpa cumque delectus esse est impedit
-                    laborum modi, molestias nesciunt possimus quaerat reprehenderit. Aliquid asperiores autem culpa
-                    ducimus esse nesciunt tenetur? Asperiores culpa deleniti enim eum eveniet inventore perspiciatis
-                    placeat provident quasi quia suscipit, vitae voluptates! Amet animi commodi dolores ducimus
-                    eligendi, eveniet exercitationem fuga hic, illum inventore libero mollitia, odio placeat quam quos
-                    recusandae saepe tempore veritatis. Dolorem eligendi ipsam magni, maiores modi nulla numquam tempora
-                    voluptate. Culpa dignissimos incidunt optio sapiente veritatis. Ab amet aperiam error facilis ipsa
-                    porro totam! Accusantium atque corporis cumque earum eligendi excepturi id inventore ipsum itaque
-                    iusto porro praesentium qui quidem quis quisquam, reiciendis repellat rerum saepe similique tempore
-                    totam veniam voluptates. Cupiditate delectus dolore earum fugiat iure, mollitia perferendis quo?
-                    Accusamus at corporis cumque debitis dicta distinctio ducimus eaque eveniet, fugit illum laboriosam
-                    maiores modi nisi nobis officia qui recusandae, sed, sequi? Commodi distinctio excepturi laboriosam
-                    magni maiores minus perspiciatis quidem quod tempora? Aperiam consequuntur corporis culpa cupiditate
-                    hic itaque laudantium minus molestias, nulla, quas quisquam quo quos velit! Consectetur debitis
-                    neque provident quas, tempora voluptate voluptatibus? A consequatur cum dolores explicabo facere
-                    magni minima neque quae? A accusantium beatae consequuntur cumque dignissimos ea excepturi, facere
-                    fuga illo minus perspiciatis, placeat provident quasi repellendus sapiente sequi similique tempora?
-                    At dolorem et impedit, iure labore molestiae, nobis officia, omnis provident quae quidem quis
-                    recusandae saepe vero voluptate. Deserunt eos esse nemo quibusdam? Alias esse expedita ipsum nostrum
-                    obcaecati sed ullam unde, vel vitae voluptas! Debitis dolorum et explicabo fugit, incidunt magnam
-                    nulla officiis quo ratione reiciendis sint ut voluptatum. Adipisci amet aspernatur, cum dolorem eius
-                    fugit hic incidunt ipsa, itaque laudantium maiores mollitia natus neque, nesciunt nihil numquam
-                    omnis reprehenderit sunt veniam voluptatem. A architecto cum earum minus provident recusandae
-                    tempora ullam velit, vero.
+                <div class="tab active" id="tab3">
+                    <? include 'pages/common/actions.php'?>
                 </div>
 
             </div>
