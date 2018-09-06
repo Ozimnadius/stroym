@@ -1,0 +1,52 @@
+.main-brands {
+  background-color: $violet;
+  padding: 50px 0;
+
+  &__title {
+    text-align: center;
+    color: $bg;
+    margin-bottom: 15px;
+  }
+
+  &__prev, &__next {
+    @include col;
+    @include size(2);
+    display: flex;
+  }
+  &__prev {
+    justify-content: flex-start;
+  }
+  &__next {
+    justify-content: flex-end;
+  }
+
+  &__slider {
+    @include col;
+    @include size(20);
+  }
+
+  &__container {
+    padding: 0 3px;
+  }
+
+  &__link {
+    margin-top: 25px;
+    display: flex;
+    justify-content: center;
+  }
+}
+
+.main-brand {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  height: 82px;
+  border-radius: 6px;
+  border: 2px solid $bg;
+  background-color: #d8d8e1;
+  box-sizing: border-box;
+
+  &__content {
+    padding: 15px 45px;
+  }
+}

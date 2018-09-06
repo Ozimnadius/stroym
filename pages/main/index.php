@@ -80,7 +80,6 @@
                         </div>
                     </div>
                 </div>
-
             </div>
         </div>
 
@@ -121,7 +120,7 @@
             <div class="switches">
                 <div class="row">
                     <div class="switches__list">
-                        <a href="#tab1" role="button" class="switch">
+                        <a href="#tab1" role="button" class="switch active">
                             <svg class="switch__svg">
                                 <use xlink:href="images/icons/sprite.svg#main"></use>
                             </svg>
@@ -137,7 +136,7 @@
                     Каталог
                 </span>
                         </a>
-                        <a href="#tab3" role="button" class="switch active">
+                        <a href="#tab3" role="button" class="switch">
                             <svg class="switch__svg">
                                 <use xlink:href="images/icons/sprite.svg#actions"></use>
                             </svg>
@@ -152,7 +151,7 @@
 
             <!-- tabs -->
             <div class="tabs">
-                <div class="tab" id="tab1">
+                <div class="tab active" id="tab1">
                     <svg hidden xmlns="http://www.w3.org/2000/svg">
                         <filter id="blur">
                             <feGaussianBlur in="SourgeGraphic" stdDeviation="2"></feGaussianBlur>
@@ -580,7 +579,8 @@
                                 <div class="folder">
                                     <a href="" class="folder__link" title="Светильники светодиодные">
                                         <span class="folder__img">
-                                            <img src="/images/content/menu/menu1-active.png" alt="Светильники светодиодные"
+                                            <img src="/images/content/menu/menu1-active.png"
+                                                 alt="Светильники светодиодные"
                                                  class="folder__pic">
                                         </span>
                                         <span class="folder__link-text">
@@ -618,7 +618,8 @@
                                 <div class="folder">
                                     <a href="" class="folder__link" title="Светильники светодиодные">
                                         <span class="folder__img">
-                                            <img src="/images/content/menu/menu1-active.png" alt="Светильники светодиодные"
+                                            <img src="/images/content/menu/menu1-active.png"
+                                                 alt="Светильники светодиодные"
                                                  class="folder__pic">
                                         </span>
                                         <span class="folder__link-text">
@@ -656,7 +657,8 @@
                                 <div class="folder">
                                     <a href="" class="folder__link" title="Светильники светодиодные">
                                         <span class="folder__img">
-                                            <img src="/images/content/menu/menu1-active.png" alt="Светильники светодиодные"
+                                            <img src="/images/content/menu/menu1-active.png"
+                                                 alt="Светильники светодиодные"
                                                  class="folder__pic">
                                         </span>
                                         <span class="folder__link-text">
@@ -694,7 +696,8 @@
                                 <div class="folder">
                                     <a href="" class="folder__link" title="Светильники светодиодные">
                                         <span class="folder__img">
-                                            <img src="/images/content/menu/menu1-active.png" alt="Светильники светодиодные"
+                                            <img src="/images/content/menu/menu1-active.png"
+                                                 alt="Светильники светодиодные"
                                                  class="folder__pic">
                                         </span>
                                         <span class="folder__link-text">
@@ -732,7 +735,8 @@
                                 <div class="folder">
                                     <a href="" class="folder__link" title="Светильники светодиодные">
                                         <span class="folder__img">
-                                            <img src="/images/content/menu/menu1-active.png" alt="Светильники светодиодные"
+                                            <img src="/images/content/menu/menu1-active.png"
+                                                 alt="Светильники светодиодные"
                                                  class="folder__pic">
                                         </span>
                                         <span class="folder__link-text">
@@ -770,7 +774,8 @@
                                 <div class="folder">
                                     <a href="" class="folder__link" title="Светильники светодиодные">
                                         <span class="folder__img">
-                                            <img src="/images/content/menu/menu1-active.png" alt="Светильники светодиодные"
+                                            <img src="/images/content/menu/menu1-active.png"
+                                                 alt="Светильники светодиодные"
                                                  class="folder__pic">
                                         </span>
                                         <span class="folder__link-text">
@@ -810,8 +815,8 @@
                         </div>
                     </div>
                 </div>
-                <div class="tab active" id="tab3">
-                    <? include 'pages/common/actions.php'?>
+                <div class="tab" id="tab3">
+                    <? include 'pages/common/actions.php' ?>
                 </div>
 
             </div>
@@ -819,5 +824,217 @@
         </div>
     </section>
     <!-- END tabs -->
+
+    <!-- brands -->
+    <section class="main-brands">
+        <div class="container">
+
+            <h2 class="main-brands__title">
+                Наши бренды
+            </h2>
+
+            <div class="row">
+
+                <!-- main-brand__prev -->
+                <button class="main-brands__prev">
+                    <span class="arrow arrow_white">
+                       <svg class="arrow__svg">
+                            <use xlink:href="images/icons/sprite.svg#left"></use>
+                        </svg>
+                    </span>
+                </button>
+                <!-- END main-brand__prev -->
+
+                <!-- slider -->
+                <div class="main-brands__slider">
+                    <div class="swiper-container main-brands__container">
+                        <div class="swiper-wrapper">
+                            <? for ($i = 1; $i < 9; $i++): ?>
+                                <a href="" title="Бренд<?= $i ?>" class="swiper-slide main-brand">
+                                    <span class="main-brand__content">
+                                        <img src="images/content/brands/brand<?= $i ?>.png" alt="Бренд<?= $i ?>"
+                                             title="Бренд<?= $i ?>"
+                                             class="main-brand__img">
+                                    </span>
+                                </a>
+                            <? endfor; ?>
+                        </div>
+                    </div>
+                </div>
+                <!-- END slider -->
+
+                <!-- main-brand__next -->
+                <button class="main-brands__next">
+                    <span class="arrow arrow_white">
+                       <svg class="arrow__svg">
+                            <use xlink:href="images/icons/sprite.svg#right"></use>
+                        </svg>
+                    </span>
+                </button>
+                <!-- END main-brand__prev -->
+
+            </div>
+
+            <div class="main-brands__link">
+                <a href="" class="link link_white">
+                    <span class="link__text">
+                        Смотреть все бренды
+                    </span>
+                    <svg class="link__svg">
+                        <use xlink:href="images/icons/sprite.svg#right"></use>
+                    </svg>
+                </a>
+            </div>
+
+        </div>
+    </section>
+    <!-- END brands -->
+
+    <!-- main-about -->
+    <section class="main-about">
+        <div class="container">
+
+            <div class="main-about__top">
+                <h2 class="main-about__title">
+                    Что говорят о нас ?
+                </h2>
+                <div class="main-about__link">
+                    <a href="" class="link" title=Смотреть все отзывы">
+                    <span class="link__text">
+                        Смотреть все отзывы
+                    </span>
+                        <svg class="link__svg">
+                            <use xlink:href="images/icons/sprite.svg#right"></use>
+                        </svg>
+                    </a>
+                </div>
+            </div>
+
+            <div class="main-about__slider">
+
+                <!-- wrapper -->
+                <div class="main-about__slider-wrap">
+
+                    <!-- swiper -->
+                    <div class="swiper-container main-about__container">
+                        <div class="swiper-wrapper">
+                            <div class="swiper-slide rev">
+                                <div class="rev__img">
+                                    <img src="images/content/about/about1.jpg" alt="Отзыв1" title="Отзыв1"
+                                         class="rev__pic">
+                                </div>
+                                <div class="rev__content">
+                                    <div class="rev__title">
+                                        Петрова Ирина, г. Москва
+                                    </div>
+                                    <div class="rev__desc">
+                                        Повседневная практика показывает, что рамки
+                                        и место обучения кадров обеспечивает широкому кругу (специалистов) участие в
+                                        формировании существенных финансовых и административных условий. С другой
+                                        стороны
+                                        дальнейшее развитие различных форм деятельности играет важную роль
+                                        в формировании системы обучения кадров, соответствует насущным потребностям.
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="swiper-slide rev">
+                                <div class="rev__img">
+                                    <img src="images/content/about/about2.jpg" alt="Отзыв2" title="Отзыв2"
+                                         class="rev__pic">
+                                </div>
+                                <div class="rev__content">
+                                    <div class="rev__title">
+                                        Тихонов Александр, г. Москва
+                                    </div>
+                                    <div class="rev__desc">
+                                        Повседневная практика показывает, что рамки
+                                        и место обучения кадров обеспечивает широкому кругу (специалистов) участие в
+                                        формировании существенных финансовых и административных условий. С другой
+                                        стороны дальнейшее развитие различных форм деятельности играет важную роль
+                                        в формировании системы обучения кадров, соответствует насущным потребностям.
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="swiper-slide rev">
+                                <div class="rev__img">
+                                    <img src="images/content/about/about1.jpg" alt="Отзыв1" title="Отзыв1"
+                                         class="rev__pic">
+                                </div>
+                                <div class="rev__content">
+                                    <div class="rev__title">
+                                        Петрова Ирина, г. Москва
+                                    </div>
+                                    <div class="rev__desc">
+                                        Повседневная практика показывает, что рамки
+                                        и место обучения кадров обеспечивает широкому кругу (специалистов) участие в
+                                        формировании существенных финансовых и административных условий. С другой
+                                        стороны
+                                        дальнейшее развитие различных форм деятельности играет важную роль
+                                        в формировании системы обучения кадров, соответствует насущным потребностям.
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <!-- END swiper -->
+
+                    <!-- nav -->
+
+                    <div class="main-about__prev">
+                        <div class="main-about__prev-wrap">
+                            <div class="main-about__arrow">
+                            </div>
+                        </div>
+                        <button role="button" class="arrow arrow_about">
+                            <svg class="arrow__svg">
+                                <use xlink:href="images/icons/sprite.svg#left"></use>
+                            </svg>
+                        </button>
+                    </div>
+                    <div class="main-about__next">
+                        <div class="main-about__next-wrap">
+                            <div class="main-about__arrow">
+                            </div>
+                        </div>
+                        <button role="button" class="arrow arrow_about">
+                            <svg class="arrow__svg">
+                                <use xlink:href="images/icons/sprite.svg#right"></use>
+                            </svg>
+                        </button>
+                    </div>
+                    <!-- END nav -->
+
+                </div>
+                <!-- END wrapper -->
+
+                <!-- pagination -->
+                <div class="swiper-pagination main-about__pagination"></div>
+                <!-- END pagination -->
+
+            </div>
+
+            <!-- news -->
+            <div class="main-news">
+                <div class="main-news__top">
+                    <h2 class="main-news__title">
+                        Новости
+                    </h2>
+                    <div class="main-news__link">
+                        <a href="" class="link" title="Смотреть все новости">
+                            <span class="link__text">
+                                Смотреть все новости
+                            </span>
+                            <svg class="link__svg">
+                                <use xlink:href="images/icons/sprite.svg#right"></use>
+                            </svg>
+                        </a>
+                    </div>
+                </div>
+            </div>
+            <!-- END news -->
+
+        </div>
+    </section>
+    <!-- END main-about -->
 
 </main>

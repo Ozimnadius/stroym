@@ -90,7 +90,7 @@
         <div class="row more__hidden">
 
         </div>
-        <button role="button" class="more__button link">
+        <button role="button" class="more__button link" data-action="moreActions">
             <span class="link__text more__button-text">
                 Загрузить еще
             </span>
