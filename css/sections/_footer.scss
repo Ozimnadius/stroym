@@ -1,4 +1,124 @@
 .footer {
-  height: 400px;
   background-color: $violet;
+
+  &__top {
+    background: url("../images/bg/bg-footer.jpg") center center no-repeat/ cover;
+    padding: 60px 0 40px 0;
+    overflow: hidden;
+
+    .container {
+      position: relative;
+    }
+
+    &-bg {
+      position: absolute;
+      z-index: 10;
+      bottom: -115px;
+      left: -35px;
+    }
+
+    .row {
+      position: relative;
+      z-index: 20;
+    }
+  }
+
+  /* left */
+  &__left {
+    @include col;
+    @include size(6);
+  }
+  /* END left */
+
+  /* center */
+  &__center {
+    @include col;
+    @include size(12);
+  }
+
+  &__nav {
+    @include col;
+    @include size(8);
+    display: flex;
+    flex-direction: column;
+
+    &-title {
+      font-size: 18px;
+      font-weight: 700;
+      margin-bottom: 10px;
+    }
+
+    &-list {
+      display: flex;
+      flex-direction: column;
+    }
+    &-item {
+      margin-bottom: 10px;
+
+      &:last-child {
+        margin-bottom: 0;
+      }
+    }
+  }
+  /* END center */
+
+  /* right */
+  &__right {
+    @include col;
+    @include size(6);
+  }
+
+  &__callorder {
+    width: 100%;
+    margin-bottom: 25px;
+  }
+
+  &__contact {
+    margin-bottom: 20px;
+
+    &:last-child {
+      margin-bottom: 0;
+    }
+
+    &-title {
+      font-weight: 700;
+      display: flex;
+      align-items: center;
+    }
+    &-svg {
+      width: 20px;
+      height: 20px;
+      fill: $text;
+      margin-right: 10px;
+    }
+    &-text {
+      padding-left: 30px;
+    }
+  }
+  /* END right */
+
+
+
+
+  &__bottom {
+    padding: 25px 0;
+    .container {
+      display: flex;
+      align-items: center;
+      justify-content: space-between;
+      position: relative;
+    }
+  }
+
+  &__copy {
+    margin: 0 auto;
+    color: $bg;
+  }
+
+  &__vendor {
+    position: absolute;
+    right: 0;
+    top: 50%;
+    transform: translateY(-50%);
+  }
 }

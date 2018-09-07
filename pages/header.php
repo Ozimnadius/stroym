@@ -53,7 +53,7 @@
                         <!-- END phone -->
 
                         <!-- callorder-button -->
-                        <button role="button" class="callorder-button">
+                        <button role="button" class="callorder-button jsCallorder">
                             Заказать обратный звонок
                         </button>
                         <!-- END callorder-button -->
