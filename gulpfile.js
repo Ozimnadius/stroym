@@ -30,6 +30,7 @@ const vendorJs = [
     'node_modules/jquery/dist/jquery.js',
     'node_modules/jquery.maskedinput/src/jquery.maskedinput.js',
     'node_modules/swiper/dist/js/swiper.js',
+    'js/jquery-ui-1.12.1/jquery-ui.js',
 ];
 
 
@@ -37,6 +38,8 @@ const vendorCss = [
     'node_modules/font-awesome/css/font-awesome.css',
     'node_modules/normalize.css/normalize.css',
     'node_modules/swiper/dist/css/swiper.css',
+    'js/jquery-ui-1.12.1/jquery-ui.css',
+    'js/jquery-ui-1.12.1/jquery-ui.theme.css',
 ];
 
 

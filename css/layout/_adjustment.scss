@@ -40,6 +40,10 @@ body {
   flex-grow: 1;
 }
 
+.section {
+  padding: 50px 0;
+}
+
 .container {
   @include wrapper;
 }
@@ -71,6 +75,12 @@ h2 {
 
 h3 {
   font-size: 24px;
+}
+
+ul {
+  margin: 0;
+  padding: 0;
+  list-style: none;
 }
 
 button {

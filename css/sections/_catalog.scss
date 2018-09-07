@@ -1,0 +1,36 @@
+.catalog {
+
+  &__list {
+    padding-bottom: 30px;
+  }
+
+  &__item {
+    @include col;
+    @include size(8);
+    display: flex;
+    flex-direction: column;
+    margin-bottom: 30px;
+
+  }
+  &__link {
+    color: $violet;
+    font-size: 22px;
+    font-weight: 500;
+    margin-bottom: 10px;
+  }
+
+  &__sublist {
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+  }
+  &__subitem {
+    margin-bottom: 9px;
+    &:hover {
+      text-decoration: underline;
+    }
+    &:last-child {
+      margin-bottom: 0;
+    }
+  }
+}

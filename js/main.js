@@ -49,6 +49,8 @@ $(function () {
 
 
     });
+
+    $('.filter__select').selectmenu();
     /*END OTHER*/
 
     /*SLIDERS*/

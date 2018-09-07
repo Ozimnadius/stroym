@@ -59,6 +59,12 @@
     }
     &-item {
       margin-bottom: 9px;
+      text-decoration: none;
+      transition: .3s;
+
+      &:hover {
+        text-decoration: underline;
+      }
 
       &:last-child {
         margin-bottom: 0;
@@ -126,5 +132,10 @@
     right: 0;
     top: 50%;
     transform: translateY(-50%);
+    transition: .3s;
+
+    &:hover {
+      opacity: .8;
+    }
   }
 }
