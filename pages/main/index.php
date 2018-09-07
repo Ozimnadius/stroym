@@ -497,9 +497,11 @@
                                             <a href="" title="Энергосберигающие лампы" class="subcat">
                                                 Энергосберигающие лампы
                                             </a>
-                                            <a href="" title="Энергосберигающие лампы" class="subcat subcat_link">
-                                                Ещё 13
-                                                <svg class="subcat__svg">
+                                            <a href="" title="Энергосберигающие лампы" class="subcat subcat_link link">
+                                                <span class="link__text">
+                                                     Ещё 13
+                                                </span>
+                                                <svg class="link__svg">
                                                     <use xlink:href="images/icons/sprite.svg#right"></use>
                                                 </svg>
                                             </a>
@@ -903,9 +905,9 @@
                     <span class="link__text">
                         Смотреть все отзывы
                     </span>
-                        <svg class="link__svg">
-                            <use xlink:href="images/icons/sprite.svg#right"></use>
-                        </svg>
+                    <svg class="link__svg">
+                        <use xlink:href="images/icons/sprite.svg#right"></use>
+                    </svg>
                     </a>
                 </div>
             </div>
@@ -1015,6 +1017,7 @@
 
             <!-- news -->
             <div class="main-news">
+                <!-- top -->
                 <div class="main-news__top">
                     <h2 class="main-news__title">
                         Новости
@@ -1030,6 +1033,27 @@
                         </a>
                     </div>
                 </div>
+                <!-- END top -->
+
+                <!-- list -->
+                <div class="main-news__list">
+                    <div class="row">
+                        <? for ($i=1; $i < 5; $i++): ?>
+                        <a href="" title="Новость1" class="main-news__item">
+                            <img src="images/content/news/news<?=$i?>.jpg" title="Новость<?=$i?>" alt="Новость<?=$i?>" class="main-news__img">
+                            <span class="main-news__date">
+                                13.05.2018
+                            </span>
+                            <span class="main-news__title">
+                                Новый ассортимент светодиодных ламп
+                            </span>
+                        </a>
+                        <? endfor; ?>
+                    </div>
+                </div>
+                <!-- END list -->
+
+
             </div>
             <!-- END news -->
 
