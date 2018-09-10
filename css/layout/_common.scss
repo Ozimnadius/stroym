@@ -98,6 +98,34 @@
       }
     }
   }
+  &_yellow {
+    border: 1px solid $bg;
+    .arrow__svg {
+      fill: $bg;
+    }
+
+    &:hover {
+      border: 1px solid $yellow;
+      background: $yellow;
+      .arrow__svg {
+        fill: $bg;
+      }
+    }
+  }
+  &_violet {
+    border: 1px solid $violet;
+    .arrow__svg {
+      fill: $violet;
+    }
+
+    &:hover {
+      border: 1px solid $yellow;
+      background: $yellow;
+      .arrow__svg {
+        fill: $bg;
+      }
+    }
+  }
 
   &_about {
     width: 44px;
@@ -125,6 +153,7 @@
 
   &__hidden {
     //display: none;
+    width: 100%;
   }
 
   &__button {

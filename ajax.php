@@ -42,6 +42,13 @@ switch ($action) {
         ));
         exit();
         break;
+    case 'moreCats':
+        echo json_encode(array(
+            'status' => true,
+            'html' => moreCats()
+        ));
+        exit();
+        break;
     default:
         echo json_encode(array(
             'status' => false,
@@ -134,6 +141,65 @@ function moreActions()
                 и фонари
             </span>
     </a>
+    <?
+    $html = ob_get_contents();
+    ob_end_clean();
+    return $html;
+}
+
+function moreCats()
+{
+    ob_start();
+    ?>
+    <div class="cat" style="background-image: url(images/content/cats/category1.jpg);">
+        <!-- link -->
+        <a href="" title="Светильники светодиодные" class="cat__link">
+            Светильники светодиодные
+        </a>
+        <!-- END link -->
+    </div>
+    <div class="cat" style="background-image: url(images/content/cats/category2.jpg);">
+        <!-- link -->
+        <a href="" title="Светильники светодиодные" class="cat__link">
+            Светильники светодиодные
+        </a>
+        <!-- END link -->
+    </div>
+    <div class="cat cat_3" style="background-image: url(images/content/cats/category3.jpg);">
+        <!-- link -->
+        <a href="" title="Светильники светодиодные" class="cat__link">
+            Лампы
+        </a>
+        <!-- END link -->
+    </div>
+    <div class="cat cat_3" style="background-image: url(images/content/cats/category4.jpg);">
+        <!-- link -->
+        <a href="" title="Светильники светодиодные" class="cat__link">
+            Лампы
+        </a>
+        <!-- END link -->
+    </div>
+    <div class="cat cat_3" style="background-image: url(images/content/cats/category5.jpg);">
+        <!-- link -->
+        <a href="" title="Светильники светодиодные" class="cat__link">
+            Лампы
+        </a>
+        <!-- END link -->
+    </div>
+    <div class="cat" style="background-image: url(images/content/cats/category6.jpg);">
+        <!-- link -->
+        <a href="" title="Светильники светодиодные" class="cat__link">
+            Светильники светодиодные
+        </a>
+        <!-- END link -->
+    </div>
+    <div class="cat" style="background-image: url(images/content/cats/category7.jpg);">
+        <!-- link -->
+        <a href="" title="Светильники светодиодные" class="cat__link">
+            Светильники светодиодные
+        </a>
+        <!-- END link -->
+    </div>
     <?
     $html = ob_get_contents();
     ob_end_clean();

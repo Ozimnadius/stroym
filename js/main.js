@@ -219,5 +219,25 @@ $(function () {
             prevEl: '.main-about__prev .arrow',
         },
     });
+
+    var popularSwiper = new Swiper('.popular__container', {
+        loop: true,
+        slidesPerView: 4,
+        spaceBetween: 30,
+        navigation: {
+            nextEl: '.popular__next .arrow',
+            prevEl: '.popular__prev .arrow',
+        },
+    });
+
+    var lookSwiper = new Swiper('.look__container', {
+        loop: true,
+        slidesPerView: 4,
+        spaceBetween: 30,
+        navigation: {
+            nextEl: '.look__next .arrow',
+            prevEl: '.look__prev .arrow',
+        },
+    });
     /*END SLIDERS*/
 });

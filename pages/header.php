@@ -18,13 +18,13 @@
                     <div class="header__addr-search">
 
                         <!-- addr -->
-                        <a href="" class="addr">
-                        <span class="addr__icon">
-                            <i class="fa fa-map-marker" aria-hidden="true"></i>
-                        </span>
-                            <span class="addr__text">
-                            Москва, ул. Тверская, дом 5, стр 1
-                        </span>
+                        <a target="_blank" href="https://yandex.ru/maps/?text=Москва, ул. Тверская, дом 5, стр 1" class="addr">
+                            <span class="addr__icon">
+                                <i class="fa fa-map-marker" aria-hidden="true"></i>
+                            </span>
+                                <span class="addr__text">
+                                Москва, ул. Тверская, дом 5, стр 1
+                            </span>
                         </a>
                         <!-- END addr -->
 
@@ -117,18 +117,18 @@
                 <!-- left -->
                 <div class="header__bottom-left">
                     <div class="menu">
-                        <a href="" class="menu__link">
+                        <a href="catalog.php" class="menu__link">
                             <svg class="menu__link-svg">
                                 <use xlink:href="images/icons/sprite.svg#catalog"></use>
                             </svg>
                             <span class="menu__link-text">
-                        Каталог
-                    </span>
+                                Каталог
+                            </span>
                         </a>
 
                         <div class="menu__drop">
                             <div class="menu__list">
-                                <a href="" title="Лампы" class="menu__item">
+                                <a href="category2.php" title="Лампы" class="menu__item">
                                     <div class="menu__item-img">
                                         <img src="images/content/menu/menu1.png" alt="Лампы" title="Лампы" class="menu__item-pic">
                                         <img src="images/content/menu/menu1-active.png" alt="Лампы" title="Лампы"
@@ -138,7 +138,7 @@
                                         Лампы
                                     </div>
                                 </a>
-                                <a href="" title="Светильники светодиодные" class="menu__item">
+                                <a href="category2.php" title="Светильники светодиодные" class="menu__item">
                                     <div class="menu__item-img">
                                         <img src="images/content/menu/menu2.png" alt="Светильники светодиодные"
                                              title="Светильники светодиодные" class="menu__item-pic">
@@ -151,7 +151,7 @@
                                         светодиодные
                                     </div>
                                 </a>
-                                <a href="" title="Светильники люминисцентные" class="menu__item">
+                                <a href="category2.php" title="Светильники люминисцентные" class="menu__item">
                                     <div class="menu__item-img">
                                         <img src="images/content/menu/menu3.png" alt="Светильники люминисцентные"
                                              title="Светильники люминисцентные" class="menu__item-pic">
@@ -164,7 +164,7 @@
                                         люминисцентные
                                     </div>
                                 </a>
-                                <a href="" title="Прожекторы и Фонари" class="menu__item">
+                                <a href="category2.php" title="Прожекторы и Фонари" class="menu__item">
                                     <div class="menu__item-img">
                                         <img src="images/content/menu/menu4.png" alt="Прожекторы и Фонари"
                                              title="Прожекторы и Фонари" class="menu__item-pic">
@@ -177,7 +177,7 @@
                                         и Фонари
                                     </div>
                                 </a>
-                                <a href="" title="Светодиодная лента" class="menu__item">
+                                <a href="category2.php" title="Светодиодная лента" class="menu__item">
                                     <div class="menu__item-img">
                                         <img src="images/content/menu/menu5.png" alt="Светодиодная лента" title="Светодиодная лента"
                                              class="menu__item-pic">
