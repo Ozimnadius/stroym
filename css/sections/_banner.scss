@@ -145,3 +145,69 @@
     fill: $text;
   }
 }
+
+.banner2 {
+  height: 495px;
+  overflow: hidden;
+  background-repeat: no-repeat;
+  position: relative;
+  padding-top: 55px;
+
+  &__bg {
+    position: absolute;
+    left: 50%;
+    right: 0;
+    top: 0;
+    bottom: 0;
+    z-index: 20;
+    background-position: center center;
+    background-size: cover;
+  }
+
+  &__content {
+    padding: 50px 45px;
+
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+  }
+
+  &__img {
+    margin-bottom: 60px;
+  }
+
+  &__svg {
+    font-size: 38px;
+    line-height: 1;
+    font-weight: 600;
+    text-transform: uppercase;
+    margin-left: 30px;
+    margin-bottom: -20px;
+
+    stroke: $bg;
+    fill: transparent;
+  }
+
+  &__desc {
+    display: flex;
+    align-items: flex-end;
+    margin-bottom: 25px;
+  }
+  &__percent {
+    color: $bg;
+    font-size: 100px;
+    font-weight: 800;
+    line-height: 1;
+    margin-right: 20px;
+  }
+  &__text {
+    font-size: 28px;
+    font-weight: 500;
+  }
+
+  &__button {
+    margin-left: 45px;
+    padding-left: 30px;
+    padding-right: 30px;
+  }
+}

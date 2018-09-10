@@ -1,0 +1,13 @@
+.category {
+
+
+  &__list {
+    @include col;
+    @include size(18);
+  }
+
+  &__filters {
+    @include col;
+    @include size(6);
+  }
+}

@@ -11,6 +11,30 @@ switch ($action) {
         ));
         exit();
         break;
+    case 'favorite':
+        echo json_encode(array(
+            'status' => true
+        ));
+        exit();
+        break;
+    case 'compare':
+        echo json_encode(array(
+            'status' => true
+        ));
+        exit();
+        break;
+    case 'add':
+        echo json_encode(array(
+            'status' => true
+        ));
+        exit();
+        break;
+    case 'type':
+        echo json_encode(array(
+            'status' => true
+        ));
+        exit();
+        break;
     case 'moreActions':
         echo json_encode(array(
             'status' => true,

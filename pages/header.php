@@ -9,7 +9,7 @@
                 <div class="header__left">
 
                     <!-- logo -->
-                    <a href="" role="link" title="Строй-М" class="header__logo logo">
+                    <a href="/" role="link" title="Строй-М" class="header__logo logo">
                         <img src="images/content/logo.png" alt="Строй-М" title="Строй-М" class="logo__img">
                     </a>
                     <!-- END logo -->

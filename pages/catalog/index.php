@@ -13,7 +13,7 @@
                 </div>
                 <!-- END title -->
 
-                <? include 'pages/common/filter.php' ?>
+                <? include 'pages/common/sort.php' ?>
 
             </div>
             <!-- END top -->
