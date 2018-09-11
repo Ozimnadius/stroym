@@ -66,11 +66,11 @@
 
                         <!-- enter -->
                         <a href="" role="link" title="Личный кабинет" class="enter">
-                        <span class="enter__img">
-                            <svg class="enter__svg">
-                            <use xlink:href="images/icons/sprite.svg#enter"></use>
-                            </svg>
-                        </span>
+                            <span class="enter__img">
+                                <svg class="enter__svg">
+                                <use xlink:href="images/icons/sprite.svg#enter"></use>
+                                </svg>
+                            </span>
                             <span class="enter__text">
                             Войти
                         </span>
@@ -209,7 +209,7 @@
                                     <a href="" class="nav-2__item" title="О нас">О нас</a>
                                     <a href="" class="nav-2__item" title="Условия покупки">Условия покупки</a>
                                     <a href="" class="nav-2__item" title="Наши партнеры">Наши партнеры</a>
-                                    <a href="" class="nav-2__item" title=">Акции">Акции</a>
+                                    <a href="" class="nav-2__item" title="Акции">Акции</a>
                                 </div>
                             </div>
                         </div>

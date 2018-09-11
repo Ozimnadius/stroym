@@ -147,6 +147,22 @@ $(function () {
 
     });
 
+    $('.product__switch').on('click', function (e) {
+        e.preventDefault();
+
+        var button = $(this),
+            href = button.attr('href'),
+            buttons = $('.product__switch').not(button),
+            tab = $(href),
+            tabs = $('.product__tab').not(tab);
+
+        buttons.removeClass('active');
+        tabs.removeClass('active');
+        button.addClass('active');
+        tab.addClass('active');
+
+    });
+
     $('.more__button').on('click', function () {
 
         var button = $(this),
@@ -180,6 +196,67 @@ $(function () {
 
     });
 
+    $('.product__preview').on('click', function (e) {
+        e.preventDefault();
+        changeImg($(this));
+    });
+
+    setInterval(function (e) {
+        var preview = $('.product__preview.active'),
+            nextPreview = preview.next('.product__preview');
+
+        if (nextPreview.length == 0) {
+            nextPreview = preview.prev('.product__preview');
+        }
+
+        changeImg(nextPreview);
+
+    }, 5000);
+
+    function changeImg(button) {
+        var preview = button,
+            href = preview.attr('href'),
+            caption = preview.data('caption'),
+            previews = $('.product__preview').not(preview),
+            fancy = $('.product__fancybox'),
+            fancyImg = fancy.find('.product__pic');
+
+        fancy.attr('href', href).attr('data-caption', caption);
+        fancyImg.attr('src', href).attr('alt', caption).attr('title', caption);
+        previews.removeClass('active');
+        preview.addClass('active');
+    }
+
+    $('.com__hand').on('click', function (e) {
+
+        var button = $(this),
+            id = button.data('id'),
+            countObj = button.find('.com__hand-int'),
+            countInt = parseInt(countObj.text()),
+            data = {
+                id: id,
+                action: 'vote'
+            };
+
+        $.ajax({
+            dataType: "json",
+            type: "POST",
+            url: 'ajax.php',
+            data: data,
+            success: function (result) {
+                if (result.status) {
+                    countInt++;
+                    countObj.text(countInt);
+                    button.prop('disabled', true);
+                } else {
+                    alert('Что-то пошло не так, попробуйте еще раз!!!');
+                }
+            },
+            error: function (result) {
+                alert('Что-то пошло не так, попробуйте еще раз!!!');
+            }
+        });
+    });
 
     /*END OTHER*/
 

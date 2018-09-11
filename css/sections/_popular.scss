@@ -36,6 +36,11 @@
 
 .look {
   background-image: url(/images/bg/bg_about-main.jpg);
+
+  &_product {
+    background-image: none;
+    background-color: $bg;
+  }
   &__title {
     color: $text;
     font-size: 38px;

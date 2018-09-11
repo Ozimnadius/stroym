@@ -49,6 +49,12 @@ switch ($action) {
         ));
         exit();
         break;
+    case 'vote':
+        echo json_encode(array(
+            'status' => true,
+        ));
+        exit();
+        break;
     default:
         echo json_encode(array(
             'status' => false,

@@ -147,6 +147,12 @@
       display: flex;
       align-items: center;
       justify-content: center;
+      transition: .3s;
+
+      &:hover {
+        color: $yellow;
+        background: $bg;
+      }
     }
   }
 
