@@ -21,6 +21,9 @@ $(function () {
             success: function (result) {
                 if (result.status) {
                     button.toggleClass('active');
+                    if (action == 'add') {
+                        addCart(1);
+                    }
                 } else {
                     alert('Что-то пошло не так, попробуйте еще раз!!!');
                 }
@@ -257,6 +260,323 @@ $(function () {
             }
         });
     });
+
+    $('.jsPopupOpen').on('click', function (e) {
+        e.preventDefault();
+        var popup = $('.popup'),
+            content = popup.find('.popup__content'),
+            action = $(this).data('action'),
+            data = {
+                action: action
+            };
+
+        $.ajax({
+            dataType: "json",
+            type: "POST",
+            url: 'ajax.php',
+            data: data,
+            success: function (result) {
+                if (result.status) {
+                    content.html(result.html);
+                    popup.addClass('active');
+                    $('input[type=tel]').mask('+7 (999) 999-99-99');
+                    $('.popup__form').validate({
+                        rules: {
+                            name: {
+                                required: true,
+                            },
+                            tel: {
+                                required: true,
+                            },
+                            email: {
+                                required: true,
+                                email: true
+                            },
+                            password: {
+                                required: true,
+                                minlength: 6
+                            }
+
+                        },
+                        messages: {
+                            name: {
+                                required: "Введите вашу Фамилию Имя",
+                            },
+                            tel: {
+                                required: "Введите ваш телефон",
+                            },
+                            email: {
+                                required: "Введите ваш email",
+                                email: "Введите корректный email"
+                            },
+                            password: {
+                                required: "Введите ваш пароль",
+                                minlength: "Длина пароля не менне 6-ти символов"
+                            }
+                        },
+                        submitHandler: function (form) {
+                            var form = $(form),
+                                ajaxUrl = 'ajax.php',
+                                data = form.serialize();
+
+                            $.ajax({
+                                dataType: "json",
+                                type: "POST",
+                                url: ajaxUrl,
+                                data: data,
+                                success: function (result) {
+                                    if (result.status) {
+                                        var bottom = $('.popup__bottom'),
+                                            height = bottom.outerHeight();
+                                        bottom.css({
+                                            height: height
+                                        });
+
+                                        if (result.reload) {
+                                            bottom.html(result.html);
+                                            setTimeout(function () {
+                                                window.location.reload()
+                                            }, 2000);
+                                        } else {
+                                            bottom.html(result.html);
+                                        }
+
+                                    } else {
+                                        alert('Что-то пошло не так, попробуйте еще раз!!!');
+                                    }
+                                },
+                                error: function (result) {
+                                    alert('Что-то пошло не так, попробуйте еще раз!!!');
+                                }
+                            });
+                        }
+                    })
+                } else {
+                    alert('Что-то пошло не так, попробуйте еще раз!!!');
+                }
+            },
+            error: function (result) {
+                alert('Что-то пошло не так, попробуйте еще раз!!!');
+            }
+        });
+    });
+
+    $('.popup').on('click', '.popup__registration', function (e) {
+        var button = $(this),
+            popup = button.closest('.popup'),
+            content = popup.find('.popup__content'),
+            action = 'registration',
+            data = {
+                action: action
+            };
+
+        $.ajax({
+            dataType: "json",
+            type: "POST",
+            url: 'ajax.php',
+            data: data,
+            success: function (result) {
+                if (result.status) {
+                    content.html(result.html);
+                    popup.addClass('active');
+                    $('input[type=tel]').mask('+7 (999) 999-99-99');
+                    $('.popup__form').validate({
+                        rules: {
+                            name: {
+                                required: true,
+                            },
+                            tel: {
+                                required: true,
+                            },
+                            email: {
+                                required: true,
+                                email: true
+                            },
+                            password: {
+                                required: true,
+                                minlength: 6
+                            }
+
+                        },
+                        messages: {
+                            name: {
+                                required: "Введите вашу Фамилию Имя",
+                            },
+                            tel: {
+                                required: "Введите ваш телефон",
+                            },
+                            email: {
+                                required: "Введите ваш email",
+                                email: "Введите корректный email"
+                            },
+                            password: {
+                                required: "Введите ваш пароль",
+                                minlength: "Длина пароля не менне 6-ти символов"
+                            }
+                        },
+                        submitHandler: function (form) {
+                            var form = $(form),
+                                ajaxUrl = 'ajax.php',
+                                data = form.serialize();
+
+                            $.ajax({
+                                dataType: "json",
+                                type: "POST",
+                                url: ajaxUrl,
+                                data: data,
+                                success: function (result) {
+                                    if (result.status) {
+                                        var bottom = $('.popup__bottom'),
+                                            height = bottom.outerHeight();
+                                        bottom.css({
+                                            height: height
+                                        });
+
+                                        if (result.reload) {
+                                            bottom.html(result.html);
+                                            setTimeout(function () {
+                                                window.location.reload()
+                                            }, 2000);
+                                        } else {
+                                            bottom.html(result.html);
+                                        }
+
+                                    } else {
+                                        alert('Что-то пошло не так, попробуйте еще раз!!!');
+                                    }
+                                },
+                                error: function (result) {
+                                    alert('Что-то пошло не так, попробуйте еще раз!!!');
+                                }
+                            });
+                        }
+                    })
+                } else {
+                    alert('Что-то пошло не так, попробуйте еще раз!!!');
+                }
+            },
+            error: function (result) {
+                alert('Что-то пошло не так, попробуйте еще раз!!!');
+            }
+        });
+    });
+
+    $('.popup').on('click', '.jsPopupClose', function () {
+        var close = $(this),
+            popup = close.closest('.popup');
+        popup.removeClass('active');
+    });
+
+    $('.popup').on('click', function (e) {
+        var popup = $(this);
+        if ($(e.target).hasClass('popup')) {
+            popup.removeClass('active');
+        }
+    });
+
+    $('.count__down').on('click', function (e) {
+
+        var $this = $(this),
+            item = $this.closest('.basket__item'),
+            countObj = item.find('.count__val'),
+            count = parseInt(countObj.val());
+
+        if (count > 0) {
+            count--;
+        } else {
+            count = 0;
+        }
+
+        countObj.val(count);
+        calcSum(item);
+    });
+
+    $('.count__up').on('click', function (e) {
+        // e.preventDefault();
+
+        var $this = $(this),
+            item = $this.closest('.basket__item'),
+            countObj = item.find('.count__val'),
+            count = parseInt(countObj.val());
+
+
+        count++;
+        countObj.val(count);
+        calcSum(item);
+    });
+
+    $('.jsDelete').on('click', function (e) {
+        e.preventDefault();
+
+        var button = $(this),
+            item = button.closest('.basket__item'),
+            id = item.data('id'),
+            data = {
+                action: 'deleteBasketItem',
+                id: id
+            };
+
+        $.ajax({
+            dataType: "json",
+            type: "POST",
+            url: 'ajax.php',
+            data: data,
+            success: function (result) {
+                if (result.status) {
+                    item.remove();
+                    calcTotal();
+                } else {
+                    alert('Что-то пошло не так, попробуйте еще раз!!!');
+                }
+            },
+            error: function (result) {
+                alert('Что-то пошло не так, попробуйте еще раз!!!');
+            }
+        });
+    });
+
+    function calcSum(item) {
+        // var count = parseInt(item.find('.count__val').val()),
+        //     price = parseInt(item.data('price')),
+        //     sum = count * price,
+        //     sumObj = item.find('.basket__item-sum');
+        //
+        // sumObj.text(sum.toLocaleString() + ' руб');
+
+        calcTotal();
+    }
+
+    function calcTotal() {
+        var items = $('.basket__item'),
+            totalCount = 0;
+
+        items.each(function (indx, elem) {
+            var item = $(elem),
+                price = parseInt(item.data('price')),
+                count = parseInt(item.find('.count__val').val()),
+                sum = price * count;
+            totalCount += count;
+
+        });
+
+        refreshCart(totalCount);
+    }
+
+    function refreshCart(count) {
+        var cart = $('.cart'),
+            countObj = cart.find('.cart__count');
+
+        countObj.text(count);
+    }
+
+    function addCart(add) {
+        var cart = $('.cart'),
+            countObj = cart.find('.cart__count'),
+            count = parseInt(countObj.text());
+
+        count += add;
+        countObj.text(count);
+    }
 
     /*END OTHER*/
 

@@ -27,6 +27,7 @@
     "gulp-uglify": "^3.0.0",
     "ikselect": "^1.1.0",
     "jquery": "^3.2.1",
+    "jquery-validation": "^1.18.0",
     "jquery.maskedinput": "^1.4.1",
     "microplugin": "0.0.3",
     "normalize.css": "^7.0.0",

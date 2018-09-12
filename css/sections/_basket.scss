@@ -1,0 +1,202 @@
+.basket {
+
+  &__table {
+    border-radius: 6px;
+    border: 1px solid #cbcbcb;
+    background-color: #fafafa;
+    margin-bottom: 40px;
+  }
+
+  &__head {
+    border-bottom: 1px solid #cbcbcb;
+    padding: 0 30px;
+  }
+
+  &__col {
+    &-product, &-controls, &-count, &-delete {
+      @include col;
+    }
+    &-product {
+      @include size(10);
+    }
+    &-controls {
+      @include size(4);
+    }
+    &-count {
+      @include size(6);
+    }
+    &-delete {
+      @include size(4);
+    }
+  }
+
+  &__th {
+    color: rgba(#464646, .5);
+    padding: 25px 0;
+    text-align: center;
+
+    &_left {
+      text-align: left;
+    }
+  }
+
+  &__body {
+    padding: 30px;
+  }
+
+  &__item {
+    border-radius: 6px;
+    border: 1px solid #e8e8e8;
+    background-color: $bg;
+    margin-bottom: 20px;
+    padding: 25px 40px;
+
+    &:last-child {
+      margin-bottom: 0;
+    }
+
+    .row {
+      align-items: center;
+    }
+  }
+
+  &__product {
+    display: flex;
+    align-items: center;
+
+    &-left {
+      margin-right: 25px;
+    }
+  }
+
+  &__img {
+    width: 115px;
+    height: 100px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+  }
+  &__pic {
+    max-height: 100%;
+  }
+  &__title {
+    font-weight: 700;
+    margin-bottom: 15px;
+  }
+  &__desc {
+    font-size: 14px;
+  }
+
+  &__controls {
+    .product__control {
+      background: $bg;
+    }
+  }
+
+  &__count {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+  }
+
+  &__delete {
+    display: flex;
+    justify-content: flex-end;
+  }
+
+  &__button {
+    width: 354px;
+    height: 73px;
+    border-radius: 37px;
+    background-color: $yellow;
+
+    display: flex;
+    align-items: center;
+    justify-content: center;
+
+    color: $bg;
+    font-size: 24px;
+    font-weight: 700;
+    transition: .3s;
+
+    &:hover {
+      background-color: $violet;
+    }
+  }
+
+}
+
+.count {
+  width: 112px;
+  height: 32px;
+  border-radius: 3px;
+  border: 1px solid #dcdcdc;
+  position: relative;
+
+  &__val {
+    width: 100%;
+    height: 100%;
+    text-align: center;
+
+    color: #464646;
+    font-size: 14px;
+    font-weight: 500;
+    border: none;
+    outline: none;
+    padding-left: 25px;
+    padding-right: 10px;
+  }
+
+  &__down, &__up {
+    width: 30px;
+    height: 30px;
+    position: absolute;
+    background: $bg;
+    top: 0;
+    cursor: pointer;
+
+    &:hover {
+      svg {
+        fill: $text;
+      }
+    }
+  }
+  &__down {
+    left: 0;
+    border-right: 1px solid #dcdcdc;
+  }
+  &__up {
+    right: 0;
+    border-left: 1px solid #dcdcdc;
+  }
+  &__svg {
+    width: 9px;
+    height: 9px;
+    fill: #dcdcdc;
+    transition: .3s;
+  }
+}
+
+.delete {
+  width: 43px;
+  height: 43px;
+  box-shadow: 0 2px 6px rgba(0, 0, 0, 0.18);
+  border: 1px solid #fc6969;
+  opacity: 0.3;
+  border-radius: 50%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  cursor: pointer;
+  transition: .3s;
+
+  &:hover {
+    opacity: 1;
+  }
+
+  &__svg {
+    width: 13px;
+    height: 18px;
+    fill: #fc6969;
+  }
+}

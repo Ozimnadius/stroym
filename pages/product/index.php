@@ -213,7 +213,7 @@
                                 <!-- buttons -->
                                 <div class="product__buttons">
                                     <!-- callorder-button -->
-                                    <button role="button" class="product__callorder button button_yellow jsCallorder">
+                                    <button role="button" class="product__callorder button button_yellow jsPopupOpen" data-action="callorder">
                                         <span class="button__text">Узнать стоимость</span>
                                     </button>
                                     <!-- END callorder-button -->
@@ -271,7 +271,7 @@
                                 <!-- buttons -->
                                 <div class="product__buttons">
                                     <!-- callorder-button -->
-                                    <button role="button" class="product__callorder button button_yellow jsCallorder">
+                                    <button role="button" class="product__callorder button button_yellow jsPopupOpen" data-action="callorder">
                                         <span class="button__text">Узнать стоимость</span>
                                     </button>
                                     <!-- END callorder-button -->
@@ -313,7 +313,7 @@
                                 <!-- buttons -->
                                 <div class="product__buttons">
                                     <!-- callorder-button -->
-                                    <button role="button" class="product__callorder button button_yellow jsCallorder">
+                                    <button role="button" class="product__callorder button button_yellow jsPopupOpen" data-action="callorder">
                                         <span class="button__text">Узнать стоимость</span>
                                     </button>
                                     <!-- END callorder-button -->

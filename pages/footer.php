@@ -82,7 +82,7 @@
                 <!-- right -->
                 <div class="footer__right">
 
-                    <button role="button" class="footer__callorder button">
+                    <button role="button" class="footer__callorder button jsPopupOpen" data-action="callorder">
                         <span class="button__text">
                              Заказать обратный звонок
                         </span>

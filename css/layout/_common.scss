@@ -19,6 +19,13 @@
     transition: .3s;
   }
 
+  &__svg {
+    width: 20px;
+    height: 14px;
+    fill: $bg;
+    margin-left: 20px;
+  }
+
   &_yellow {
     background-color: $yellow;
     box-shadow: 0 12px 16px rgba(0, 0, 0, 0.3);

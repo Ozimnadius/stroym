@@ -53,7 +53,7 @@
                         <!-- END phone -->
 
                         <!-- callorder-button -->
-                        <button role="button" class="callorder-button jsCallorder">
+                        <button role="button" class="callorder-button jsPopupOpen" data-action="callorder">
                             Заказать обратный звонок
                         </button>
                         <!-- END callorder-button -->
@@ -65,7 +65,7 @@
                     <div class="header__controls">
 
                         <!-- enter -->
-                        <a href="" role="link" title="Личный кабинет" class="enter">
+                        <a href="" role="link" title="Личный кабинет" class="enter jsPopupOpen" data-action="enter">
                             <span class="enter__img">
                                 <svg class="enter__svg">
                                 <use xlink:href="images/icons/sprite.svg#enter"></use>
@@ -89,7 +89,7 @@
                                     <use xlink:href="images/icons/sprite.svg#sravnenie"></use>
                                 </svg>
                             </a>
-                            <a href="" role="link" title="Избранное" class="control cart">
+                            <a href="basket.php" role="link" title="Избранное" class="control cart">
                                 <svg class="control__svg cart__svg">
                                     <use xlink:href="images/icons/sprite.svg#basket"></use>
                                 </svg>
