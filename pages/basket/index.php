@@ -37,7 +37,7 @@
                 </div>
                 <div class="basket__body">
                     <? for ($i = 1; $i<4;$i++): ?>
-                    <div class="basket__item" data-id="<?=$i?>">
+                    <div class="basket__item jsItem" data-id="<?=$i?>">
                         <div class="row">
                             <div class="basket__td basket__col-product">
                                 <!-- product -->

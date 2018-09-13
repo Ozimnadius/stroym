@@ -1,266 +1,53 @@
 $(function () {
 
-    /*ITEMS*/
-    $('.jsControl').on('click', function (e) {
-        e.preventDefault();
+    /*FUNCTIONS*/
+    function calcSum(item) {
+        // var count = parseInt(item.find('.count__val').val()),
+        //     price = parseInt(item.data('price')),
+        //     sum = count * price,
+        //     sumObj = item.find('.basket__item-sum');
+        //
+        // sumObj.text(sum.toLocaleString() + ' руб');
 
-        var button = $(this),
-            action = button.data('action'),
-            item = button.closest('.jsItem'),
-            id = item.data('id'),
-            data = {
-                id: id,
-                action: action
-            };
-
-        $.ajax({
-            dataType: "json",
-            type: "POST",
-            url: 'ajax.php',
-            data: data,
-            success: function (result) {
-                if (result.status) {
-                    button.toggleClass('active');
-                    if (action == 'add') {
-                        addCart(1);
-                    }
-                } else {
-                    alert('Что-то пошло не так, попробуйте еще раз!!!');
-                }
-            },
-            error: function (result) {
-                alert('Что-то пошло не так, попробуйте еще раз!!!');
-            }
-        });
-    });
-
-    $('.type__button').on('click', function (e) {
-        var button = $(this),
-            type = button.data('type'),
-            parent = button.closest('.type'),
-            buttons = parent.find('.type__button').not(button),
-            items = $('.items'),
-            data = {
-                action: 'type',
-                type: type
-            };
-
-
-        $.ajax({
-            dataType: "json",
-            type: "POST",
-            url: 'ajax.php',
-            data: data,
-            success: function (result) {
-                if (result.status) {
-                    buttons.removeClass('active');
-                    button.addClass('active');
-
-                    if (type == 'list') {
-                        items.addClass('list');
-                    } else {
-                        items.removeClass('list');
-                    }
-
-                } else {
-                    alert('Что-то пошло не так, попробуйте еще раз!!!');
-                }
-            },
-            error: function (result) {
-                alert('Что-то пошло не так, попробуйте еще раз!!!');
-            }
-        });
-    });
-    /*END ITEMS*/
-
-    /*FILTERS*/
-
-    /*JQ UI*/
-    $('.sort__select').selectmenu();
-
-    $('.range__range').each(function (indx, elem) {
-        var range = $(elem),
-            filter = range.closest('.range'),
-            min = filter.data('from'),
-            max = filter.data('to'),
-            inputFrom = filter.find('.range__input_from'),
-            inputTo = filter.find('.range__input_to');
-
-        // debugger;
-
-        range.slider({
-            range: true,
-            min: min,
-            max: max,
-            values: [min, max],
-            slide: function (event, ui) {
-                inputFrom.val(ui.values[0]);
-                inputTo.val(ui.values[1]);
-            }
-        });
-    });
-
-    $('.range__input_from').on('input', function (e) {
-
-        var input = $(this),
-            val = parseInt(input.val()),
-            filter = input.closest('.range'),
-            valTo = parseInt(filter.find('.range__input_to').val()),
-            range = filter.find('.range__range');
-
-
-        range.slider("values", [val, valTo]);
-    });
-
-    $('.filter__input_to').on('input', function (e) {
-
-        var input = $(this),
-            val = parseInt(input.val()),
-            filter = input.closest('.range'),
-            valFrom = parseInt(filter.find('.range__input_from').val()),
-            range = filter.find('.range__range');
-
-
-        range.slider("values", [valFrom, val]);
-    });
-    /*END JQ UI*/
-
-    $('.filter__title').on('click', function (e) {
-        var button = $(this),
-            filter = button.closest('.filter');
-
-        filter.toggleClass('open');
-    });
-    /*END FILTERS*/
-
-    /*OTHER*/
-    $('.switch').on('click', function (e) {
-        e.preventDefault();
-
-        var button = $(this),
-            href = button.attr('href'),
-            buttons = $('.switch').not(button),
-            tab = $(href),
-            tabs = $('.tab').not(tab);
-
-        buttons.removeClass('active');
-        tabs.removeClass('active');
-        button.addClass('active');
-        tab.addClass('active');
-
-    });
-
-    $('.product__switch').on('click', function (e) {
-        e.preventDefault();
-
-        var button = $(this),
-            href = button.attr('href'),
-            buttons = $('.product__switch').not(button),
-            tab = $(href),
-            tabs = $('.product__tab').not(tab);
-
-        buttons.removeClass('active');
-        tabs.removeClass('active');
-        button.addClass('active');
-        tab.addClass('active');
-
-    });
-
-    $('.more__button').on('click', function () {
-
-        var button = $(this),
-            more = button.closest('.more'),
-            hidden = more.find('.more__hidden'),
-            action = button.data('action'),
-            data = {
-                action: action,
-            };
-
-        button.addClass('active');
-
-        $.ajax({
-            dataType: "json",
-            type: "POST",
-            url: 'ajax.php',
-            data: data,
-            success: function (result) {
-                if (result.status) {
-                    hidden.append(result.html);
-                    button.removeClass('active');
-                } else {
-                    alert('Что-то пошло не так, попробуйте еще раз!!!');
-                }
-            },
-            error: function (result) {
-                alert('Что-то пошло не так, попробуйте еще раз!!!');
-            }
-        });
-
-
-    });
-
-    $('.product__preview').on('click', function (e) {
-        e.preventDefault();
-        changeImg($(this));
-    });
-
-    setInterval(function (e) {
-        var preview = $('.product__preview.active'),
-            nextPreview = preview.next('.product__preview');
-
-        if (nextPreview.length == 0) {
-            nextPreview = preview.prev('.product__preview');
-        }
-
-        changeImg(nextPreview);
-
-    }, 5000);
-
-    function changeImg(button) {
-        var preview = button,
-            href = preview.attr('href'),
-            caption = preview.data('caption'),
-            previews = $('.product__preview').not(preview),
-            fancy = $('.product__fancybox'),
-            fancyImg = fancy.find('.product__pic');
-
-        fancy.attr('href', href).attr('data-caption', caption);
-        fancyImg.attr('src', href).attr('alt', caption).attr('title', caption);
-        previews.removeClass('active');
-        preview.addClass('active');
+        calcTotal();
     }
 
-    $('.com__hand').on('click', function (e) {
+    function calcTotal() {
+        var items = $('.basket__item'),
+            totalCount = 0;
 
-        var button = $(this),
-            id = button.data('id'),
-            countObj = button.find('.com__hand-int'),
-            countInt = parseInt(countObj.text()),
-            data = {
-                id: id,
-                action: 'vote'
-            };
+        items.each(function (indx, elem) {
+            var item = $(elem),
+                price = parseInt(item.data('price')),
+                count = parseInt(item.find('.count__val').val()),
+                sum = price * count;
+            totalCount += count;
 
-        $.ajax({
-            dataType: "json",
-            type: "POST",
-            url: 'ajax.php',
-            data: data,
-            success: function (result) {
-                if (result.status) {
-                    countInt++;
-                    countObj.text(countInt);
-                    button.prop('disabled', true);
-                } else {
-                    alert('Что-то пошло не так, попробуйте еще раз!!!');
-                }
-            },
-            error: function (result) {
-                alert('Что-то пошло не так, попробуйте еще раз!!!');
-            }
         });
-    });
 
+        refreshCart(totalCount);
+    }
+
+    function refreshCart(count) {
+        var cart = $('.cart'),
+            countObj = cart.find('.cart__count');
+
+        countObj.text(count);
+    }
+
+    function addCart(add) {
+        var cart = $('.cart'),
+            countObj = cart.find('.cart__count'),
+            count = parseInt(countObj.text());
+
+        count += add;
+        countObj.text(count);
+    }
+
+    /*END FUNCTIONS*/
+
+
+    /*POPUP*/
     $('.jsPopupOpen').on('click', function (e) {
         e.preventDefault();
         var popup = $('.popup'),
@@ -350,7 +137,7 @@ $(function () {
                                 }
                             });
                         }
-                    })
+                    });
                 } else {
                     alert('Что-то пошло не так, попробуйте еще раз!!!');
                 }
@@ -473,36 +260,293 @@ $(function () {
             popup.removeClass('active');
         }
     });
+    /*END POPUP*/
 
-    $('.count__down').on('click', function (e) {
 
-        var $this = $(this),
-            item = $this.closest('.basket__item'),
-            countObj = item.find('.count__val'),
-            count = parseInt(countObj.val());
+    /*PRODUCT*/
+    $('.product__switch').on('click', function (e) {
+        e.preventDefault();
 
-        if (count > 0) {
-            count--;
-        } else {
-            count = 0;
-        }
+        var button = $(this),
+            href = button.attr('href'),
+            buttons = $('.product__switch').not(button),
+            tab = $(href),
+            tabs = $('.product__tab').not(tab);
 
-        countObj.val(count);
-        calcSum(item);
+        buttons.removeClass('active');
+        tabs.removeClass('active');
+        button.addClass('active');
+        tab.addClass('active');
+
     });
 
-    $('.count__up').on('click', function (e) {
-        // e.preventDefault();
+    $('.product__preview').on('click', function (e) {
+        e.preventDefault();
+        changeImg($(this));
+    });
 
-        var $this = $(this),
-            item = $this.closest('.basket__item'),
-            countObj = item.find('.count__val'),
-            count = parseInt(countObj.val());
+    setInterval(function (e) {
+        var preview = $('.product__preview.active'),
+            nextPreview = preview.next('.product__preview');
+
+        if (nextPreview.length == 0) {
+            nextPreview = preview.prev('.product__preview');
+        }
+
+        changeImg(nextPreview);
+
+    }, 5000);
+
+    function changeImg(button) {
+        var preview = button,
+            href = preview.attr('href'),
+            caption = preview.data('caption'),
+            previews = $('.product__preview').not(preview),
+            fancy = $('.product__fancybox'),
+            fancyImg = fancy.find('.product__pic');
+
+        fancy.attr('href', href).attr('data-caption', caption);
+        fancyImg.attr('src', href).attr('alt', caption).attr('title', caption);
+        previews.removeClass('active');
+        preview.addClass('active');
+    }
+
+    $('.com__hand').on('click', function (e) {
+
+        var button = $(this),
+            id = button.data('id'),
+            countObj = button.find('.com__hand-int'),
+            countInt = parseInt(countObj.text()),
+            data = {
+                id: id,
+                action: 'vote'
+            };
+
+        $.ajax({
+            dataType: "json",
+            type: "POST",
+            url: 'ajax.php',
+            data: data,
+            success: function (result) {
+                if (result.status) {
+                    countInt++;
+                    countObj.text(countInt);
+                    button.prop('disabled', true);
+                } else {
+                    alert('Что-то пошло не так, попробуйте еще раз!!!');
+                }
+            },
+            error: function (result) {
+                alert('Что-то пошло не так, попробуйте еще раз!!!');
+            }
+        });
+    });
+    /*END PRODUCT*/
 
 
-        count++;
-        countObj.val(count);
-        calcSum(item);
+    /*CATALOG*/
+    $('.type__button').on('click', function (e) {
+        var button = $(this),
+            type = button.data('type'),
+            parent = button.closest('.type'),
+            buttons = parent.find('.type__button').not(button),
+            items = $('.items'),
+            data = {
+                action: 'type',
+                type: type
+            };
+
+
+        $.ajax({
+            dataType: "json",
+            type: "POST",
+            url: 'ajax.php',
+            data: data,
+            success: function (result) {
+                if (result.status) {
+                    buttons.removeClass('active');
+                    button.addClass('active');
+
+                    if (type == 'list') {
+                        items.addClass('list');
+                    } else {
+                        items.removeClass('list');
+                    }
+
+                } else {
+                    alert('Что-то пошло не так, попробуйте еще раз!!!');
+                }
+            },
+            error: function (result) {
+                alert('Что-то пошло не так, попробуйте еще раз!!!');
+            }
+        });
+    });
+    /*END CATALOG*/
+
+    /*FILTERS*/
+    $('.sort__select').selectmenu();
+
+    $('.range__range').each(function (indx, elem) {
+        var range = $(elem),
+            filter = range.closest('.range'),
+            min = filter.data('from'),
+            max = filter.data('to'),
+            inputFrom = filter.find('.range__input_from'),
+            inputTo = filter.find('.range__input_to');
+
+        // debugger;
+
+        range.slider({
+            range: true,
+            min: min,
+            max: max,
+            values: [min, max],
+            slide: function (event, ui) {
+                inputFrom.val(ui.values[0]);
+                inputTo.val(ui.values[1]);
+            }
+        });
+    });
+
+    $('.range__input_from').on('input', function (e) {
+
+        var input = $(this),
+            val = parseInt(input.val()),
+            filter = input.closest('.range'),
+            valTo = parseInt(filter.find('.range__input_to').val()),
+            range = filter.find('.range__range');
+
+
+        range.slider("values", [val, valTo]);
+    });
+
+    $('.filter__input_to').on('input', function (e) {
+
+        var input = $(this),
+            val = parseInt(input.val()),
+            filter = input.closest('.range'),
+            valFrom = parseInt(filter.find('.range__input_from').val()),
+            range = filter.find('.range__range');
+
+
+        range.slider("values", [valFrom, val]);
+    });
+
+    $('.filter__title').on('click', function (e) {
+        var button = $(this),
+            filter = button.closest('.filter');
+
+        filter.toggleClass('open');
+    });
+    /*END FILTERS*/
+
+    /*CABINET*/
+    $('.cabinet__switch').on('click', function (e) {
+        e.preventDefault();
+
+        var button = $(this),
+            href = button.attr('href'),
+            buttons = $('.cabinet__switch').not(button),
+            tab = $(href),
+            tabs = $('.cabinet__tab').not(tab);
+
+        buttons.removeClass('active');
+        tabs.removeClass('active');
+        button.addClass('active');
+        tab.addClass('active');
+
+    });
+
+    $('.personal__photo-input').on('change', function (e) {
+        let img = document.querySelector('.personal__photo-img');
+        img.src = URL.createObjectURL(this.files[0]);
+    });
+
+    $('.personal__select').selectmenu();
+
+    $('.personal__form_password').validate({
+        rules: {
+            password: {
+                required: true,
+                minlength: 6
+            },
+            confirmPassword: {
+                required: true,
+                minlength: 6,
+                equalTo: "#password"
+            },
+
+        },
+        messages: {
+            password: {
+                required: "Введите ваш пароль",
+                minlength: "Не менее 6-ти символов"
+            },
+            confirmPassword: {
+                required: "Введите ваш пароль",
+                minlength: "Не менее 6-ти символов",
+                equalTo: "Пароли не совпадают"
+            }
+        }
+    });
+
+    $('.order__more').on('click', function (e) {
+        let button = $(this),
+            hidden = button.prev();
+
+        hidden.slideToggle();
+    });
+    /*END CABINET*/
+
+    /*GENERAL*/
+    $('.switch').on('click', function (e) {
+        e.preventDefault();
+
+        var button = $(this),
+            href = button.attr('href'),
+            buttons = $('.switch').not(button),
+            tab = $(href),
+            tabs = $('.tab').not(tab);
+
+        buttons.removeClass('active');
+        tabs.removeClass('active');
+        button.addClass('active');
+        tab.addClass('active');
+
+    });
+
+    $('.more__button').on('click', function () {
+
+        var button = $(this),
+            more = button.closest('.more'),
+            hidden = more.find('.more__hidden'),
+            action = button.data('action'),
+            data = {
+                action: action,
+            };
+
+        button.addClass('active');
+
+        $.ajax({
+            dataType: "json",
+            type: "POST",
+            url: 'ajax.php',
+            data: data,
+            success: function (result) {
+                if (result.status) {
+                    hidden.append(result.html);
+                    button.removeClass('active');
+                } else {
+                    alert('Что-то пошло не так, попробуйте еще раз!!!');
+                }
+            },
+            error: function (result) {
+                alert('Что-то пошло не так, попробуйте еще раз!!!');
+            }
+        });
+
+
     });
 
     $('.jsDelete').on('click', function (e) {
@@ -535,50 +579,82 @@ $(function () {
         });
     });
 
-    function calcSum(item) {
-        // var count = parseInt(item.find('.count__val').val()),
-        //     price = parseInt(item.data('price')),
-        //     sum = count * price,
-        //     sumObj = item.find('.basket__item-sum');
-        //
-        // sumObj.text(sum.toLocaleString() + ' руб');
+    $('.count__down').on('click', function (e) {
 
-        calcTotal();
-    }
+        var $this = $(this),
+            item = $this.closest('.basket__item'),
+            countObj = item.find('.count__val'),
+            count = parseInt(countObj.val());
 
-    function calcTotal() {
-        var items = $('.basket__item'),
-            totalCount = 0;
+        if (count > 0) {
+            count--;
+        } else {
+            count = 0;
+        }
 
-        items.each(function (indx, elem) {
-            var item = $(elem),
-                price = parseInt(item.data('price')),
-                count = parseInt(item.find('.count__val').val()),
-                sum = price * count;
-            totalCount += count;
+        countObj.val(count);
+        calcSum(item);
+    });
 
+    $('.count__up').on('click', function (e) {
+        // e.preventDefault();
+
+        var $this = $(this),
+            item = $this.closest('.basket__item'),
+            countObj = item.find('.count__val'),
+            count = parseInt(countObj.val());
+
+
+        count++;
+        countObj.val(count);
+        calcSum(item);
+    });
+
+    $('.count__val').on('change', function (e) {
+        var $this = $(this),
+            item = $this.closest('.basket__item');
+
+        calcSum(item);
+    });
+
+    $('.jsControl').on('click', function (e) {
+        e.preventDefault();
+
+        var button = $(this),
+            action = button.data('action'),
+            item = button.closest('.jsItem'),
+            id = item.data('id'),
+            data = {
+                id: id,
+                action: action
+            };
+
+        $.ajax({
+            dataType: "json",
+            type: "POST",
+            url: 'ajax.php',
+            data: data,
+            success: function (result) {
+                if (result.status) {
+                    button.toggleClass('active');
+                    if (action == 'add') {
+                        addCart(1);
+                    }
+                } else {
+                    alert('Что-то пошло не так, попробуйте еще раз!!!');
+                }
+            },
+            error: function (result) {
+                alert('Что-то пошло не так, попробуйте еще раз!!!');
+            }
         });
+    });
 
-        refreshCart(totalCount);
-    }
+    /*END GENERAL*/
 
-    function refreshCart(count) {
-        var cart = $('.cart'),
-            countObj = cart.find('.cart__count');
+    /*VENDORS*/
 
-        countObj.text(count);
-    }
-
-    function addCart(add) {
-        var cart = $('.cart'),
-            countObj = cart.find('.cart__count'),
-            count = parseInt(countObj.text());
-
-        count += add;
-        countObj.text(count);
-    }
-
-    /*END OTHER*/
+    /*END VENDORS*/
 
     /*SLIDERS*/
     var bannerSwiper = new Swiper('.banner__container', {

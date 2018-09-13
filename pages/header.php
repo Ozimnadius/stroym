@@ -79,12 +79,12 @@
 
                         <!-- controls -->
                         <div class="controls">
-                            <a href="" role="link" title="Избранное" class="control">
+                            <a href="cabinet.php" role="link" title="Избранное" class="control">
                                 <svg class="control__svg">
                                     <use xlink:href="images/icons/sprite.svg#izbrznnoe"></use>
                                 </svg>
                             </a>
-                            <a href="" role="link" title="Избранное" class="control">
+                            <a href="cabinet.php" role="link" title="Избранное" class="control">
                                 <svg class="control__svg">
                                     <use xlink:href="images/icons/sprite.svg#sravnenie"></use>
                                 </svg>
