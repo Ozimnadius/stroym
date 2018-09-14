@@ -1,0 +1,153 @@
+.about {
+  position: relative;
+  padding-bottom: 100px;
+
+  &__left,&__right {
+    @include col;
+    @include size(12);
+  }
+
+  &__content {
+    font-size: 20px;
+    font-weight: 500;
+    margin-bottom: 20px;
+  }
+
+  &__desc {
+    color: rgba($text,.9);
+  }
+  &__col {
+    @include col;
+    @include size(12);
+  }
+
+  &__row {
+    display: flex;
+    margin-bottom: 25px;
+
+    &:last-child {
+      margin-bottom: 0;
+    }
+  }
+  &__img {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-grow: 1;
+    height: 257px;
+    flex-basis: 50%;
+
+    box-shadow: 2px 3px 10px rgba(0, 0, 0, 0.3);
+    border-radius: 6px;
+    border: 6px solid $bg;
+    background-color: #717372;
+    overflow: hidden;
+
+    &_1 {
+      transform: rotate(10deg);
+      transform-origin: 20px center;
+      .about__pic {
+        transform: rotate(-10deg);
+      }
+    }
+
+    &_2 {
+      transform: rotate(4deg);
+      .about__pic {
+        transform: rotate(-4deg);
+      }
+    }
+  }
+  &__pic {
+    max-width: initial;
+  }
+
+  &__bg {
+    position: absolute;
+    left: 0;
+    right: 0;
+    bottom: -50px;
+  }
+}
+
+.scope {
+  background-color: $grey-white;
+  padding: 90px 0;
+
+  &__left,&__right {
+    @include col;
+    @include size(12);
+  }
+
+  &__title {
+    font-size: 38px;
+    line-height: 1;
+    font-weight: 700;
+    margin-bottom: 25px;
+  }
+
+  &__content {
+    color: rgba($text,.9);
+    margin-bottom: 30px;
+  }
+
+  &__numbers  {
+    display: flex;
+    justify-content: space-between;
+    padding-right: 50px;
+  }
+  &__number {
+    &-title {
+      color: $violet;
+      font-size: 71px;
+      font-weight: 900;
+      border-bottom: 2px solid $violet;
+      margin-bottom: 15px;
+      text-align: center;
+    }
+
+    &-text {
+      font-size: 18px;
+      color: rgba($text,.9);
+      text-align: center;
+    }
+  }
+
+  &__list {
+    display: flex;
+    flex-wrap: wrap;
+  }
+  &__item {
+    width: 50%;
+    border-top: 1px solid #acacac;
+    padding: 40px 20px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    color: $violet;
+    font-weight: 700;
+
+    &:first-child {
+      border-top: none;
+
+      + .scope__item {
+        border-top: none;
+      }
+    }
+
+    &:nth-child(odd) {
+      border-right: 1px solid #acacac;
+    }
+
+  }
+
+  &__img {
+    width: 40px;
+    height: 40px;
+    display: flex;
+    align-items: center;justify-content: center;
+  }
+  &__pic {
+    max-height: 100%;
+  }
+}
