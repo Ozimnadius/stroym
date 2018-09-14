@@ -28,7 +28,7 @@
 
   &_yellow {
     background-color: $yellow;
-    box-shadow: 0 12px 16px rgba(0, 0, 0, 0.3);
+    box-shadow: 0px 20px 22px -18px rgba(0, 0, 0, 1);
 
     &:hover {
       background-color: $violet;
@@ -74,6 +74,38 @@
   }
 }
 
+.delete {
+  width: 43px;
+  height: 43px;
+  box-shadow: 0 2px 6px rgba(0, 0, 0, 0.18);
+  border: 1px solid #fc6969;
+  opacity: 0.3;
+  border-radius: 50%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  cursor: pointer;
+  transition: .3s;
+
+  &_grey {
+    border: 1px solid $text;
+
+    svg {
+      fill: $text;
+    }
+  }
+
+  &:hover {
+    opacity: 1;
+  }
+
+  &__svg {
+    width: 13px;
+    height: 18px;
+    fill: #fc6969;
+  }
+}
+
 .noscroll {
   overflow: hidden;
 }
@@ -100,6 +132,16 @@
     width: 20px;
     height: 14px;
     fill: $text;
+  }
+
+  &_orange {
+    &:hover {
+      border: 1px solid $yellow;
+      background: $yellow;
+      .arrow__svg {
+        fill: $bg;
+      }
+    }
   }
 
   &_white {

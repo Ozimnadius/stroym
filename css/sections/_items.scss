@@ -21,6 +21,11 @@
         max-width: 150px;
       }
 
+      &__desc {
+        max-width: 240px;
+
+      }
+
       &__controls {
         flex-direction: row;
         top: 50%;

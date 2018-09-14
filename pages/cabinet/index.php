@@ -62,7 +62,8 @@
 
                         <!-- controls -->
                         <div class="cabinet__controls">
-                            <a href="" class="cabinet__controls_exit">Выйти из аккаунта</a> / <a href="" class="cabinet__controls_delete">Удалить</a>
+                            <a href="" class="cabinet__controls_exit">Выйти из аккаунта</a> / <a href=""
+                                                                                                 class="cabinet__controls_delete">Удалить</a>
                         </div>
                         <!-- END controls -->
 
@@ -75,14 +76,14 @@
                         <!-- tabs -->
                         <div class="cabinet__tabs">
                             <!-- tab -->
-                            <div class="cabinet__tab" id="tab1">
+                            <div class="cabinet__tab active" id="tab1">
 
                                 <!-- personal -->
                                 <div class="personal">
 
                                     <form action="" method="post" class="personal__form"
                                           enctype="multipart/form-data">
-                                        <div class="personal__title">
+                                        <div class="personal__title  cabinet__title">
                                             Настройки личных данных
                                         </div>
 
@@ -93,9 +94,11 @@
                                                 <div class="personal__left">
                                                     <div class="personal__photo">
                                                         <label class="personal__photo-label">
-                                                            <img class="personal__photo-img" src="images/icons/photo.png"
+                                                            <img class="personal__photo-img"
+                                                                 src="images/icons/photo.png"
                                                                  alt="">
-                                                            <input type="file" name="photo" class="personal__photo-input"
+                                                            <input type="file" name="photo"
+                                                                   class="personal__photo-input"
                                                                    accept="image/jpeg,image/png,image/gif,image/svg+xml">
                                                         </label>
                                                     </div>
@@ -118,7 +121,8 @@
                                                         <div class="personal__block">
                                                             <label class="personal__field">
                                                                 <span class="personal__label">Почта</span>
-                                                                <input type="email" name="email" value="info99@gmail.com"
+                                                                <input type="email" name="email"
+                                                                       value="info99@gmail.com"
                                                                        class="personal__input personal__input_email">
                                                             </label>
                                                             <label class="personal__field">
@@ -143,7 +147,8 @@
                                                         <div class="personal__block">
                                                             <label class="personal__field">
                                                                 <span class="personal__label">Адрес доставки</span>
-                                                                <input type="text" name="name" placeholder="Введите адрес"
+                                                                <input type="text" name="name"
+                                                                       placeholder="Введите адрес"
                                                                        class="personal__input">
                                                             </label>
                                                         </div>
@@ -208,10 +213,10 @@
                             </div>
                             <!-- END tab -->
                             <!-- tab -->
-                            <div class="cabinet__tab  active" id="tab2">
+                            <div class="cabinet__tab" id="tab2">
                                 <!-- orders -->
                                 <div class="orders">
-                                    <div class="orders__title">
+                                    <div class="orders__title cabinet__title">
                                         Мои заказы
                                     </div>
 
@@ -308,54 +313,239 @@
                             <!-- END tab -->
                             <!-- tab -->
                             <div class="cabinet__tab" id="tab3">
-                                Lorem ipsum dolor sit amet, consectetur adipisicing elit. Adipisci animi asperiores atque
-                                autem consequuntur delectus deleniti dolorum exercitationem explicabo harum id, inventore
-                                ipsum labore magni molestias nihil officiis quibusdam quisquam sapiente sequi sunt, tempora
-                                totam! Alias aperiam culpa excepturi nam nemo placeat porro recusandae, unde? Ad aliquam
-                                aspernatur aut commodi culpa, ea eos esse fugiat itaque iusto mollitia necessitatibus nulla
-                                obcaecati officiis perspiciatis possimus, quibusdam quis reiciendis repellendus sequi sit
-                                temporibus totam vel. Ab deleniti doloribus ea fuga, illo minus nesciunt porro quam
-                                reprehenderit rerum, similique voluptate voluptates voluptatibus. Ab accusamus animi
-                                asperiores corporis, cumque dolor dolores et facilis non odit pariatur perspiciatis
-                                praesentium recusandae sapiente tempore veritatis, voluptas! Accusantium doloremque hic in
-                                quibusdam repellendus? Aperiam consectetur dicta doloribus explicabo facilis iure
-                                temporibus. Alias aliquam autem beatae corporis dicta distinctio dolore eius excepturi
-                                expedita fugiat ipsam magni minus molestiae, nesciunt nostrum quos reiciendis repellat sed
-                                voluptates voluptatibus! Illo inventore ipsa maiores odit repudiandae saepe, voluptas?
-                                Aspernatur cupiditate dolore error quasi quia. Assumenda consequuntur delectus eius facere
-                                facilis impedit laborum modi numquam odit omnis quia, repudiandae, totam veniam vero
-                                voluptate? Amet commodi distinctio doloribus eos harum nemo nobis nostrum quibusdam repellat
-                                voluptatibus. Eos esse, quibusdam! Consectetur esse laboriosam natus placeat tempore.
+                                <!-- favourites -->
+                                <div class="favs">
+                                    <div class="favs__title cabinet__title">
+                                        Избранное
+                                    </div>
+
+                                    <div class="favs__list">
+                                        <? for ($i = 0; $i < 4; $i++): ?>
+                                            <div class="fav jsItem" data-id="<?= $i ?>">
+                                                <!-- img -->
+                                                <div class="fav__img">
+                                                    <img src="/images/content/products/product.png" title="Product1"
+                                                         alt="Product1"
+                                                         class="fav__pic">
+                                                </div>
+                                                <!-- END img -->
+
+                                                <!-- desc -->
+                                                <div class="fav__desc">
+                                                    <a href="product.php" title="Светодиодная лампа" class="fav__title">
+                                                        Светодиодная лампа
+                                                    </a>
+                                                    <div class="fav__text">
+                                                        Navigator 94 338 <br>
+                                                        NLL-T75-25-230-840-E27
+                                                    </div>
+
+                                                </div>
+                                                <!-- END desc -->
+
+                                                <!-- button -->
+                                                <button role="button" class="fav__button button button_yellow">
+                                            <span class="button__text">
+                                                Узнать стоимость
+                                            </span>
+                                                </button>
+                                                <!-- END button -->
+
+                                                <!-- controls -->
+                                                <div class="fav__controls">
+                                                    <button role="button" class="fav__control jsControl"
+                                                            data-action="compare">
+                                                        <svg class="fav__control-svg">
+                                                            <use xlink:href="images/icons/sprite.svg#sravnenie"></use>
+                                                        </svg>
+                                                    </button>
+                                                    <button role="button" class="fav__control jsControl"
+                                                            data-action="add">
+                                                        <svg class="fav__control-svg">
+                                                            <use xlink:href="images/icons/sprite.svg#basket"></use>
+                                                        </svg>
+                                                    </button>
+                                                </div>
+                                                <!-- END controls -->
+                                            </div>
+                                        <? endfor; ?>
+                                    </div>
+
+                                    <div class="favs__pagination">
+                                        <? include 'pages/common/pagination.php' ?>
+                                    </div>
+                                </div>
+                                <!-- END favourites -->
                             </div>
                             <!-- END tab -->
                             <!-- tab -->
                             <div class="cabinet__tab" id="tab4">
-                                Lorem ipsum dolor sit amet, consectetur adipisicing elit. Excepturi nisi quos voluptas
-                                voluptatibus? Ab, alias amet aspernatur blanditiis cumque, dolor error illum incidunt maxime
-                                molestiae nisi, perspiciatis quaerat quisquam ratione similique sunt tempora velit! Ad,
-                                aperiam at commodi cupiditate delectus deleniti dignissimos dolores ea, earum eligendi id
-                                incidunt, ipsa ipsum iusto laboriosam libero maiores maxime minus nemo nesciunt numquam
-                                porro repellendus sapiente temporibus tenetur ut voluptates voluptatibus. Corporis ea fugit
-                                magni, nisi numquam tenetur! Accusamus ad at consequatur consequuntur cum cupiditate
-                                dignissimos dolor eligendi error ex exercitationem facere, id impedit incidunt iusto labore
-                                libero magnam maiores minus nihil nulla obcaecati odio officiis, omnis, optio provident qui
-                                quia quidem quisquam quo sapiente sed sunt tempore ut veniam voluptates voluptatum! Animi
-                                architecto eaque excepturi expedita provident. Aspernatur assumenda corporis dicta, nihil
-                                suscipit voluptatem. Aliquid delectus dolorum, earum enim laudantium saepe unde. Doloremque
-                                ea excepturi, illo illum, inventore libero minima molestias obcaecati reiciendis
-                                reprehenderit repudiandae sunt. Ab accusantium aspernatur at consectetur delectus earum
-                                eligendi est ex id impedit in ipsam laborum laudantium necessitatibus omnis recusandae
-                                repellendus saepe sapiente, similique ullam veritatis vero voluptate. Ab adipisci amet
-                                asperiores corporis, cum delectus doloremque doloribus eveniet expedita incidunt iusto
-                                labore laudantium libero magnam, maxime nam necessitatibus nemo nesciunt nihil nisi odio
-                                odit porro praesentium quasi quod recusandae temporibus totam unde vel veniam. Accusamus
-                                aliquam amet architecto atque autem commodi culpa debitis dolore dolores eius, error est ex
-                                hic illum iste libero minus nam necessitatibus nostrum nulla omnis quae quo similique sunt,
-                                voluptatem voluptates voluptatibus! Aliquam aliquid architecto aut autem cum cumque dicta
-                                dolor doloremque dolores et explicabo facere illum inventore ipsa ipsum iure laudantium
-                                mollitia nam nemo nihil, nisi obcaecati odit quae quam quisquam ratione rem repellat soluta
-                                ullam velit vero voluptate voluptatem voluptatibus. A autem earum, nemo non obcaecati
-                                officiis quam quod rerum temporibus ut!
+                                <div class="compare">
+                                    <div class="cabinet__title">
+                                        Сравнение
+                                    </div>
+
+                                    <!-- table -->
+                                    <div class="compare__table">
+                                        <div class="row">
+
+                                            <!-- head -->
+                                            <div class="compare__head compare__col">
+
+                                                <div class="compare__th compare__cell">
+                                                    <div class="compare__header">
+                                                        <div class="compare__header-title">
+                                                            Основные характеристики:
+                                                        </div>
+                                                        <a href="" class="compare__header-button">
+                                                            Очистить характеристики
+                                                        </a>
+                                                    </div>
+                                                </div>
+                                                <div class="compare__th compare__cell">
+                                                    Бренд
+                                                </div>
+                                                <div class="compare__th compare__cell">
+                                                    Страна
+                                                </div>
+                                                <div class="compare__th compare__cell">
+                                                    Коллекция
+                                                </div>
+                                                <div class="compare__th compare__cell">
+                                                    Артикул
+                                                </div>
+                                                <div class="compare__th compare__cell">
+                                                    Высота, мм
+                                                </div>
+                                                <div class="compare__th compare__cell">
+                                                    Диаметр, мм
+                                                </div>
+                                                <div class="compare__th compare__cell">
+                                                    Мощность лампы, W
+                                                </div>
+                                                <div class="compare__th compare__cell">
+                                                    Общая мощность, W
+                                                </div>
+                                                <div class="compare__th compare__cell">
+                                                    Площадь освещения, м2
+                                                </div>
+                                                <div class="compare__th compare__cell">
+                                                    Тип лампочки
+                                                </div>
+                                                <div class="compare__th compare__cell">
+                                                    Световой поток, lm
+                                                </div>
+                                                <div class="compare__th compare__cell">
+                                                    Тип цоколя
+                                                </div>
+                                                <div class="compare__th compare__cell">
+                                                    Напряжение, V
+                                                </div>
+                                                <div class="compare__th compare__cell">
+                                                    Виды материалов
+                                                </div>
+                                                <div class="compare__th compare__cell">
+                                                    Цвет арматуры
+                                                </div>
+                                                <div class="compare__th compare__cell">
+                                                    Гарантия
+                                                </div>
+
+                                            </div>
+                                            <!-- END head -->
+
+                                            <!-- body -->
+                                            <div class="compare__body">
+
+                                                <div class="swiper-container compare__container">
+                                                    <div class="swiper-wrapper">
+                                                        <? for ($i = 1; $i < 13; $i++): ?>
+                                                            <div class="swiper-slide compare__item compare__col jsItem"
+                                                                 data-id="<?= $i ?>">
+
+                                                                <!-- delete -->
+                                                                <div class="compare__delete">
+                                                                    <button role="button"
+                                                                            class="delete delete_grey jsDelete">
+                                                                        <svg class="delete__svg">
+                                                                            <use xlink:href="images/icons/sprite.svg#del"></use>
+                                                                        </svg>
+                                                                    </button>
+                                                                </div>
+                                                                <!-- END delete -->
+
+                                                                <div class="compare__list">
+                                                                    <div class="compare__td compare__td_border compare__cell">
+                                                                        <div class="compare__desc">
+                                                                            <div class="compare__img">
+                                                                                <img src="/images/content/products/product.png"
+                                                                                     alt="Светодиодная лампа"
+                                                                                     title="Светодиодная лампа"
+                                                                                     class="compare__pic">
+                                                                            </div>
+                                                                            <a href="product.php"
+                                                                               title="Светодиодная лампа"
+                                                                               class="compare__title">
+                                                                                Светодиодная лампа<?= $i ?>
+                                                                            </a>
+                                                                        </div>
+                                                                    </div>
+                                                                    <div class="compare__td compare__cell">Voltega</div>
+                                                                    <div class="compare__td compare__cell">Германия
+                                                                    </div>
+                                                                    <div class="compare__td compare__cell">Simple</div>
+                                                                    <div class="compare__td compare__cell">4711</div>
+                                                                    <div class="compare__td compare__cell">85</div>
+                                                                    <div class="compare__td compare__cell">50</div>
+                                                                    <div class="compare__td compare__cell">5,5</div>
+                                                                    <div class="compare__td compare__cell">5,5</div>
+                                                                    <div class="compare__td compare__cell">2,8</div>
+                                                                    <div class="compare__td compare__cell">
+                                                                        Светодиодная
+                                                                    </div>
+                                                                    <div class="compare__td compare__cell">480</div>
+                                                                    <div class="compare__td compare__cell">Е14</div>
+                                                                    <div class="compare__td compare__cell">220</div>
+                                                                    <div class="compare__td compare__cell">Пластиковые
+                                                                    </div>
+                                                                    <div class="compare__td compare__cell">Металл</div>
+                                                                    <div class="compare__td compare__cell">2 года</div>
+                                                                </div>
+                                                                <button class="compare__button button button_yellow jsPopupOpen"
+                                                                        data-action="callorder">
+                                                    <span class="button__text">
+                                                        Узнать стоимость
+                                                    </span>
+                                                                </button>
+                                                            </div>
+                                                        <? endfor; ?>
+                                                    </div>
+
+
+                                                    <div class="compare__prev">
+                                                        <button role="button" class="arrow arrow_violet">
+                                                            <svg class="arrow__svg">
+                                                                <use xlink:href="images/icons/sprite.svg#left"></use>
+                                                            </svg>
+                                                        </button>
+                                                    </div>
+                                                    <div class="compare__next">
+                                                        <button role="button" class="arrow arrow_violet">
+                                                            <svg class="arrow__svg">
+                                                                <use xlink:href="images/icons/sprite.svg#right"></use>
+                                                            </svg>
+                                                        </button>
+                                                    </div>
+
+                                                </div>
+
+
+                                            </div>
+                                            <!-- END body -->
+                                        </div>
+                                    </div>
+                                    <!-- END table -->
+                                </div>
                             </div>
                             <!-- END tab -->
 

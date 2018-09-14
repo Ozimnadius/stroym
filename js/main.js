@@ -455,6 +455,12 @@ $(function () {
         tabs.removeClass('active');
         button.addClass('active');
         tab.addClass('active');
+        if (href == "#tab4") {
+            compareSwiper.update();
+            setHeight();
+        }
+
+
 
     });
 
@@ -497,6 +503,47 @@ $(function () {
 
         hidden.slideToggle();
     });
+
+    setHeight();
+
+    function setHeight() {
+        if ($('#tab4').hasClass('active')) {
+            var arrayHeight = {};
+
+            $('.compare__col').each(function (indx, elem) {
+                var col = $(elem),
+                    cells = col.find('.compare__cell');
+
+                cells.each(function (indx2, elem2) {
+                    var cell = $(elem2),
+                        height = cell.outerHeight();
+
+                    // debugger;
+
+                    if (arrayHeight[indx2] < height || arrayHeight[indx2] == undefined) {
+                        arrayHeight[indx2] = height;
+                    }
+                });
+
+            });
+
+            $('.compare__col').each(function (indx, elem) {
+                var col = $(elem),
+                    cells = col.find('.compare__cell');
+
+                cells.each(function (indx2, elem2) {
+                    var cell = $(elem2);
+
+                    cell.css({
+                        height: arrayHeight[indx2]
+                    })
+
+                });
+
+            });
+        }
+    }
+
     /*END CABINET*/
 
     /*GENERAL*/
@@ -553,7 +600,7 @@ $(function () {
         e.preventDefault();
 
         var button = $(this),
-            item = button.closest('.basket__item'),
+            item = button.closest('.jsItem'),
             id = item.data('id'),
             data = {
                 action: 'deleteBasketItem',
@@ -568,7 +615,12 @@ $(function () {
             success: function (result) {
                 if (result.status) {
                     item.remove();
-                    calcTotal();
+
+                    if ((item).hasClass('basket__item')) {
+                        calcTotal();
+                    } else {
+                        compareSwiper.update();
+                    }
                 } else {
                     alert('Что-то пошло не так, попробуйте еще раз!!!');
                 }
@@ -710,6 +762,15 @@ $(function () {
         navigation: {
             nextEl: '.look__next .arrow',
             prevEl: '.look__prev .arrow',
+        },
+    });
+
+    var compareSwiper = new Swiper('.compare__container', {
+        slidesPerView: 2,
+        spaceBetween: 30,
+        navigation: {
+            nextEl: '.compare__next .arrow',
+            prevEl: '.compare__prev .arrow',
         },
     });
     /*END SLIDERS*/

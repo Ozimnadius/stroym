@@ -30,9 +30,9 @@
                                 <a href="product.php" title="Товар<?= $i ?>" class="item jsItem" data-id="<?= $i ?>">
                                     <!-- img -->
                                     <span class="item__img">
-                                    <img src="/images/content/products/product.png" title="Product1" alt="Product1"
-                                         class="item__pic">
-                                </span>
+                                        <img src="/images/content/products/product.png" title="Product1" alt="Product1"
+                                             class="item__pic">
+                                    </span>
                                     <!-- END img -->
 
                                     <!-- desc -->
