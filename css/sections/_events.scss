@@ -93,3 +93,30 @@
 
   }
 }
+
+.event {
+
+  &__left {
+    @include col;
+    @include size(12);
+    position: relative;
+  }
+
+  &__date {
+    position: absolute;
+    top: 30px;
+    left: 30px;
+    background-color: $yellow;
+    border-radius: 6px;
+    color: $bg;
+    font-weight: 700;
+    padding: 10px 15px;
+    border: 1px solid $bg;
+    box-shadow: 0px 0px 0px 2px $yellow;
+  }
+
+  &__right {
+    @include col;
+    @include size(12);
+  }
+}

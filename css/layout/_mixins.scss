@@ -11,9 +11,27 @@
 @mixin content() {
   ul {
     margin: 1em 0;
-    padding-left: 40px;
     li {
-      list-style: disc;
+      list-style: none;
+      position: relative;
+      padding-left: 20px;
+      margin-bottom: 12px;
+
+      &:last-child {
+        margin-bottom: 0;
+      }
+
+      &:before {
+        content: '';
+        display: block;
+        width: 8px;
+        height: 8px;
+        border-radius: 50%;
+        background-color: $yellow;
+        position: absolute;
+        top: 9px;
+        left: 0;
+      }
     }
   }
 
