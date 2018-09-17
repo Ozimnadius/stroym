@@ -1,0 +1,22 @@
+.partners {
+
+  &__left,&__right {
+    @include col;
+    @include size(12);
+  }
+}
+
+.partner {
+  @include col;
+  @include size(12);
+  height: 145px;
+  border-radius: 6px;
+  border: 1px solid #c1c1c1;
+  background-color: $grey-white;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  margin-bottom: 30px;
+  padding: 20px;
+}
+
