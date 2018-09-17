@@ -1,0 +1,95 @@
+.events {
+  padding-bottom: 50px;
+
+  &__item {
+    @include col;
+    @include size(24);
+    display: flex;
+    flex-direction: column;
+    background-color: $grey-white;
+    border-radius: 6px;
+    border: 1px solid #c1c1c1;
+    transition: .3s;
+    margin-bottom: 30px;
+    overflow: hidden;
+
+    &:hover {
+      box-shadow: 0 7px 30px rgba(0, 0, 0, 0.33);
+    }
+
+    &_2 {
+      @include size(12);
+
+      .events__item-desc {
+        padding-right: 30px;
+      }
+    }
+
+    &-img {
+      height: 316px;
+      overflow: hidden;
+      position: relative;
+
+      &:hover {
+        .events__button {
+          opacity: 1;
+        }
+      }
+    }
+
+    &-date {
+      position: absolute;
+      top: 30px;
+      left: 30px;
+      background-color: $yellow;
+      border-radius: 6px;
+      color: $bg;
+      font-weight: 700;
+      padding: 10px 15px;
+      border: 1px solid $bg;
+      box-shadow: 0px 0px 0px 2px $yellow;
+    }
+
+    &-desc {
+      padding: 20px 30px;
+      padding-right: 25%;
+    }
+
+    &-title {
+      font-size: 24px;
+      font-weight: 700;
+      margin-bottom: 10px;
+    }
+  }
+
+  &__button {
+    width: 220px;
+    height: 43px;
+    border-radius: 21px;
+    border: 1px solid $bg;
+    background-color: $bg;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    margin-top: -21.5px;
+    margin-left: -110px;
+    transition: .5s;
+    opacity: 0;
+
+    &-text {
+      color: $violet;
+      font-weight: 700;
+      margin-right: 17px;
+    }
+
+    &-svg {
+      width: 20px;
+      height: 14px;
+      fill: $violet;
+    }
+
+  }
+}
