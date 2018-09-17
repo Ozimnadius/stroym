@@ -201,7 +201,7 @@
                 <div class="header__bottom-right">
                     <nav class="nav">
                         <div class="nav__item nav__item_drop">
-                            <a href="" class="nav__link" title="О компании">
+                            <a href="about.php" class="nav__link" title="О компании">
                                 О компании
                             </a>
                             <div class="nav-2">

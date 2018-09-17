@@ -151,3 +151,47 @@
     max-height: 100%;
   }
 }
+
+.certs {
+  padding-bottom: 50px;
+  &__bg {
+    margin-bottom: 70px;
+    .container {
+      max-width: 1245px;
+    }
+  }
+
+  &__title {
+    font-size: 38px;
+    font-weight: 700;
+    margin-bottom: 25px;
+  }
+
+  &__slider {
+    position: relative;
+  }
+
+  &__next,&__prev {
+    position: absolute;
+    top: 50%;
+    margin-top: -20px;
+  }
+  &__prev {
+    left: -60px;
+  }
+  &__next {
+    right: -60px;
+  }
+}
+.cert {
+  &__fancy {
+    display: block;
+    outline: none;
+  }
+
+  &__img {
+    width: 100%;
+    max-width: 300px;
+    outline: none;
+  }
+}

@@ -2,21 +2,22 @@
 
     <? include 'pages/common/banner3.php' ?>
 
-    <!-- category -->
     <section class="section">
+
         <div class="container">
             <!-- top -->
             <div class="section__top">
 
                 <!-- title -->
                 <div class="title">
-                    Корзина
+                    О компании
                 </div>
                 <!-- END title -->
 
             </div>
             <!-- END top -->
         </div>
+
         <!-- about -->
         <div class="about">
 
@@ -129,7 +130,8 @@
                         <div class="scope__list">
                             <div class="scope__item">
                                 <div class="scope__img">
-                                    <img src="/images/content/scope/scope1.png" alt="Быстрая доставка" title="Быстрая доставка" class="scope__pic">
+                                    <img src="/images/content/scope/scope1.png" alt="Быстрая доставка"
+                                         title="Быстрая доставка" class="scope__pic">
                                 </div>
                                 <div class="scope__text">
                                     Быстрая доставка
@@ -137,7 +139,8 @@
                             </div>
                             <div class="scope__item">
                                 <div class="scope__img">
-                                <img src="/images/content/scope/scope2.png" alt="Низкие цены" title="Низкие цены" class="scope__pic">
+                                    <img src="/images/content/scope/scope2.png" alt="Низкие цены" title="Низкие цены"
+                                         class="scope__pic">
                                 </div>
                                 <div class="scope__text">
                                     Низкие цены
@@ -146,7 +149,8 @@
                             </div>
                             <div class="scope__item">
                                 <div class="scope__img">
-                                <img src="/images/content/scope/scope3.png" alt="Широкий ассортимент" title="Широкий ассортимент" class="scope__pic">
+                                    <img src="/images/content/scope/scope3.png" alt="Широкий ассортимент"
+                                         title="Широкий ассортимент" class="scope__pic">
                                 </div>
                                 <div class="scope__text">
                                     Широкий ассортимент
@@ -155,7 +159,8 @@
                             </div>
                             <div class="scope__item">
                                 <div class="scope__img">
-                                    <img src="/images/content/scope/scope4.png" alt="Бонусы и подарки" title="Бонусы и подарки" class="scope__pic">
+                                    <img src="/images/content/scope/scope4.png" alt="Бонусы и подарки"
+                                         title="Бонусы и подарки" class="scope__pic">
                                 </div>
                                 <div class="scope__text">
                                     Бонусы и подарки
@@ -164,7 +169,8 @@
                             </div>
                             <div class="scope__item">
                                 <div class="scope__img">
-                                    <img src="/images/content/scope/scope5.png" alt="Надежные поставщики" title="Надежные поставщики" class="scope__pic">
+                                    <img src="/images/content/scope/scope5.png" alt="Надежные поставщики"
+                                         title="Надежные поставщики" class="scope__pic">
                                 </div>
                                 <div class="scope__text">
                                     Надежные поставщики
@@ -173,7 +179,8 @@
                             </div>
                             <div class="scope__item">
                                 <div class="scope__img">
-                                    <img src="/images/content/scope/scope6.png" alt="Гарантия на все товары" title="Гарантия на все товары" class="scope__pic">
+                                    <img src="/images/content/scope/scope6.png" alt="Гарантия на все товары"
+                                         title="Гарантия на все товары" class="scope__pic">
                                 </div>
                                 <div class="scope__text">
                                     Гарантия на все товары
@@ -192,12 +199,54 @@
 
         <!-- certificates -->
         <div class="certs">
+            
+            <div class="certs__bg">
+                <div class="container">
+                    <img src="images/bg/bg-cert.png" alt="Сертификаты и документы" class="certs__img">
+                </div>
+            </div>
+            
+            <div class="container">
+                <div class="certs__title">
+                    Сертификаты и документы
+                </div>
 
+                <div class="certs__slider">
+                    <div class="swiper-container certs__container">
+                        <div class="swiper-wrapper">
+                            <? for ($i = 1; $i < 9; $i++): ?>
+                                <div class="swiper-slide cert">
+                                    <a href="images/content/certificates/cert<?= $i ?>.jpg" class="cert__fancy"
+                                       data-fancybox="images"
+                                       data-caption="Сертефикат<?= $i ?>">
+                                        <img class="cert__img" src="images/content/certificates/cert<?= $i ?>.jpg"
+                                             alt="Сертефикат<?= $i ?>" title="Сертефикат<?= $i ?>"/>
+                                    </a>
+                                </div>
+                            <? endfor; ?>
+                        </div>
+                    </div>
+
+                    <div class="certs__prev">
+                        <button class="arrow arrow_violet">
+                            <svg class="arrow__svg">
+                                <use xlink:href="images/icons/sprite.svg#left"></use>
+                            </svg>
+                        </button>
+                    </div>
+                    <div class="certs__next">
+                        <button class="arrow arrow_violet">
+                            <svg class="arrow__svg">
+                                <use xlink:href="images/icons/sprite.svg#right"></use>
+                            </svg>
+                        </button>
+                    </div>
+                </div>
+            </div>
         </div>
         <!-- END certificates -->
 
     </section>
-    <!-- END category -->
 
 
 </main>

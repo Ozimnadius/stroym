@@ -773,5 +773,14 @@ $(function () {
             prevEl: '.compare__prev .arrow',
         },
     });
+
+    var certsSwiper = new Swiper('.certs__container', {
+        slidesPerView: 4,
+        spaceBetween: 30,
+        navigation: {
+            nextEl: '.certs__next .arrow',
+            prevEl: '.certs__prev .arrow',
+        },
+    });
     /*END SLIDERS*/
 });
