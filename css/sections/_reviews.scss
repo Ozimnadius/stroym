@@ -1,5 +1,119 @@
 .reviews {
 
+  &__pagination {
+    margin-bottom: 60px;
+
+    &-wrapper {
+      @include col;
+      @include size(20);
+      @include offset-left(4);
+    }
+  }
+
+  &__form {
+    border-radius: 6px;
+    border: 1px solid $yellow;
+    padding: 25px 30px;
+    margin-bottom: 30px;
+
+    &-top {
+      display: flex;
+      flex-wrap: wrap;
+      justify-content: space-between;
+      margin-bottom: 39px;
+    }
+    &-title {
+      font-size: 22px;
+      font-weight: 500;
+      line-height: 1;
+    }
+
+    &-bottom {
+      .row {
+        margin-bottom: 30px;
+      }
+    }
+    &-label {
+      display: flex;
+      flex-direction: column;
+      margin-bottom: 25px;
+      font-size: 14px;
+    }
+    &-input {
+      height: 117px;
+      border-radius: 4px;
+      border: 1px solid #e8e8e8;
+      background-color: $grey-white;
+      resize: vertical;
+      margin: 5px 0;
+      padding: 10px 15px;
+      font-size: 14px;
+
+      &::placeholder {
+        color: rgba($text,.5);
+      }
+    }
+
+    &-buttons {
+      display: flex;
+      flex-wrap: wrap;
+    }
+    &-submit {
+      width: 158px;
+      height: 43px;
+      border-radius: 22px;
+      background-color: #bdbdbd;
+      box-shadow: 0 5px 10px rgba(0, 0, 0, 0.3);
+      cursor: pointer;
+      color: $bg;
+      font-weight: 700;
+      transition: .3s;
+      margin-right: 20px;
+
+      &:hover {
+        background-color: $violet;
+      }
+
+    }
+    &-reset {
+      width: 138px;
+      height: 43px;
+      border-radius: 22px;
+      border: 1px solid #bdbdbd;
+      background-color: transparent;
+      font-weight: 700;
+      color: #bdbdbd;
+      cursor: pointer;
+      transition: .3s;
+
+      &:hover {
+        border: 1px solid $yellow;
+        color: $yellow;
+      }
+    }
+  }
+
+  &__block {
+    @include col;
+    @include size(8);
+
+    .rating {
+      align-items: flex-start;
+    }
+  }
+
+  &__input {
+    border-radius: 4px;
+    border: 1px solid #e8e8e8;
+    background-color: $grey-white;
+    padding: 15px 20px;
+    width: 100%;
+    outline: none;
+
+    &::placeholder {
+      color: rgba($text,.5);
+    }
+  }
 }
 
 .review {

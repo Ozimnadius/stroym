@@ -19,6 +19,7 @@
 
             <!-- reviews -->
             <div class="reviews">
+                <!-- list -->
                 <div class="reviews__list">
                     <? for ($i=1;$i<6;$i++): ?>
                         <div class="review">
@@ -26,7 +27,7 @@
                                 <!-- left -->
                                 <div class="review__left">
                                     <div class="review__img">
-                                         АК
+                                        АК
                                     </div>
                                     <div class="review__title">
                                         Александ Кротов
@@ -109,10 +110,87 @@
                         </div>
                     <? endfor; ?>
                 </div>
+                <!-- END list -->
 
+                <!-- pagination -->
                 <div class="reviews__pagination">
-                    <? include 'pages/common/pagination.php'?>
+                    <div class="row">
+                        <div class="reviews__pagination-wrapper">
+                            <? include 'pages/common/pagination.php'?>
+                        </div>
+                    </div>
                 </div>
+                <!-- END pagination -->
+
+                <!-- form -->
+                <form action="" method="post" class="reviews__form">
+                    <!-- top -->
+                    <div class="reviews__form-top">
+                        <!-- title -->
+                        <div class="reviews__form-title">
+                            Оставить отзыв
+                        </div>
+                        <!-- END title -->
+
+                    </div>
+                    <!-- END top -->
+
+                    <!-- bottom -->
+                    <div class="reviews__form-bottom">
+                        <div class="row">
+                            <div class="reviews__block">
+                                <input type="text" name="name" class="reviews__input" placeholder="Фамилия Имя">
+                            </div>
+                            <div class="reviews__block">
+                                <input type="email" name="email" class="reviews__input" placeholder="Ваш e-mail">
+                            </div>
+                            <div class="reviews__block">
+                                <!-- rating -->
+                                <div class="rating">
+
+                                    <div class="rating__title">
+                                        Ваша оценка
+                                    </div>
+
+                                    <div class="rating__wrapper">
+                                        <? for ($i = 5; $i > 0; $i--): ?>
+                                            <input type="radio" class="rating__input"
+                                                   id="rating-<?= $i ?>"
+                                                   name="rating" value="<?= $i ?>">
+                                            <label for="rating-<?= $i ?>" class="rating__star">
+                                                <svg class="rating__star-svg" viewBox="0 0 49.94 49.94">
+                                                    <use xlink:href="images/icons/sprite.svg#star"></use>
+                                                </svg>
+                                            </label>
+                                        <? endfor; ?>
+                                    </div>
+                                </div>
+                                <!-- END rating -->
+                            </div>
+                        </div>
+
+                        <!-- label -->
+                        <label class="reviews__form-label">
+                            <textarea name="comment"
+                                      class="reviews__form-input"
+                                      placeholder="Добавьте комментарий"></textarea>
+                            Все отзывы проходят модерацию
+                        </label>
+                        <!-- END label -->
+
+                        <!-- buttons -->
+                        <div class="reviews__form-buttons">
+                            <input type="submit" value="Отправить" class="reviews__form-submit">
+                            <input type="reset" value="Отмена" class="reviews__form-reset">
+                        </div>
+                        <!-- END buttons -->
+
+                    </div>
+                    <!-- END bottom -->
+
+                </form>
+                <!-- END form -->
+
             </div>
             <!-- END reviews -->
 
