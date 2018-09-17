@@ -36,6 +36,13 @@
   }
 }
 
+.proportion {
+  width: 100%;
+  &_16x9 {
+    padding-top: calc((9 / 16) * 100%);
+  }
+}
+
 .link {
   color: $violet !important;
   opacity: 1 !important;

@@ -1,0 +1,54 @@
+.videos {
+
+}
+
+.video {
+  @include col;
+  @include size(12);
+  margin-bottom: 30px;
+  border-radius: 6px;
+  border: 1px solid #c1c1c1;
+  background-color: $grey-white;
+  overflow: hidden;
+
+  display: flex;
+  flex-direction: column;
+
+  &__wrapper {
+    position: relative;
+    overflow: hidden;
+
+    &:after {
+      content: url(../images/icons/youtube2.png);
+      display: block;
+      position: absolute;
+      top: 50%;
+      left: 50%;
+      margin-top: -31px;
+      margin-left: -44px;
+     pointer-events: none;
+    }
+  }
+  &__fancy {
+    position: absolute;
+    top: 0;
+    bottom: 0;
+    left: 0;
+    right: 0;
+    display: block;
+    cursor: pointer;
+    outline: none;
+  }
+  &__img {
+    width: 100%;
+  }
+
+  &__title {
+    flex-grow: 1;
+    padding: 17px 30px;
+    font-size: 24px;
+    font-weight: 700;
+    min-height: 100px;
+  }
+}
+
