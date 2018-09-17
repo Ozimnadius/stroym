@@ -2,7 +2,8 @@
   background-color: $violet;
 
   &__top {
-    background: url("../images/bg/bg-footer.jpg") center center no-repeat/ cover;
+    background: url("../images/bg/bg-footer.jpg") center center no-repeat;
+    background-size: cover;
     padding: 60px 0 40px 0;
     overflow: hidden;
 

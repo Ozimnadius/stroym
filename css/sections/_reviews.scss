@@ -1,0 +1,121 @@
+.reviews {
+
+}
+
+.review {
+  margin-bottom: 30px;
+
+  &__left {
+    @include col;
+    @include size(4);
+  }
+
+  &__img {
+    width: 136px;
+    height: 136px;
+    border-radius: 50%;
+    overflow: hidden;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin-bottom: 10px;
+    background-color: $yellow;
+    color: $bg;
+    font-size: 58px;
+    font-weight: 900;
+
+  }
+
+  &__title {
+    font-weight: 500;
+  }
+
+  &__right {
+    @include col;
+    @include size(20);
+    border-radius: 6px;
+    border: 1px solid #c1c1c1;
+    background-color: $grey-white;
+    padding: 30px;
+  }
+
+  &__rating {
+    display: flex;
+    margin-bottom: 20px;
+  }
+  &__star {
+    width: 20px;
+    height: 19px;
+    fill: rgba($text, .2);
+    margin-right: 6px;
+
+    &:last-child {
+      margin-right: 0;
+    }
+    &.active {
+      fill: $yellow;
+    }
+  }
+
+  &__text {
+    font-size: 14px;
+    margin-bottom: 20px;
+  }
+
+  &__bottom {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+  }
+
+  &__author {
+    color: rgba($text, .5);
+    font-size: 14px;
+  }
+
+  &__vote {
+    display: flex;
+    align-items: center;
+
+    &-title {
+      color: rgba($text, .5);
+      font-size: 14px;
+      margin-right: 18px;
+    }
+  }
+
+  &__hands {
+    display: flex;
+    align-items: center;
+  }
+
+  &__hand {
+    display: flex;
+    align-items: center;
+    margin-right: 15px;
+    color: #2aa633;
+    font-size: 14px;
+    font-weight: 700;
+    line-height: 1;
+
+    &:last-child {
+      margin-right: 0;
+    }
+
+    &-svg {
+      width: 16px;
+      height: 15px;
+      fill: rgba($text,.3);
+      margin-left: 5px;
+      position: relative;
+      cursor: pointer;
+    }
+
+    &_dislike {
+      color: #cc2121;
+      svg {
+        top: 4px;
+      }
+    }
+  }
+}

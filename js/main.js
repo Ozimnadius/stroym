@@ -311,36 +311,6 @@ $(function () {
         preview.addClass('active');
     }
 
-    $('.com__hand').on('click', function (e) {
-
-        var button = $(this),
-            id = button.data('id'),
-            countObj = button.find('.com__hand-int'),
-            countInt = parseInt(countObj.text()),
-            data = {
-                id: id,
-                action: 'vote'
-            };
-
-        $.ajax({
-            dataType: "json",
-            type: "POST",
-            url: 'ajax.php',
-            data: data,
-            success: function (result) {
-                if (result.status) {
-                    countInt++;
-                    countObj.text(countInt);
-                    button.prop('disabled', true);
-                } else {
-                    alert('Что-то пошло не так, попробуйте еще раз!!!');
-                }
-            },
-            error: function (result) {
-                alert('Что-то пошло не так, попробуйте еще раз!!!');
-            }
-        });
-    });
     /*END PRODUCT*/
 
 
@@ -692,6 +662,37 @@ $(function () {
                     if (action == 'add') {
                         addCart(1);
                     }
+                } else {
+                    alert('Что-то пошло не так, попробуйте еще раз!!!');
+                }
+            },
+            error: function (result) {
+                alert('Что-то пошло не так, попробуйте еще раз!!!');
+            }
+        });
+    });
+
+    $('.jsVote').on('click', function (e) {
+
+        var button = $(this),
+            id = button.data('id'),
+            countObj = button.find('.jsVote__int'),
+            countInt = parseInt(countObj.text()),
+            data = {
+                id: id,
+                action: 'vote'
+            };
+
+        $.ajax({
+            dataType: "json",
+            type: "POST",
+            url: 'ajax.php',
+            data: data,
+            success: function (result) {
+                if (result.status) {
+                    countInt++;
+                    countObj.text(countInt);
+                    button.prop('disabled', true);
                 } else {
                     alert('Что-то пошло не так, попробуйте еще раз!!!');
                 }

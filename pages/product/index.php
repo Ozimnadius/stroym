@@ -471,8 +471,8 @@
                                                     </div>
                                                     <div class="com__hands">
                                                         <!-- like -->
-                                                        <button role="button" class="com__hand" data-id="<?=$i?>">
-                                                            <span class="com__hand-int">1</span>
+                                                        <button role="button" class="com__hand jsVote" data-id="<?=$i?>">
+                                                            <span class="com__hand-int jsVote__int">1</span>
                                                             <svg class="com__hand-svg" viewBox="0 0 49.94 49.94">
                                                                 <use xlink:href="images/icons/sprite.svg#like"></use>
                                                             </svg>
@@ -480,8 +480,8 @@
                                                         <!-- END like -->
 
                                                         <!-- dislike -->
-                                                        <button role="button" class="com__hand com__hand_dislike">
-                                                            <span class="com__hand-int">3</span>
+                                                        <button role="button" class="com__hand com__hand_dislike jsVote" data-id="<?=$i?>">
+                                                            <span class="com__hand-int jsVote__int">3</span>
                                                             <svg class="com__hand-svg" viewBox="0 0 49.94 49.94">
                                                                 <use xlink:href="images/icons/sprite.svg#dislike"></use>
                                                             </svg>

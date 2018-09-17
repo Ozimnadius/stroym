@@ -17,54 +17,105 @@
             </div>
             <!-- END top -->
 
-            <!-- events -->
-            <div class="event">
-                <div class="row">
-                    <!-- left -->
-                    <div class="event__left">
-                        <img src="images/content/events/event1.jpg"
-                             title="Cвечки серии Ecola Light 5W и 6W"
-                             alt="Cвечки серии Ecola Light 5W и 6W"
-                             class="event__img">
-                        <div class="event__date">10 июля 2018</div>
-                    </div>
-                    <!-- END left -->
+            <!-- reviews -->
+            <div class="reviews">
+                <div class="reviews__list">
+                    <? for ($i=1;$i<6;$i++): ?>
+                        <div class="review">
+                            <div class="row">
+                                <!-- left -->
+                                <div class="review__left">
+                                    <div class="review__img">
+                                         АК
+                                    </div>
+                                    <div class="review__title">
+                                        Александ Кротов
+                                    </div>
+                                </div>
+                                <!-- END left -->
 
-                    <!-- right -->
-                    <div class="event__right">
-                        <div class="content">
-                            Появились новые свечки серии Ecola Light 5W и 6W. Как всегда, Ecola Light означает, что цена
-                            очень и очень привлекательная. Свечки матовые. Внешний вид очень симпатичный. А уж цены -
-                            так точно симпатичные: на 12-15% ниже, чем лампы основной линейки, и почти
-                            на 30% дешевле, чем серия Premium.
+                                <!-- right -->
+                                <div class="review__right">
+                                    <!-- rating -->
+                                    <div class="review__rating">
+                                        <svg class="review__star active">
+                                            <use xlink:href="images/icons/sprite.svg#star"></use>
+                                        </svg>
+                                        <svg class="review__star active">
+                                            <use xlink:href="images/icons/sprite.svg#star"></use>
+                                        </svg>
+                                        <svg class="review__star active">
+                                            <use xlink:href="images/icons/sprite.svg#star"></use>
+                                        </svg>
+                                        <svg class="review__star">
+                                            <use xlink:href="images/icons/sprite.svg#star"></use>
+                                        </svg>
+                                        <svg class="review__star">
+                                            <use xlink:href="images/icons/sprite.svg#star"></use>
+                                        </svg>
+                                    </div>
+                                    <!-- END rating -->
 
-                            <blockquote>
-                                Итак, 8 новых вариантов свечек: 5 и 6 ватт, 2 цветовые
-                                температуры (2700К и 4000К) и 2 варианта цоколя
-                                (Е14 и Е27) для каждой.
-                            </blockquote>
+                                    <!-- text -->
+                                    <div class="review__text">
+                                        Долго выбирала хрустальную люстру и бра в интернете. Но мне помогла менеджер Елизавета, очень вежоиво
+                                        и заинтересованно меня выслушала,грамотно дала нужный совет. Спасибо огромное Вам Елизавета!!! Спасибо Кире !!!
+                                        Хочу выразить благодарность Александру, быстро доставил и установил! Очень довольна,советую всем обращаться в этот интернет магазин СПАСИБО!!!
+                                    </div>
+                                    <!-- END text -->
 
-                            Часть партнеров недооценивают свечи на цоколе Е27. А мы убедились, что покупатели удивляются
-                            и радуются, когда видят свечки на цоколь
-                            Е27. Так что свечки для цоколя Е27 пользуются стабильным спросом.
+                                    <!-- bottom -->
+                                    <div class="review__bottom">
+                                        <!-- author -->
+                                        <div class="review__author">
+                                            alex.krotckov, 01 августа 2018
+                                        </div>
+                                        <!-- END author -->
 
-                            <ul>
-                                <li>C4TW50ELC Ecola Light candle LED 5,0W 220V E14 2700K свеча 100x37</li>
-                                <li>C4TW50ELC Ecola Light candle LED 5,0W 220V E14 2700K свеча 100x37</li>
-                                <li>C4TW50ELC Ecola Light candle LED 5,0W 220V E14 2700K свеча 100x37</li>
-                                <li>C4TW50ELC Ecola Light candle LED 5,0W 220V E14 2700K свеча 100x37</li>
-                                <li>C4TW50ELC Ecola Light candle LED 5,0W 220V E14 2700K свеча 100x37</li>
-                                <li>C4TW50ELC Ecola Light candle LED 5,0W 220V E14 2700K свеча 100x37</li>
-                                <li>C4TW50ELC Ecola Light candle LED 5,0W 220V E14 2700K свеча 100x37</li>
-                                <li>C4TW50ELC Ecola Light candle LED 5,0W 220V E14 2700K свеча 100x37</li>
-                                <li>C4TW50ELC Ecola Light candle LED 5,0W 220V E14 2700K свеча 100x37</li>
-                            </ul>
+                                        <!-- vote -->
+                                        <div class="review__vote">
+                                            <div class="review__vote-title">
+                                                Отзыв полезен?
+                                            </div>
+                                            <div class="review__hands">
+                                                <!-- like -->
+                                                <button role="button" class="review__hand jsVote" data-id="<?=$i?>">
+                                                    <span class="review__hand-int jsVote__int">1</span>
+                                                    <svg class="review__hand-svg" viewBox="0 0 49.94 49.94">
+                                                        <use xlink:href="images/icons/sprite.svg#like"></use>
+                                                    </svg>
+                                                </button>
+                                                <!-- END like -->
+
+                                                <!-- dislike -->
+                                                <button role="button" class="review__hand review__hand_dislike jsVote" data-id="<?=$i?>">
+                                                    <span class="review__hand-int jsVote__int">3</span>
+                                                    <svg class="review__hand-svg" viewBox="0 0 49.94 49.94">
+                                                        <use xlink:href="images/icons/sprite.svg#dislike"></use>
+                                                    </svg>
+                                                </button>
+                                                <!-- END dislike -->
+
+                                            </div>
+                                        </div>
+                                        <!-- END vote -->
+
+
+                                    </div>
+                                    <!-- END bottom -->
+                                </div>
+                                <!-- END right -->
+                            </div>
                         </div>
-                    </div>
-                    <!-- END right -->
+                    <? endfor; ?>
+                </div>
+
+                <div class="reviews__pagination">
+                    <? include 'pages/common/pagination.php'?>
                 </div>
             </div>
-            <!-- END events -->
+            <!-- END reviews -->
+
         </div>
 
 
