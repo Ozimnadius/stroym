@@ -1,0 +1,54 @@
+.conditions {
+  background-color: $violet;
+  padding: 35px 0 60px 0;
+
+  &__left, &__right {
+    @include col;
+    @include size(12);
+  }
+
+  &__title {
+    color: $bg;
+    font-size: 38px;
+    font-weight: 700;
+  }
+  &__text {
+    color: $bg;
+  }
+
+  &__list {
+    display: flex;
+    height: 100%;
+    border-bottom: 1px solid $bg;
+  }
+
+}
+
+.condition {
+
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  width: 50%;
+  padding: 25px;
+  border-right: 1px solid $bg;
+
+  &:last-child {
+    border-right: none;
+  }
+
+
+
+  &__svg {
+    width: 45px;
+    height: 45px;
+    fill: $yellow;
+    margin-bottom: 20px;
+  }
+
+  &__text {
+    color: $bg;
+    font-weight: 700;
+    text-align: center;
+  }
+}
