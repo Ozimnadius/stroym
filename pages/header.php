@@ -208,8 +208,8 @@
                                 <div class="nav-2__list">
                                     <a href="" class="nav-2__item" title="О нас">О нас</a>
                                     <a href="" class="nav-2__item" title="Условия покупки">Условия покупки</a>
-                                    <a href="" class="nav-2__item" title="Наши партнеры">Наши партнеры</a>
-                                    <a href="" class="nav-2__item" title="Акции">Акции</a>
+                                    <a href="partners.php" class="nav-2__item" title="Наши партнеры">Наши партнеры</a>
+                                    <a href="actions.php" class="nav-2__item" title="Акции">Акции</a>
                                 </div>
                             </div>
                         </div>
