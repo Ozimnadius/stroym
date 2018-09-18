@@ -702,6 +702,20 @@ $(function () {
         });
     });
 
+    $('body').on('change', '.accept__check', function (e) {
+
+        let input = $(this),
+            checked = input.prop('checked'),
+            form = input.closest('form'),
+            submit = $('[type=submit]');
+
+        if (checked) {
+            submit.removeClass('disabled');
+        } else {
+            submit.addClass('disabled');
+        }
+    });
+
     /*END GENERAL*/
 
     /*VENDORS*/

@@ -166,6 +166,10 @@
 
   &__button {
     width: 316px;
+    &.disabled {
+      pointer-events: none;
+      opacity: .5;
+    }
   }
 }
 

@@ -214,12 +214,12 @@
                             </div>
                         </div>
                         <div class="nav__item">
-                            <a href="" class="nav__link" title="Видео">
+                            <a href="videos.php" class="nav__link" title="Видео">
                                 Видео
                             </a>
                         </div>
                         <div class="nav__item">
-                            <a href="" class="nav__link" title="Новости">
+                            <a href="events.php" class="nav__link" title="Новости">
                                 Новости
                             </a>
                         </div>
@@ -229,17 +229,17 @@
                             </a>
                         </div>
                         <div class="nav__item">
-                            <a href="" class="nav__link" title="Отзывы">
+                            <a href="reviews.php" class="nav__link" title="Отзывы">
                                 Отзывы
                             </a>
                         </div>
                         <div class="nav__item">
-                            <a href="" class="nav__link" title="Доставка">
+                            <a href="delivery.php" class="nav__link" title="Доставка">
                                 Доставка
                             </a>
                         </div>
                         <div class="nav__item">
-                            <a href="" class="nav__link" title="Контакты">
+                            <a href="contacts.php" class="nav__link" title="Контакты">
                                 Контакты
                             </a>
                         </div>

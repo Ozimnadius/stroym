@@ -852,7 +852,7 @@
                     <div class="swiper-container main-brands__container">
                         <div class="swiper-wrapper">
                             <? for ($i = 1; $i < 9; $i++): ?>
-                                <a href="" title="Бренд<?= $i ?>" class="swiper-slide main-brand">
+                                <a href="brand-select.php" title="Бренд<?= $i ?>" class="swiper-slide main-brand">
                                     <span class="main-brand__content">
                                         <img src="images/content/brands/brand<?= $i ?>.png" alt="Бренд<?= $i ?>"
                                              title="Бренд<?= $i ?>"
@@ -878,7 +878,7 @@
             </div>
 
             <div class="main-brands__link">
-                <a href="" class="link link_white">
+                <a href="brands.php" class="link link_white">
                     <span class="link__text">
                         Смотреть все бренды
                     </span>
@@ -901,7 +901,7 @@
                     Что говорят о нас ?
                 </h2>
                 <div class="main-about__link">
-                    <a href="" class="link" title=Смотреть все отзывы">
+                    <a href="reviews.php" class="link" title=Смотреть все отзывы">
                     <span class="link__text">
                         Смотреть все отзывы
                     </span>
@@ -1023,7 +1023,7 @@
                         Новости
                     </h2>
                     <div class="main-news__link">
-                        <a href="" class="link" title="Смотреть все новости">
+                        <a href="events.php" class="link" title="Смотреть все новости">
                             <span class="link__text">
                                 Смотреть все новости
                             </span>
@@ -1039,7 +1039,7 @@
                 <div class="main-news__list">
                     <div class="row">
                         <? for ($i=1; $i < 5; $i++): ?>
-                        <a href="" title="Новость1" class="main-news__item">
+                        <a href="event.php" title="Новость1" class="main-news__item">
                             <img src="images/content/news/news<?=$i?>.jpg" title="Новость<?=$i?>" alt="Новость<?=$i?>" class="main-news__img">
                             <span class="main-news__date">
                                 13.05.2018
