@@ -1,0 +1,30 @@
+.brands {
+  padding-bottom: 50px;
+}
+.brand {
+  @include col;
+  @include size(6);
+  padding: 10px;
+  height: 112px;
+  border-radius: 6px;
+  border: 1px solid #c1c1c1;
+  background-color: $bg;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  margin-bottom: 30px;
+  transition: .3s;
+
+  &:hover {
+    box-shadow: 0 7px 12px rgba(39, 37, 37, 0.3);
+    border: 1px solid $violet;
+  }
+
+  &__img {
+    max-height: 100%;
+  }
+}
+
+.brand-select {
+  padding-bottom: 50px;
+}
