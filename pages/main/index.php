@@ -463,7 +463,7 @@
                                 <!-- END subcats -->
 
                             </div>
-                            <div class="cat">
+                            <div class="cat lg-12">
                                 <!-- link -->
                                 <a href="category.php" title="Светильники светодиодные" class="cat__link">
                                     Светильники светодиодные
@@ -1040,7 +1040,10 @@
                     <div class="row">
                         <? for ($i=1; $i < 5; $i++): ?>
                         <a href="event.php" title="Новость1" class="main-news__item">
-                            <img src="images/content/news/news<?=$i?>.jpg" title="Новость<?=$i?>" alt="Новость<?=$i?>" class="main-news__img">
+                            <span class="main-news__pic">
+                                <img src="images/content/news/news<?=$i?>.jpg" title="Новость<?=$i?>" alt="Новость<?=$i?>" class="main-news__img">
+                            </span>
+
                             <span class="main-news__date">
                                 13.05.2018
                             </span>

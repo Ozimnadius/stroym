@@ -608,3 +608,44 @@ a.ui-button:active {
     transform: rotate(361deg);
   }
 }
+
+.lg {
+  &-24 {
+    @include size-lg(24);
+  }
+  &-12 {
+    @include size-lg(12);
+  }
+  &-n {
+    @include lg-block {
+      display: none;
+    };
+
+  }
+
+  @include lg-block {
+    &-order {
+      &-1 {
+        order: 1;
+      }
+      &-2 {
+        order: 2;
+      }
+      &-3 {
+        order: 3;
+      }
+      &-4 {
+        order: 4;
+      }
+      &-5 {
+        order: 5;
+      }
+      &-6 {
+        order: 6;
+      }
+
+    }
+  };
+
+
+}

@@ -244,6 +244,25 @@
                             </a>
                         </div>
                     </nav>
+
+                    <div class="header__bottom-search">
+                        <!-- search -->
+                        <form action="" method="post" class="search">
+                            <input type="search" name="search" class="search__input" placeholder="Поиск по сайту">
+                            <input type="submit" value="Искать" class="search__submit">
+                        </form>
+                        <!-- END search -->
+                    </div>
+
+                    <div class="header__bottom-mmenu">
+                        <button role="button" class="mmenu__button">
+                            <span class="mmenu__button-line"></span>
+                            <span class="mmenu__button-line"></span>
+                            <span class="mmenu__button-line"></span>
+                        </button>
+                    </div>
+
+
                 </div>
                 <!-- END right -->
             </div>

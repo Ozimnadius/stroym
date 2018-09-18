@@ -515,6 +515,27 @@ $(function () {
 
     /*END CABINET*/
 
+    /*MMENU*/
+    $('.mmenu__button').on('click', function (e) {
+        $('.mmenu').addClass('open');
+        $('body').addClass('noscroll');
+    });
+
+    $('.mmenu__close, .mmenu__shading').on('click', function (e) {
+        $('.mmenu').removeClass('open');
+        $('body').removeClass('noscroll');
+    });
+
+    $('.menum__title').on('click', function (e) {
+        let button = $(this),
+            list = button.next();
+
+        list.slideToggle();
+        button.toggleClass('open');
+
+    });
+    /*END MMENU*/
+
     /*GENERAL*/
     $('.switch').on('click', function (e) {
         e.preventDefault();
@@ -743,6 +764,13 @@ $(function () {
             nextEl: '.main-brands__next .arrow',
             prevEl: '.main-brands__prev .arrow',
         },
+        breakpoints: {
+            // when window width is <= 1199.99px
+            1199.99: {
+                slidesPerView: 3,
+                spaceBetween: 20
+            }
+        }
     });
 
     var aboutSwiper = new Swiper('.main-about__container', {
@@ -757,6 +785,13 @@ $(function () {
             nextEl: '.main-about__next .arrow',
             prevEl: '.main-about__prev .arrow',
         },
+        breakpoints: {
+            // when window width is <= 1199.99px
+            991.99: {
+                slidesPerView: 1,
+                spaceBetween: 0
+            }
+        }
     });
 
     var popularSwiper = new Swiper('.popular__container', {

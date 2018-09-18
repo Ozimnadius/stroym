@@ -7,7 +7,7 @@
   @include size(24);
   position: relative;
   background-repeat: no-repeat;
-  background-position: center 0;
+  background-position: 0 0;
   background-size: cover;
   display: flex;
   align-items: flex-end;
@@ -16,6 +16,9 @@
   height: 450px;
   margin-bottom: 30px;
   transition: .3s;
+  @include lg-block {
+    height: 365px;
+  };
 
   &:hover {
     box-shadow: 0 9px 17px rgba(0, 0, 0, 0.4);
@@ -29,6 +32,10 @@
     width: 490px;
     height: 320px;
     overflow: hidden;
+    @include lg-block {
+      width: 252px;
+      height: 52px;
+    };
   }
   &__percent {
     position: absolute;
@@ -43,11 +50,23 @@
     font-size: 30px;
     font-weight: 700;
     background: rgba($bg, 0.2);
+    @include lg-block {
+      top: 0;
+      bottom: 0;
+      right: 0;
+      left: 0;
+      font-size: 25px;
+      padding: 0;
+      justify-content: center;
+    };
   }
   &__pic {
     position: absolute;
     right: 0;
     top: 0;
+    @include lg-block {
+      display: none;
+    };
   }
 
   &__title {
@@ -58,6 +77,10 @@
     color: $bg;
     font-size: 47px;
     font-weight: 800;
+    @include lg-block {
+      padding: 30px;
+      font-size: 34px;
+    };
   }
 
   &-2 {
@@ -66,17 +89,27 @@
     flex-direction: column;
     align-items: flex-start;
     justify-content: space-between;
+    @include lg-block {
+      padding: 20px 30px;
+      background-position: right 0;
+    };
 
     &__title {
       color: $bg;
       font-size: 30px;
       font-weight: 500;
+      @include lg-block {
+        font-size: 22px;
+      };
     }
 
     &__percent {
       color: $bg;
       font-size: 47px;
       font-weight: 800;
+      @include lg-block {
+        font-size: 38px;
+      };
     }
 
   }
@@ -86,6 +119,9 @@
     flex-direction: column;
     align-items: flex-start;
     padding: 45px 35px;
+    @include lg-block {
+      background-position: center 0;
+    };
 
     &__percent {
       font-size: 62px;
@@ -96,6 +132,10 @@
       fill: rgba($bg, 0);
       margin-top: auto;
       margin-bottom: 60px;
+      @include lg-block {
+        margin-top: 0;
+        margin-bottom: 50px;
+      };
 
     }
 
@@ -106,12 +146,21 @@
       color: $bg;
       font-size: 20px;
       margin-bottom: 25px;
+      @include lg-block {
+        padding: 7px 15px;
+        margin-bottom: 0;
+      };
     }
 
     &__title {
       color: $bg;
       font-size: 36px;
       font-weight: 500;
+      @include lg-block {
+        font-size: 20px;
+        order: -1;
+        margin-top: auto;
+      };
     }
   }
 
@@ -120,6 +169,7 @@
     flex-direction: column;
     justify-content: space-between;
     align-items: flex-start;
+    @include size-lg(12);
 
     &__stick {
       border-radius: 22px;
@@ -144,6 +194,9 @@
   &-5 {
     @include size(8);
     padding-bottom: 45px;
+    @include lg-block {
+      display: none;
+    };
 
     &__img {
       position: absolute;
@@ -185,6 +238,7 @@
     align-items: center;
     justify-content: space-between;
     padding: 40px 20px 30px 20px;
+    @include size-lg(12);
 
     &__percent {
       border-radius: 26px;
@@ -201,6 +255,9 @@
       color: $bg;
       font-size: 40px;
       font-weight: 500;
+      @include lg-block {
+        font-size: 30px;
+      };
     }
   }
 

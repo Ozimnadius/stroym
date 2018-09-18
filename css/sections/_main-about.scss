@@ -5,6 +5,10 @@
     url(/images/bg/main-about1.png) left 45px top -100px no-repeat,
     url(/images/bg/main-about2.png) right 45px top -100px no-repeat,
     url(/images/bg/bg_about-main.jpg) center 0 no-repeat/ cover fixed;
+  @include lg-block {
+    background:
+            url(/images/bg/bg_about-main.jpg) center 0 no-repeat/ cover fixed;
+  };
 
 
   &__top {
@@ -174,12 +178,21 @@
   &__item {
     @include col;
     @include size(6);
-
+    @include size-md(12);
     display: flex;
     flex-direction: column;
+
+    @include md-block {
+      margin-bottom: 25px;
+    };
+  }
+  &__pic {
+    border-radius: 6px;
+    overflow: hidden;
   }
   &__img {
     margin-bottom: 25px;
+    width: 100%;
   }
   &__date {
     color: #7f7f7f;
