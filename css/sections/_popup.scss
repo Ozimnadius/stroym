@@ -2,7 +2,7 @@
   position: fixed;
   top: 0;
   bottom: 0;
-  z-index: 120;
+  z-index: 220;
   width: 100vw;
   height: 100vh;
   display: none;
@@ -17,10 +17,20 @@
   &__content {
     width: 482px;
     border-radius: 6px;
+    @include xs-block{
+      width: 100%;
+      height: 100%;
+    };
   }
 
   &__form {
     position: relative;
+    display: flex;
+    flex-direction: column;
+    @include xs-block{
+      width: 100%;
+      height: 100%;
+    };
   }
 
   &__bottom {
@@ -31,11 +41,15 @@
     border-radius: 6px;
     border-top-right-radius: 0;
     border-top-left-radius: 0;
-
+    flex-grow: 1;
     display: flex;
     flex-direction: column;
     align-items: center;
     justify-content: center;
+    @include xs-block {
+      padding-bottom: 70px;
+      justify-content: flex-start;
+    };
 
   }
 
@@ -51,6 +65,11 @@
     left: 50%;
     margin-left: -30px;
     cursor: pointer;
+
+    @include xs-block {
+      border: none;
+      top: 20px;
+    };
 
     &:hover {
       .popup__close-wrapper {
@@ -81,7 +100,7 @@
 
   &__title {
     background-image: url(/images/bg/bg_popup.png);
-
+    background-position: center 0;
     border-radius: 6px;
     border-bottom-right-radius: 0;
     border-bottom-left-radius: 0;
@@ -92,6 +111,12 @@
     text-align: center;
     padding: 40px 0 25px 0;
 
+    @include xs-block {
+      background-image: none;
+      background-color: $yellow;
+      font-size: 20px;
+      padding: 40px 0 15px 0;
+    };
   }
 
   &__success {
@@ -114,11 +139,18 @@
   display: flex;
   flex-direction: column;
   width: 100%;
+  @include xs-block {
+    padding: 20px;
+  };
 }
 
 .field {
   position: relative;
   margin-bottom: 30px;
+
+  @include xs-block {
+    margin-bottom: 15px;
+  };
 
   &:last-child {
     margin-bottom: 0;
@@ -132,6 +164,11 @@
     background-color: $bg;
     padding: 15px 20px;
     outline: none;
+
+    @include xs-block {
+      height: auto;
+      padding: 9px 15px;
+    };
 
     &::placeholder {
       color: rgba($text, .5);
@@ -163,9 +200,16 @@
   display: flex;
   justify-content: center;
   margin-bottom: 25px;
+  @include xs-block {
+    width: 100%;
+    padding: 0 20px;
+  };
 
   &__button {
     width: 316px;
+    @include xs-block {
+      width: 100%;
+    };
     &.disabled {
       pointer-events: none;
       opacity: .5;

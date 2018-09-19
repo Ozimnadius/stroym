@@ -1,6 +1,6 @@
 <!-- sort -->
 <form action="" method="post" class="sort">
-    <label for="sort" class="sort__label">Показать/Сортировать:</label>
+    <label for="sort" class="sort__label">Показать:</label>
     <select name="sort" id="sort" class="sort__select">
         <option value="Все">Все</option>
         <option value="Акции">Параметр1</option>

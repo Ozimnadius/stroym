@@ -138,6 +138,7 @@ $(function () {
                             });
                         }
                     });
+                    $('body').addClass('noscroll');
                 } else {
                     alert('Что-то пошло не так, попробуйте еще раз!!!');
                 }
@@ -252,12 +253,14 @@ $(function () {
         var close = $(this),
             popup = close.closest('.popup');
         popup.removeClass('active');
+        $('body').removeClass('noscroll');
     });
 
     $('.popup').on('click', function (e) {
         var popup = $(this);
         if ($(e.target).hasClass('popup')) {
             popup.removeClass('active');
+            $('body').removeClass('noscroll');
         }
     });
     /*END POPUP*/
@@ -742,7 +745,7 @@ $(function () {
             item = button.closest('.acco__item'),
             items = $('.acco__item').not(item);
 
-        items.removeClass('active');
+        // items.removeClass('active');
         item.toggleClass('active');
     });
 

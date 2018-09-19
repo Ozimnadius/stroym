@@ -291,6 +291,22 @@
   margin-right: 25px;
   position: relative;
 
+  @include xs-block {
+    margin-right: 10px;
+    padding-right: 15px;
+  };
+
+  &:not(:first-child) {
+    @include xs-block {
+      max-width: 90px;
+      white-space: nowrap;
+      text-overflow: ellipsis;
+      overflow: hidden;
+    };
+  }
+
+
+
   &:after {
     content: '/';
     display: block;
@@ -317,11 +333,20 @@
 .section {
   &__top {
     display: flex;
-    flex-wrap: wrap;
+    //flex-wrap: wrap;
     align-items: flex-start;
     border-bottom: 1px solid $violet;
     padding-bottom: 10px;
     margin-bottom: 40px;
+
+    @include lg-block {
+      align-items: center;
+    };
+    @include sm-block {
+      align-items: flex-start;
+      flex-direction: column;
+      border-bottom: none;
+    };
   }
 
 }
@@ -330,6 +355,14 @@
   color: $violet;
   font-size: 40px;
   font-weight: 700;
+  line-height: 1.1;
+  @include sm-block {
+    font-size: 24px;
+    border-bottom: 1px solid $violet;
+    width: 100%;
+    padding-bottom: 13px;
+    margin-bottom: 25px;
+  };
 }
 
 .type {
@@ -520,12 +553,25 @@
 /*FILTER*/
 .sort {
   display: flex;
-  flex-wrap: wrap;
+  //flex-wrap: wrap;
   align-items: center;
   margin-left: auto;
 
+  @include sm-block {
+    flex-wrap: wrap;
+    margin-left: 0;
+  };
+  @include xs-block {
+    align-items: flex-start;
+    flex-direction: column;
+  };
+
   &__label {
     margin-right: 15px;
+    @include xs-block {
+      margin-bottom: 10px;
+      margin-left: 0;
+    };
   }
 
   .ui-button {

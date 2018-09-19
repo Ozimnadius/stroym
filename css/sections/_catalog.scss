@@ -7,6 +7,8 @@
   &__item {
     @include col;
     @include size(8);
+    @include size-md(12);
+    @include size-xs(24);
     display: flex;
     flex-direction: column;
     margin-bottom: 30px;
