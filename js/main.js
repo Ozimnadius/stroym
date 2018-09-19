@@ -737,6 +737,15 @@ $(function () {
         }
     });
 
+    $('.acco__button').on('click', function (e) {
+        let button = $(this),
+            item = button.closest('.acco__item'),
+            items = $('.acco__item').not(item);
+
+        items.removeClass('active');
+        item.toggleClass('active');
+    });
+
     /*END GENERAL*/
 
     /*VENDORS*/
@@ -765,6 +774,17 @@ $(function () {
             prevEl: '.main-brands__prev .arrow',
         },
         breakpoints: {
+            // when window width is <= 575.99px
+            575.99: {
+                slidesPerView: 3,
+                spaceBetween: 15,
+                centeredSlides: true
+            },
+            // when window width is <= 767.99px
+            767.99: {
+                slidesPerView: 2,
+                spaceBetween: 10
+            },
             // when window width is <= 1199.99px
             1199.99: {
                 slidesPerView: 3,

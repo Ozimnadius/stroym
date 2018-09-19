@@ -21,6 +21,9 @@
   position: relative;
   margin-bottom: 30px;
   transition: .5s;
+  @include sm-block {
+    height: 220px;
+  };
 
   &_3 {
     @include size(8);
@@ -30,6 +33,13 @@
     @include size-md(24);
     @include md-block {
       order: 1;
+    };
+    @include sm-block {
+      .cat__img {
+        height: 150px;
+        bottom: 0px;
+        right: -20px;
+      }
     };
   }
   &:nth-child(2) {
@@ -43,17 +53,31 @@
         }
       }
     };
+    @include sm-block {
+      .cat__img {
+        img {
+          height: 100%;
+        }
+      }
+    };
   }
   &:nth-child(3) {
     @include size-md(12);
     @include md-block {
       order: 2;
     };
+    @include size-sm(24);
   }
   &:nth-child(4) {
     @include size-md(12);
     @include md-block {
       order: 3;
+    };
+    @include size-sm(24);
+    @include sm-block {
+      .cat__img {
+        height: 190px;
+      }
     };
   }
   &:nth-child(5) {
@@ -61,12 +85,24 @@
     @include md-block {
       order: 5;
     };
+    @include size-sm(24);
+    @include sm-block {
+      .cat__img {
+        img {
+          height: 200px;
+        }
+      }
+    };
   }
   &:nth-child(6) {
     @include size-md(12);
     @include md-block {
       order: 5;
     };
+    @include sm-block {
+      display: none;
+    };
+
   }
   &:nth-child(7) {
     @include md-block {
@@ -81,6 +117,7 @@
       height: 65%;
     }
   }
+
 
 
   &__bg {
@@ -101,6 +138,10 @@
     z-index: 10;
     bottom: -10px;
     right: 0;
+
+  }
+  &__pic {
+    max-height: 100%;
   }
 
   &__link {
@@ -110,14 +151,16 @@
     bottom: 0;
     left: 0;
     right: 0;
-
     color: $bg;
     font-size: 24px;
     font-weight: 500;
     padding: 25px 30px;
-
     display: flex;
     align-items: flex-end;
+    @include sm-block {
+      padding: 10px 20px;
+      font-size: 22px;
+    };
   }
 }
 
@@ -130,6 +173,9 @@
   height: 0;
   overflow: hidden;
   transition: .5s;
+  @include sm-block {
+    display: none;
+  };
 
   &.active {
     height: 65%;

@@ -115,11 +115,50 @@
             </button>
             <!-- END close -->
 
+            <!-- search -->
+            <div class="mmenu__search">
+                <form action="" method="post" class="search">
+                    <input type="search" name="search" class="search__input" placeholder="Поиск по сайту">
+                    <input type="submit" value="Искать" class="search__submit">
+                </form>
+            </div>
+            <!-- END search -->
+
         </div>
         <!-- END top -->
 
+        <!-- middle -->
+        <div class="mmenu__middle">
+            <!-- contacts -->
+            <div class="header__contacts">
+
+                <!-- phone -->
+                <a role="link" href="tel:+7(900)800-80-90" title="+7(900)800-80-90" class="phone">
+                    +7 (900) 800-80-90
+                </a>
+                <!-- END phone -->
+
+                <!-- callorder-button -->
+                <button role="button" class="callorder-button jsPopupOpen" data-action="callorder">
+                    Заказать обратный звонок
+                </button>
+                <!-- END callorder-button -->
+
+            </div>
+            <!-- END contacts -->
+        </div>
+        <!-- END middle -->
+
         <!-- controls -->
         <div class="mmenu__controls">
+            <a href="cabinet.php" class="mmenu__control">
+                <svg class="mmenu__control-svg">
+                    <use xlink:href="images/icons/sprite.svg#user"></use>
+                </svg>
+                <span class="mmenu__control-text">
+                    Demo@user.com
+                </span>
+            </a>
             <a href="cabinet.php" class="mmenu__control">
                 <svg class="mmenu__control-svg">
                     <use xlink:href="images/icons/sprite.svg#izbrznnoe"></use>

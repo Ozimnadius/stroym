@@ -116,6 +116,743 @@
     <section class="main-tabs">
         <div class="container">
 
+            <!-- accordeon -->
+            <div class="acco">
+                <div class="acco__item">
+                    <div class="acco__button">
+                        <div class="acco__button-wrapper">
+                            <svg class="acco__button-svg">
+                                <use xlink:href="images/icons/sprite.svg#main"></use>
+                            </svg>
+                            <span class="acco__button-text">
+                                Главная
+                            </span>
+                            <div class="acco__button-symbol">
+                                <div class="acco__button-line"></div>
+                                <div class="acco__button-line"></div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="acco__content">
+                        <div class="main-cat cats">
+                            <div class="row">
+                                <div class="cat">
+                                    <!-- link -->
+                                    <a href="category.php" title="Светильники светодиодные" class="cat__link">
+                                        Светильники светодиодные
+                                    </a>
+                                    <!-- END link -->
+
+                                    <!-- img -->
+                                    <div class="cat__img">
+                                        <img src="images/content/cats/cat1.png" alt="Светильники светодиодные"
+                                             title="Светильники светодиодные" class="cat__pic">
+                                    </div>
+                                    <!-- END img -->
+
+                                    <div class="cat__bg"
+                                         style="background-image: url(images/content/cats/catbg1.jpg);"></div>
+
+                                    <!-- subcats -->
+                                    <div class="subcats">
+                                        <div class="subcats__blur"
+                                             style="background-image: url(images/content/cats/catbg1.jpg);">
+                                            <div class="cat__img">
+                                                <img src="images/content/cats/cat1.png" alt="Светильники светодиодные"
+                                                     title="Светильники светодиодные" class="cat__pic">
+                                            </div>
+                                        </div>
+                                        <div class="subcats__content">
+                                            <a href="category.php" title="Светильники светодиодные"
+                                               class="subcats__title">
+                                                Светильники светодиодные
+                                            </a>
+                                            <div class="subcats__list">
+                                                <a href="category.php" title="Энергосберигающие лампы" class="subcat">
+                                                    Энергосберигающие лампы
+                                                </a>
+                                                <a href="category.php" title="Энергосберигающие лампы" class="subcat">
+                                                    Энергосберигающие лампы
+                                                </a>
+                                                <a href="category.php" title="Энергосберигающие лампы" class="subcat">
+                                                    Энергосберигающие лампы
+                                                </a>
+                                                <a href="category.php" title="Энергосберигающие лампы" class="subcat">
+                                                    Энергосберигающие лампы
+                                                </a>
+                                                <a href="category.php" title="Энергосберигающие лампы" class="subcat">
+                                                    Энергосберигающие лампы
+                                                </a>
+                                                <a href="category.php" title="Энергосберигающие лампы"
+                                                   class="subcat subcat_link link">
+                                                <span class="link__text">
+                                                    Ещё 13
+                                                </span>
+                                                    <svg class="link__svg">
+                                                        <use xlink:href="images/icons/sprite.svg#right"></use>
+                                                    </svg>
+                                                </a>
+
+                                            </div>
+                                        </div>
+                                    </div>
+                                    <!-- END subcats -->
+
+                                </div>
+                                <div class="cat">
+                                    <!-- link -->
+                                    <a href="category.php" title="Светильники светодиодные" class="cat__link">
+                                        Светильники светодиодные
+                                    </a>
+                                    <!-- END link -->
+
+                                    <!-- img -->
+                                    <div class="cat__img">
+                                        <img src="images/content/cats/cat2.png" alt="Светильники светодиодные"
+                                             title="Светильники светодиодные" class="cat__pic">
+                                    </div>
+                                    <!-- END img -->
+
+                                    <div class="cat__bg"
+                                         style="background-image: url(images/content/cats/catbg2.jpg);"></div>
+
+                                    <!-- subcats -->
+                                    <div class="subcats">
+                                        <div class="subcats__blur"
+                                             style="background-image: url(images/content/cats/catbg2.jpg);">
+                                            <div class="cat__img">
+                                                <img src="images/content/cats/cat2.png" alt="Светильники светодиодные"
+                                                     title="Светильники светодиодные" class="cat__pic">
+                                            </div>
+                                        </div>
+                                        <div class="subcats__content">
+                                            <a href="category.php" title="Светильники светодиодные"
+                                               class="subcats__title">
+                                                Светильники светодиодные
+                                            </a>
+                                            <div class="subcats__list">
+                                                <a href="category.php" title="Энергосберигающие лампы" class="subcat">
+                                                    Энергосберигающие лампы
+                                                </a>
+                                                <a href="category.php" title="Энергосберигающие лампы" class="subcat">
+                                                    Энергосберигающие лампы
+                                                </a>
+                                                <a href="category.php" title="Энергосберигающие лампы" class="subcat">
+                                                    Энергосберигающие лампы
+                                                </a>
+                                                <a href="category.php" title="Энергосберигающие лампы" class="subcat">
+                                                    Энергосберигающие лампы
+                                                </a>
+                                                <a href="category.php" title="Энергосберигающие лампы" class="subcat">
+                                                    Энергосберигающие лампы
+                                                </a>
+                                                <a href="category.php" title="Энергосберигающие лампы"
+                                                   class="subcat subcat_link link">
+                                                <span class="link__text">
+                                                    Ещё 13
+                                                </span>
+                                                    <svg class="link__svg">
+                                                        <use xlink:href="images/icons/sprite.svg#right"></use>
+                                                    </svg>
+                                                </a>
+
+                                            </div>
+                                        </div>
+                                    </div>
+                                    <!-- END subcats -->
+
+                                </div>
+                                <div class="cat cat_3">
+                                    <!-- link -->
+                                    <a href="category.php" title="Светильники светодиодные" class="cat__link">
+                                        Лампы
+                                    </a>
+                                    <!-- END link -->
+
+                                    <!-- img -->
+                                    <div class="cat__img">
+                                        <img src="images/content/cats/cat3.png" alt="Светильники светодиодные"
+                                             title="Светильники светодиодные" class="cat__pic">
+                                    </div>
+                                    <!-- END img -->
+
+                                    <div class="cat__bg"
+                                         style="background-image: url(images/content/cats/catbg3.jpg);"></div>
+
+                                    <!-- subcats -->
+                                    <div class="subcats">
+                                        <div class="subcats__blur"
+                                             style="background-image: url(images/content/cats/catbg3.jpg);">
+                                            <div class="cat__img">
+                                                <img src="images/content/cats/cat3.png" alt="Светильники светодиодные"
+                                                     title="Светильники светодиодные" class="cat__pic">
+                                            </div>
+                                        </div>
+                                        <div class="subcats__content">
+                                            <a href="category.php" title="Светильники светодиодные"
+                                               class="subcats__title">
+                                                Лампы
+                                            </a>
+                                            <div class="subcats__list">
+                                                <a href="category.php" title="Энергосберигающие лампы" class="subcat">
+                                                    Лампы
+                                                </a>
+                                                <a href="category.php" title="Энергосберигающие лампы" class="subcat">
+                                                    Лампы
+                                                </a>
+                                                <a href="category.php" title="Энергосберигающие лампы" class="subcat">
+                                                    Лампы
+                                                </a>
+                                                <a href="category.php" title="Энергосберигающие лампы" class="subcat">
+                                                    Лампы
+                                                </a>
+                                                <a href="category.php" title="Энергосберигающие лампы" class="subcat">
+                                                    Лампы
+                                                </a>
+                                                <a href="category.php" title="Энергосберигающие лампы"
+                                                   class="subcat subcat_link link">
+                                                <span class="link__text">
+                                                    Ещё 13
+                                                </span>
+                                                    <svg class="link__svg">
+                                                        <use xlink:href="images/icons/sprite.svg#right"></use>
+                                                    </svg>
+                                                </a>
+
+                                            </div>
+                                        </div>
+                                    </div>
+                                    <!-- END subcats -->
+
+                                </div>
+                                <div class="cat cat_3">
+                                    <!-- link -->
+                                    <a href="category.php" title="Светильники светодиодные" class="cat__link">
+                                        Лампы
+                                    </a>
+                                    <!-- END link -->
+
+                                    <!-- img -->
+                                    <div class="cat__img">
+                                        <img src="images/content/cats/cat4.png" alt="Светильники светодиодные"
+                                             title="Светильники светодиодные" class="cat__pic">
+                                    </div>
+                                    <!-- END img -->
+
+                                    <div class="cat__bg"
+                                         style="background-image: url(images/content/cats/catbg4.jpg);"></div>
+
+                                    <!-- subcats -->
+                                    <div class="subcats">
+                                        <div class="subcats__blur"
+                                             style="background-image: url(images/content/cats/catbg4.jpg);">
+                                            <div class="cat__img">
+                                                <img src="images/content/cats/cat4.png" alt="Светильники светодиодные"
+                                                     title="Светильники светодиодные" class="cat__pic">
+                                            </div>
+                                        </div>
+                                        <div class="subcats__content">
+                                            <a href="category.php" title="Светильники светодиодные"
+                                               class="subcats__title">
+                                                Лампы
+                                            </a>
+                                            <div class="subcats__list">
+                                                <a href="category.php" title="Энергосберигающие лампы" class="subcat">
+                                                    Лампы
+                                                </a>
+                                                <a href="category.php" title="Энергосберигающие лампы" class="subcat">
+                                                    Лампы
+                                                </a>
+                                                <a href="category.php" title="Энергосберигающие лампы" class="subcat">
+                                                    Лампы
+                                                </a>
+                                                <a href="category.php" title="Энергосберигающие лампы" class="subcat">
+                                                    Лампы
+                                                </a>
+                                                <a href="category.php" title="Энергосберигающие лампы" class="subcat">
+                                                    Лампы
+                                                </a>
+                                                <a href="category.php" title="Энергосберигающие лампы"
+                                                   class="subcat subcat_link link">
+                                                <span class="link__text">
+                                                    Ещё 13
+                                                </span>
+                                                    <svg class="link__svg">
+                                                        <use xlink:href="images/icons/sprite.svg#right"></use>
+                                                    </svg>
+                                                </a>
+                                            </div>
+                                        </div>
+                                    </div>
+                                    <!-- END subcats -->
+
+                                </div>
+                                <div class="cat cat_3">
+                                    <!-- link -->
+                                    <a href="category.php" title="Светильники светодиодные" class="cat__link">
+                                        Лампы
+                                    </a>
+                                    <!-- END link -->
+
+                                    <!-- img -->
+                                    <div class="cat__img">
+                                        <img src="images/content/cats/cat5.png" alt="Светильники светодиодные"
+                                             title="Светильники светодиодные" class="cat__pic">
+                                    </div>
+                                    <!-- END img -->
+
+                                    <div class="cat__bg"
+                                         style="background-image: url(images/content/cats/catbg5.jpg);"></div>
+
+                                    <!-- subcats -->
+                                    <div class="subcats">
+                                        <div class="subcats__blur"
+                                             style="background-image: url(images/content/cats/catbg5.jpg);">
+                                            <div class="cat__img">
+                                                <img src="images/content/cats/cat5.png" alt="Светильники светодиодные"
+                                                     title="Светильники светодиодные" class="cat__pic">
+                                            </div>
+                                        </div>
+                                        <div class="subcats__content">
+                                            <a href="category.php" title="Светильники светодиодные"
+                                               class="subcats__title">
+                                                Лампы
+                                            </a>
+                                            <div class="subcats__list">
+                                                <a href="category.php" title="Энергосберигающие лампы" class="subcat">
+                                                    Лампы
+                                                </a>
+                                                <a href="category.php" title="Энергосберигающие лампы" class="subcat">
+                                                    Лампы
+                                                </a>
+                                                <a href="category.php" title="Энергосберигающие лампы" class="subcat">
+                                                    Лампы
+                                                </a>
+                                                <a href="category.php" title="Энергосберигающие лампы" class="subcat">
+                                                    Лампы
+                                                </a>
+                                                <a href="category.php" title="Энергосберигающие лампы" class="subcat">
+                                                    Лампы
+                                                </a>
+                                                <a href="category.php" title="Энергосберигающие лампы"
+                                                   class="subcat subcat_link link">
+                                                <span class="link__text">
+                                                    Ещё 13
+                                                </span>
+                                                    <svg class="link__svg">
+                                                        <use xlink:href="images/icons/sprite.svg#right"></use>
+                                                    </svg>
+                                                </a>
+
+                                            </div>
+                                        </div>
+                                    </div>
+                                    <!-- END subcats -->
+
+                                </div>
+                                <div class="cat lg-12">
+                                    <!-- link -->
+                                    <a href="category.php" title="Светильники светодиодные" class="cat__link">
+                                        Светильники светодиодные
+                                    </a>
+                                    <!-- END link -->
+
+                                    <div class="cat__bg"
+                                         style="background-image: url(images/content/cats/catbg6.jpg);"></div>
+
+                                    <!-- subcats -->
+                                    <div class="subcats">
+                                        <div class="subcats__blur"
+                                             style="background-image: url(images/content/cats/catbg6.jpg);"></div>
+                                        <div class="subcats__content">
+                                            <a href="category.php" title="Светильники светодиодные"
+                                               class="subcats__title">
+                                                Светильники светодиодные
+                                            </a>
+                                            <div class="subcats__list">
+                                                <a href="category.php" title="Энергосберигающие лампы" class="subcat">
+                                                    Энергосберигающие лампы
+                                                </a>
+                                                <a href="category.php" title="Энергосберигающие лампы" class="subcat">
+                                                    Энергосберигающие лампы
+                                                </a>
+                                                <a href="category.php" title="Энергосберигающие лампы" class="subcat">
+                                                    Энергосберигающие лампы
+                                                </a>
+                                                <a href="category.php" title="Энергосберигающие лампы" class="subcat">
+                                                    Энергосберигающие лампы
+                                                </a>
+                                                <a href="category.php" title="Энергосберигающие лампы" class="subcat">
+                                                    Энергосберигающие лампы
+                                                </a>
+                                                <a href="category.php" title="Энергосберигающие лампы"
+                                                   class="subcat subcat_link link">
+                                                <span class="link__text">
+                                                     Ещё 13
+                                                </span>
+                                                    <svg class="link__svg">
+                                                        <use xlink:href="images/icons/sprite.svg#right"></use>
+                                                    </svg>
+                                                </a>
+
+                                            </div>
+                                        </div>
+                                    </div>
+                                    <!-- END subcats -->
+
+                                </div>
+                                <div class="cat">
+                                    <!-- link -->
+                                    <a href="category.php" title="Светильники светодиодные" class="cat__link">
+                                        Светильники светодиодные
+                                    </a>
+                                    <!-- END link -->
+
+
+                                    <div class="cat__bg"
+                                         style="background-image: url(images/content/cats/catbg7.jpg);"></div>
+
+                                    <!-- subcats -->
+                                    <div class="subcats">
+                                        <div class="subcats__blur"
+                                             style="background-image: url(images/content/cats/catbg7.jpg);"></div>
+                                        <div class="subcats__content">
+                                            <a href="category.php" title="Светильники светодиодные"
+                                               class="subcats__title">
+                                                Светильники светодиодные
+                                            </a>
+                                            <div class="subcats__list">
+                                                <a href="category.php" title="Энергосберигающие лампы" class="subcat">
+                                                    Энергосберигающие лампы
+                                                </a>
+                                                <a href="category.php" title="Энергосберигающие лампы" class="subcat">
+                                                    Энергосберигающие лампы
+                                                </a>
+                                                <a href="category.php" title="Энергосберигающие лампы" class="subcat">
+                                                    Энергосберигающие лампы
+                                                </a>
+                                                <a href="category.php" title="Энергосберигающие лампы" class="subcat">
+                                                    Энергосберигающие лампы
+                                                </a>
+                                                <a href="category.php" title="Энергосберигающие лампы" class="subcat">
+                                                    Энергосберигающие лампы
+                                                </a>
+                                                <a href="category.php" title="Энергосберигающие лампы"
+                                                   class="subcat subcat_link link">
+                                                <span class="link__text">
+                                                    Ещё 13
+                                                </span>
+                                                    <svg class="link__svg">
+                                                        <use xlink:href="images/icons/sprite.svg#right"></use>
+                                                    </svg>
+                                                </a>
+
+                                            </div>
+                                        </div>
+                                    </div>
+                                    <!-- END subcats -->
+
+                                </div>
+                            </div>
+
+                            <a href="catalog.php" class="cats__more link">
+                            <span class="link__text">
+                                Смотреть весь каталог
+                            </span>
+                                <svg class="link__svg">
+                                    <use xlink:href="images/icons/sprite.svg#right"></use>
+                                </svg>
+                            </a>
+                        </div>
+                    </div>
+                </div>
+                <div class="acco__item">
+                    <div class="acco__button">
+                        <div class="acco__button-wrapper">
+                            <svg class="acco__button-svg">
+                                <use xlink:href="images/icons/sprite.svg#catalog"></use>
+                            </svg>
+                            <div class="acco__button-text">
+                    Каталог
+                </div>
+                            <div class="acco__button-symbol">
+                                <div class="acco__button-line"></div>
+                                <div class="acco__button-line"></div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="acco__content">
+                        <div class="main-catalog">
+                            <div class="folders">
+                                <div class="row">
+                                    <div class="folder">
+                                        <a href="category.php" class="folder__link" title="Светильники светодиодные">
+                                        <span class="folder__img">
+                                            <img src="/images/content/menu/menu1-active.png"
+                                                 alt="Светильники светодиодные"
+                                                 class="folder__pic">
+                                        </span>
+                                            <span class="folder__link-text">
+                                          Светильники светодиодные
+                                        </span>
+                                        </a>
+
+                                        <div class="subfolders">
+                                            <a href="category.php" class="subfolder" title="Светильники светодиодные">
+                                                Энергосберигающие лампы
+                                            </a>
+                                            <a href="category.php" class="subfolder" title="Светильники светодиодные">
+                                                Энергосберигающие лампы
+                                            </a>
+                                            <a href="category.php" class="subfolder" title="Светильники светодиодные">
+                                                Энергосберигающие лампы
+                                            </a>
+                                            <a href="category.php" class="subfolder" title="Светильники светодиодные">
+                                                Энергосберигающие лампы
+                                            </a>
+                                            <a href="category.php" class="subfolder" title="Светильники светодиодные">
+                                                Энергосберигающие лампы
+                                            </a>
+                                            <a href="category.php" class="subfolder link"
+                                               title="Светильники светодиодные">
+                                        <span class="link__text">
+                                            Ещё 13
+                                        </span>
+                                                <svg class="link__svg">
+                                                    <use xlink:href="images/icons/sprite.svg#right"></use>
+                                                </svg>
+                                            </a>
+
+                                        </div>
+                                    </div>
+                                    <div class="folder">
+                                        <a href="category.php" class="folder__link" title="Светильники светодиодные">
+                                        <span class="folder__img">
+                                            <img src="/images/content/menu/menu1-active.png"
+                                                 alt="Светильники светодиодные"
+                                                 class="folder__pic">
+                                        </span>
+                                            <span class="folder__link-text">
+                                          Светильники светодиодные
+                                        </span>
+                                        </a>
+
+                                        <div class="subfolders">
+                                            <a href="category.php" class="subfolder" title="Светильники светодиодные">
+                                                Энергосберигающие лампы
+                                            </a>
+                                            <a href="category.php" class="subfolder" title="Светильники светодиодные">
+                                                Энергосберигающие лампы
+                                            </a>
+                                            <a href="category.php" class="subfolder" title="Светильники светодиодные">
+                                                Энергосберигающие лампы
+                                            </a>
+                                            <a href="category.php" class="subfolder" title="Светильники светодиодные">
+                                                Энергосберигающие лампы
+                                            </a>
+                                            <a href="category.php" class="subfolder" title="Светильники светодиодные">
+                                                Энергосберигающие лампы
+                                            </a>
+                                            <a href="category.php" class="subfolder link"
+                                               title="Светильники светодиодные">
+                                        <span class="link__text">
+                                            Ещё 13
+                                        </span>
+                                                <svg class="link__svg">
+                                                    <use xlink:href="images/icons/sprite.svg#right"></use>
+                                                </svg>
+                                            </a>
+
+                                        </div>
+                                    </div>
+                                    <div class="folder">
+                                        <a href="category.php" class="folder__link" title="Светильники светодиодные">
+                                        <span class="folder__img">
+                                            <img src="/images/content/menu/menu1-active.png"
+                                                 alt="Светильники светодиодные"
+                                                 class="folder__pic">
+                                        </span>
+                                            <span class="folder__link-text">
+                                          Светильники светодиодные
+                                        </span>
+                                        </a>
+
+                                        <div class="subfolders">
+                                            <a href="category.php" class="subfolder" title="Светильники светодиодные">
+                                                Энергосберигающие лампы
+                                            </a>
+                                            <a href="category.php" class="subfolder" title="Светильники светодиодные">
+                                                Энергосберигающие лампы
+                                            </a>
+                                            <a href="category.php" class="subfolder" title="Светильники светодиодные">
+                                                Энергосберигающие лампы
+                                            </a>
+                                            <a href="category.php" class="subfolder" title="Светильники светодиодные">
+                                                Энергосберигающие лампы
+                                            </a>
+                                            <a href="category.php" class="subfolder" title="Светильники светодиодные">
+                                                Энергосберигающие лампы
+                                            </a>
+                                            <a href="category.php" class="subfolder link"
+                                               title="Светильники светодиодные">
+                                        <span class="link__text">
+                                            Ещё 13
+                                        </span>
+                                                <svg class="link__svg">
+                                                    <use xlink:href="images/icons/sprite.svg#right"></use>
+                                                </svg>
+                                            </a>
+
+                                        </div>
+                                    </div>
+                                    <div class="folder">
+                                        <a href="category.php" class="folder__link" title="Светильники светодиодные">
+                                        <span class="folder__img">
+                                            <img src="/images/content/menu/menu1-active.png"
+                                                 alt="Светильники светодиодные"
+                                                 class="folder__pic">
+                                        </span>
+                                            <span class="folder__link-text">
+                                          Светильники светодиодные
+                                        </span>
+                                        </a>
+
+                                        <div class="subfolders">
+                                            <a href="category.php" class="subfolder" title="Светильники светодиодные">
+                                                Энергосберигающие лампы
+                                            </a>
+                                            <a href="category.php" class="subfolder" title="Светильники светодиодные">
+                                                Энергосберигающие лампы
+                                            </a>
+                                            <a href="category.php" class="subfolder" title="Светильники светодиодные">
+                                                Энергосберигающие лампы
+                                            </a>
+                                            <a href="category.php" class="subfolder" title="Светильники светодиодные">
+                                                Энергосберигающие лампы
+                                            </a>
+                                            <a href="category.php" class="subfolder" title="Светильники светодиодные">
+                                                Энергосберигающие лампы
+                                            </a>
+                                            <a href="category.php" class="subfolder link"
+                                               title="Светильники светодиодные">
+                                        <span class="link__text">
+                                            Ещё 13
+                                        </span>
+                                                <svg class="link__svg">
+                                                    <use xlink:href="images/icons/sprite.svg#right"></use>
+                                                </svg>
+                                            </a>
+
+                                        </div>
+                                    </div>
+                                    <div class="folder">
+                                        <a href="category.php" class="folder__link" title="Светильники светодиодные">
+                                        <span class="folder__img">
+                                            <img src="/images/content/menu/menu1-active.png"
+                                                 alt="Светильники светодиодные"
+                                                 class="folder__pic">
+                                        </span>
+                                            <span class="folder__link-text">
+                                          Светильники светодиодные
+                                        </span>
+                                        </a>
+
+                                        <div class="subfolders">
+                                            <a href="category.php" class="subfolder" title="Светильники светодиодные">
+                                                Энергосберигающие лампы
+                                            </a>
+                                            <a href="category.php" class="subfolder" title="Светильники светодиодные">
+                                                Энергосберигающие лампы
+                                            </a>
+                                            <a href="category.php" class="subfolder" title="Светильники светодиодные">
+                                                Энергосберигающие лампы
+                                            </a>
+                                            <a href="category.php" class="subfolder" title="Светильники светодиодные">
+                                                Энергосберигающие лампы
+                                            </a>
+                                            <a href="category.php" class="subfolder" title="Светильники светодиодные">
+                                                Энергосберигающие лампы
+                                            </a>
+                                            <a href="category.php" class="subfolder link"
+                                               title="Светильники светодиодные">
+                                        <span class="link__text">
+                                            Ещё 13
+                                        </span>
+                                                <svg class="link__svg">
+                                                    <use xlink:href="images/icons/sprite.svg#right"></use>
+                                                </svg>
+                                            </a>
+
+                                        </div>
+                                    </div>
+                                    <div class="folder">
+                                        <a href="category.php" class="folder__link" title="Светильники светодиодные">
+                                        <span class="folder__img">
+                                            <img src="/images/content/menu/menu1-active.png"
+                                                 alt="Светильники светодиодные"
+                                                 class="folder__pic">
+                                        </span>
+                                            <span class="folder__link-text">
+                                          Светильники светодиодные
+                                        </span>
+                                        </a>
+
+                                        <div class="subfolders">
+                                            <a href="category.php" class="subfolder" title="Светильники светодиодные">
+                                                Энергосберигающие лампы
+                                            </a>
+                                            <a href="category.php" class="subfolder" title="Светильники светодиодные">
+                                                Энергосберигающие лампы
+                                            </a>
+                                            <a href="category.php" class="subfolder" title="Светильники светодиодные">
+                                                Энергосберигающие лампы
+                                            </a>
+                                            <a href="category.php" class="subfolder" title="Светильники светодиодные">
+                                                Энергосберигающие лампы
+                                            </a>
+                                            <a href="category.php" class="subfolder" title="Светильники светодиодные">
+                                                Энергосберигающие лампы
+                                            </a>
+                                            <a href="category.php" class="subfolder link"
+                                               title="Светильники светодиодные">
+                                        <span class="link__text">
+                                            Ещё 13
+                                        </span>
+                                                <svg class="link__svg">
+                                                    <use xlink:href="images/icons/sprite.svg#right"></use>
+                                                </svg>
+                                            </a>
+
+                                        </div>
+                                    </div>
+
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="acco__item">
+                    <div class="acco__button">
+                        <div class="acco__button-wrapper">
+                            <svg class="acco__button-svg">
+                                <use xlink:href="images/icons/sprite.svg#actions"></use>
+                            </svg>
+                            <div class="acco__button-text">
+                                Акции
+                            </div>
+                            <div class="acco__button-symbol">
+                                <div class="acco__button-line"></div>
+                                <div class="acco__button-line"></div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="acco__content">
+                        <? include 'pages/common/actions.php' ?>
+                    </div>
+                </div>
+            </div>
+            <!-- END accordeon -->
+
             <!-- switches -->
             <div class="switches">
                 <div class="row">
@@ -205,7 +942,8 @@
                                             <a href="category.php" title="Энергосберигающие лампы" class="subcat">
                                                 Энергосберигающие лампы
                                             </a>
-                                            <a href="category.php" title="Энергосберигающие лампы" class="subcat subcat_link link">
+                                            <a href="category.php" title="Энергосберигающие лампы"
+                                               class="subcat subcat_link link">
                                                 <span class="link__text">
                                                     Ещё 13
                                                 </span>
@@ -266,7 +1004,8 @@
                                             <a href="category.php" title="Энергосберигающие лампы" class="subcat">
                                                 Энергосберигающие лампы
                                             </a>
-                                            <a href="category.php" title="Энергосберигающие лампы" class="subcat subcat_link link">
+                                            <a href="category.php" title="Энергосберигающие лампы"
+                                               class="subcat subcat_link link">
                                                 <span class="link__text">
                                                     Ещё 13
                                                 </span>
@@ -327,7 +1066,8 @@
                                             <a href="category.php" title="Энергосберигающие лампы" class="subcat">
                                                 Лампы
                                             </a>
-                                            <a href="category.php" title="Энергосберигающие лампы" class="subcat subcat_link link">
+                                            <a href="category.php" title="Энергосберигающие лампы"
+                                               class="subcat subcat_link link">
                                                 <span class="link__text">
                                                     Ещё 13
                                                 </span>
@@ -388,7 +1128,8 @@
                                             <a href="category.php" title="Энергосберигающие лампы" class="subcat">
                                                 Лампы
                                             </a>
-                                            <a href="category.php" title="Энергосберигающие лампы" class="subcat subcat_link link">
+                                            <a href="category.php" title="Энергосберигающие лампы"
+                                               class="subcat subcat_link link">
                                                 <span class="link__text">
                                                     Ещё 13
                                                 </span>
@@ -448,7 +1189,8 @@
                                             <a href="category.php" title="Энергосберигающие лампы" class="subcat">
                                                 Лампы
                                             </a>
-                                            <a href="category.php" title="Энергосберигающие лампы" class="subcat subcat_link link">
+                                            <a href="category.php" title="Энергосберигающие лампы"
+                                               class="subcat subcat_link link">
                                                 <span class="link__text">
                                                     Ещё 13
                                                 </span>
@@ -497,7 +1239,8 @@
                                             <a href="category.php" title="Энергосберигающие лампы" class="subcat">
                                                 Энергосберигающие лампы
                                             </a>
-                                            <a href="category.php" title="Энергосберигающие лампы" class="subcat subcat_link link">
+                                            <a href="category.php" title="Энергосберигающие лампы"
+                                               class="subcat subcat_link link">
                                                 <span class="link__text">
                                                      Ещё 13
                                                 </span>
@@ -547,7 +1290,8 @@
                                             <a href="category.php" title="Энергосберигающие лампы" class="subcat">
                                                 Энергосберигающие лампы
                                             </a>
-                                            <a href="category.php" title="Энергосберигающие лампы" class="subcat subcat_link link">
+                                            <a href="category.php" title="Энергосберигающие лампы"
+                                               class="subcat subcat_link link">
                                                 <span class="link__text">
                                                     Ещё 13
                                                 </span>
@@ -1015,6 +1759,19 @@
 
             </div>
 
+            <div class="main-about__bottom">
+                <div class="main-about__link">
+                    <a href="reviews.php" class="link" title=Смотреть все отзывы">
+                    <span class="link__text">
+                        Смотреть все отзывы
+                    </span>
+                    <svg class="link__svg">
+                        <use xlink:href="images/icons/sprite.svg#right"></use>
+                    </svg>
+                    </a>
+                </div>
+            </div>
+
             <!-- news -->
             <div class="main-news">
                 <!-- top -->
@@ -1038,25 +1795,39 @@
                 <!-- list -->
                 <div class="main-news__list">
                     <div class="row">
-                        <? for ($i=1; $i < 5; $i++): ?>
-                        <a href="event.php" title="Новость1" class="main-news__item">
+                        <? for ($i = 1; $i < 5; $i++): ?>
+                            <a href="event.php" title="Новость1" class="main-news__item">
                             <span class="main-news__pic">
-                                <img src="images/content/news/news<?=$i?>.jpg" title="Новость<?=$i?>" alt="Новость<?=$i?>" class="main-news__img">
+                                <img src="images/content/news/news<?= $i ?>.jpg" title="Новость<?= $i ?>"
+                                     alt="Новость<?= $i ?>" class="main-news__img">
                             </span>
 
-                            <span class="main-news__date">
+                                <span class="main-news__date">
                                 13.05.2018
                             </span>
-                            <span class="main-news__title">
+                                <span class="main-news__title">
                                 Новый ассортимент светодиодных ламп
                             </span>
-                        </a>
+                            </a>
                         <? endfor; ?>
                     </div>
                 </div>
                 <!-- END list -->
 
-
+                <!-- bottom -->
+                <div class="main-news__bottom">
+                    <div class="main-news__link">
+                        <a href="events.php" class="link" title="Смотреть все новости">
+                            <span class="link__text">
+                                Смотреть все новости
+                            </span>
+                            <svg class="link__svg">
+                                <use xlink:href="images/icons/sprite.svg#right"></use>
+                            </svg>
+                        </a>
+                    </div>
+                </div>
+                <!-- END bottom -->
             </div>
             <!-- END news -->
 

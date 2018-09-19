@@ -6,10 +6,16 @@
   @include md-block {
     padding: 80px 0;
   };
+  @include sm-block {
+    padding: 50px 0;
+  };
 }
 
 .switches {
   margin-bottom: 50px;
+  @include sm-block {
+    display: none;
+  };
   &__list {
     @include col;
     @include size(16);
@@ -80,12 +86,112 @@
 
 
 .tabs {
-
+  @include sm-block{
+    display: none;
+  };
 }
 .tab {
   display: none;
 
   &.active {
     display: block;
+  }
+}
+
+.acco {
+  display: none;
+
+  @include sm-block {
+    display: block;
+  };
+
+  &__item {
+    margin-bottom: 10px;
+    &:last-child {
+      margin-bottom: 0;
+    }
+
+    &.active {
+      .acco__content {
+        display: block;
+      }
+      .acco__button-wrapper {
+        background-color: #ffb30c;
+      }
+      .acco__button-svg {
+        fill: $bg;
+      }
+      .acco__button-text {
+        color: $bg;
+      }
+      .acco__button-line {
+        background: $bg;
+
+        &:last-child {
+          transform: rotate(0deg);
+        }
+      }
+    }
+  }
+
+  &__button {
+    border-radius: 25px;
+    border: 1px solid rgba(#303030,.5);
+    padding: 4px;
+    position: relative;
+
+
+
+
+    &-wrapper {
+      display: flex;
+      align-items: center;
+      border-radius: 20px;
+      background-color: #bdbdbd;
+      padding: 6px 20px;
+      transition: .3s;
+    }
+    &-svg {
+      width: 16px;
+      height: 16px;
+      fill: #767676;
+      margin-right: 10px;
+      transition: .3s;
+    }
+    &-text {
+      color: #767676;
+      font-size: 18px;
+      font-weight: 500;
+      transition: .3s;
+    }
+
+    &-symbol {
+      width: 16px;
+      height: 16px;
+      position: absolute;
+      top: 50%;
+      margin-top: -8px;
+      right: 20px;
+    }
+    &-line {
+      position: absolute;
+      top: 50%;
+      margin-top: -1px;
+      left: 50%;
+      margin-left: -8px;
+      width: 16px;
+      height: 2px;
+      background-color: $bg;
+      transition: .3s;
+
+      &:last-child {
+        transform: rotate(-90deg);
+      }
+    }
+  }
+
+  &__content {
+    display: none;
+    padding: 30px 0;
   }
 }

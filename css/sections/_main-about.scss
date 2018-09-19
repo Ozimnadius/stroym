@@ -1,15 +1,17 @@
 .main-about {
   //background: url(/images/bg/bg_about-main.jpg) center 0 no-repeat;
   padding: 80px 0 100px 0;
-  background:
-    url(/images/bg/main-about1.png) left 45px top -100px no-repeat,
-    url(/images/bg/main-about2.png) right 45px top -100px no-repeat,
-    url(/images/bg/bg_about-main.jpg) center 0 no-repeat/ cover fixed;
+  background: url(/images/bg/main-about1.png) left 45px top -100px no-repeat,
+  url(/images/bg/main-about2.png) right 45px top -100px no-repeat,
+  url(/images/bg/bg_about-main.jpg) center 0 no-repeat/ cover fixed;
   @include lg-block {
-    background:
-            url(/images/bg/bg_about-main.jpg) center 0 no-repeat/ cover fixed;
-  };
-
+    background: url(/images/bg/bg_about-main.jpg) center 0 no-repeat/ cover fixed;
+  }
+;
+  @include xs-block {
+    padding: 50px 0;
+  }
+;
 
   &__top {
     display: flex;
@@ -17,6 +19,24 @@
     align-items: center;
     justify-content: space-between;
     margin-bottom: 30px;
+    @include xs-block {
+      .main-about__link {
+        display: none;
+      }
+      justify-content: center;
+    }
+  ;
+  }
+
+  &__bottom {
+    display: none;
+    flex-wrap: wrap;
+    align-items: center;
+    justify-content: center;
+    @include xs-block {
+      display: flex;
+    }
+  ;
   }
 
   &__slider {
@@ -29,6 +49,11 @@
       padding: 0 22px;
       margin-bottom: 30px;
       position: relative;
+      @include xs-block {
+        padding: 0;
+        margin-bottom: 20px;
+      }
+    ;
     }
   }
   &__container {
@@ -47,12 +72,15 @@
     align-items: center;
     justify-content: flex-end;
     padding-right: 8px;
+    @include xs-block {
+      display: none;
+    }
+  ;
 
     .arrow {
       position: relative;
       z-index: 20;
     }
-
 
     &-wrap {
       position: absolute;
@@ -80,7 +108,10 @@
     align-items: center;
     justify-content: flex-start;
     padding-left: 8px;
-
+    @include xs-block {
+      display: none;
+    }
+  ;
 
     .arrow {
       position: relative;
@@ -109,14 +140,17 @@
     bottom: 0;
     left: 0;
     right: 0;
-    background:
-            url(/images/bg/main-about1.png) left 45px top -100px no-repeat,
-            url(/images/bg/main-about2.png) right 45px top -100px no-repeat,
-            url(/images/bg/bg_about-main.jpg) center 0 no-repeat/ cover fixed;
+    background: url(/images/bg/main-about1.png) left 45px top -100px no-repeat,
+    url(/images/bg/main-about2.png) right 45px top -100px no-repeat,
+    url(/images/bg/bg_about-main.jpg) center 0 no-repeat/ cover fixed;
   }
 
   &__pagination {
     position: relative;
+    @include xs-block {
+      margin-bottom: 15px;
+    }
+  ;
 
     span {
       width: 11px;
@@ -146,6 +180,14 @@
   overflow: hidden;
   box-sizing: border-box;
   padding: 60px;
+  @include xs-block {
+    padding: 25px;
+    text-align: center;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+  }
+;
 
   &__img {
     width: 82px;
@@ -166,6 +208,10 @@
   margin-top: 100px;
   border-top: 1px solid #9d9d9d;
   padding-top: 100px;
+  @include xs-block{
+    margin-top: 50px;
+    padding-top: 40px;
+  };
 
   &__top {
     display: flex;
@@ -173,18 +219,38 @@
     align-items: center;
     justify-content: space-between;
     margin-bottom: 20px;
+
+    @include xs-block {
+      .main-news__link {
+        display: none;
+      }
+    }
+  ;
   }
 
+  &__bottom {
+    display: flex;
+    justify-content: center;
+    .main-news__link {
+      display: none;
+      @include xs-block {
+        display: block;
+      }
+    ;
+    }
+  }
   &__item {
     @include col;
     @include size(6);
     @include size-md(12);
+    @include size-xs(24);
     display: flex;
     flex-direction: column;
 
     @include md-block {
       margin-bottom: 25px;
-    };
+    }
+  ;
   }
   &__pic {
     border-radius: 6px;

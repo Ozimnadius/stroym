@@ -19,6 +19,9 @@
   @include lg-block {
     height: 365px;
   };
+  @include sm-block {
+    height: 317px;
+  };
 
   &:hover {
     box-shadow: 0 9px 17px rgba(0, 0, 0, 0.4);
@@ -36,6 +39,9 @@
       width: 252px;
       height: 52px;
     };
+    @include sm-block {
+      display: none;
+    };
   }
   &__percent {
     position: absolute;
@@ -50,6 +56,24 @@
     font-size: 30px;
     font-weight: 700;
     background: rgba($bg, 0.2);
+    &-mobile {
+      display: none;
+      width: 204px;
+      height: 42px;
+      border-radius: 21px;
+      border: 2px dashed $bg;
+      background: rgba($bg, 0.2);
+      align-items: center;
+      justify-content: center;
+      color: #3c3b69;
+      font-size: 20px;
+      font-weight: 700;
+      margin-top: 10px;
+
+      @include sm-block {
+        display: flex;
+      };
+    }
     @include lg-block {
       top: 0;
       bottom: 0;
@@ -58,6 +82,9 @@
       font-size: 25px;
       padding: 0;
       justify-content: center;
+    };
+    @include sm-block{
+      display: none;
     };
   }
   &__pic {
@@ -81,7 +108,15 @@
       padding: 30px;
       font-size: 34px;
     };
+    @include sm-block {
+      font-size: 20px;
+      padding: 20px 15px;
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+    };
   }
+
 
   &-2 {
     @include size(12);
@@ -93,6 +128,7 @@
       padding: 20px 30px;
       background-position: right 0;
     };
+    @include size-sm(24);
 
     &__title {
       color: $bg;
@@ -110,6 +146,9 @@
       @include lg-block {
         font-size: 38px;
       };
+      @include sm-block {
+        font-size: 29px;
+      };
     }
 
   }
@@ -121,6 +160,10 @@
     padding: 45px 35px;
     @include lg-block {
       background-position: center 0;
+    };
+    @include size-sm(24);
+    @include sm-block {
+      padding: 20px;
     };
 
     &__percent {
@@ -136,6 +179,9 @@
         margin-top: 0;
         margin-bottom: 50px;
       };
+      @include sm-block {
+        font-size: 90px;
+      };
 
     }
 
@@ -150,6 +196,9 @@
         padding: 7px 15px;
         margin-bottom: 0;
       };
+      @include sm-block {
+        font-size: 16px;
+      };
     }
 
     &__title {
@@ -161,6 +210,9 @@
         order: -1;
         margin-top: auto;
       };
+      @include sm-block {
+        font-size: 18px;
+      };
     }
   }
 
@@ -170,6 +222,9 @@
     justify-content: space-between;
     align-items: flex-start;
     @include size-lg(12);
+    @include sm-block {
+      display: none;
+    };
 
     &__stick {
       border-radius: 22px;
@@ -239,6 +294,10 @@
     justify-content: space-between;
     padding: 40px 20px 30px 20px;
     @include size-lg(12);
+    @include size-sm(24);
+    @include sm-block {
+      padding: 20px;
+    };
 
     &__percent {
       border-radius: 26px;
@@ -248,6 +307,9 @@
       color: $bg;
       font-size: 28px;
       font-weight: 700;
+      @include sm-block {
+        font-size: 23px;
+      };
     }
 
     &__title {
@@ -257,6 +319,10 @@
       font-weight: 500;
       @include lg-block {
         font-size: 30px;
+      };
+      @include sm-block {
+        font-size: 24px;
+        line-height: 28px;
       };
     }
   }

@@ -15,6 +15,9 @@
             <!-- title -->
             <span class="action__title">
                Светодиодные лампы
+                <span class="action__percent-mobile">
+                    Скидки -15%
+                </span>
             </span>
             <!-- END title -->
         </a>

@@ -10,6 +10,10 @@
 .folders {
   padding: 25px 50px;
   padding-bottom: 0;
+  @include sm-block {
+    padding: 20px;
+    padding-bottom: 0;
+  };
 }
 
 .folder {
@@ -19,6 +23,7 @@
   flex-direction: column;
   margin-bottom: 40px;
   @include size-md(12);
+  @include size-sm(24);
 
   &__link {
     display: flex;

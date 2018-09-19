@@ -4,6 +4,9 @@
 
   &__top {
     padding: 25px 0 30px 0;
+    @include sm-block {
+      padding: 20px 0;
+    };
   }
 
   &__left, &__right {
@@ -23,11 +26,19 @@
   &__right {
     @include size-lg(14);
     @include size-md(16);
+    @include sm-block {
+      justify-content: flex-end;
+    };
   }
 
   &__logo {
+    @include xs-block {
+      width: 146px;
+      min-width: 146px;
+    };
     min-width: 179px;
     margin-right: 25px;
+
   }
 
   &__addr-search {
@@ -42,6 +53,9 @@
   &__contacts {
     display: flex;
     flex-direction: column;
+    @include sm-block{
+      display: none;
+    };
   }
 
   &__controls {
@@ -64,6 +78,9 @@
   &__bottom {
     background-color: $violet;
     padding: 15px 0;
+    @include sm-block {
+      padding: 0;
+    };
 
     &-left {
       @include col;
@@ -74,6 +91,13 @@
 
       @include size-md(8);
       @include offset-right-md(0);
+      @include sm-block {
+        padding: 10px 0;
+        margin-right: 0;
+        width: auto;
+        flex-grow: 1;
+        border-right: 1px solid $bg;
+      };
     }
 
     &-right {
@@ -85,6 +109,10 @@
         align-items: center;
         justify-content: space-between;
       };
+      @include sm-block {
+        width: auto;
+        justify-content: flex-end;
+      };
     }
 
     &-search {
@@ -93,6 +121,9 @@
         display: block;
         flex-grow: 1;
         margin-right: 52px;
+      };
+      @include sm-block {
+        display: none;
       };
     }
 
@@ -132,6 +163,10 @@
   @include md-block {
     width: 100%;
   };
+  @include xs-block {
+    padding: 7px 45px 7px 20px;
+    background-position: right 20px center;
+  };
 
   &__input {
     border: none;
@@ -152,6 +187,9 @@
     color: $bg;
     font-weight: 700;
     transition: .3s;
+    @include xs-block {
+      display: none;
+    };
 
     &:hover {
       background-color: #d99b27;
@@ -191,6 +229,13 @@
   margin-right: 20px;
   transition: .3s;
 
+  @include sm-block {
+    width: 39px;
+    height: 39px;
+    border: none;
+    padding: 0;
+  };
+
   &:hover {
     background-color: $violet;
     .enter__text {
@@ -206,11 +251,19 @@
     display: flex;
     align-items: center;
     justify-content: center;
+    @include sm-block {
+      width: 100%;
+      height: 100%;
+    };
   }
   &__svg {
     width: 18px;
     height: 17px;
     fill: $text;
+    @include sm-block {
+      width: 20px;
+      height: 20px;
+    };
   }
 
   &__text {
@@ -220,6 +273,9 @@
     white-space: nowrap;
     text-overflow: ellipsis;
     overflow: hidden;
+    @include sm-block {
+      display: none;
+    };
   }
 }
 
@@ -317,6 +373,9 @@
     justify-content: center;
     padding: 10px;
     position: relative;
+    @include sm-block {
+      width: 205px;
+    };
 
     &:after {
       content: '';
@@ -540,12 +599,20 @@
     display: flex;
     flex-direction: column;
     justify-content: space-between;
+    @include sm-block {
+      width: 34px;
+      height: 27px;
+    };
 
 
     &-line {
       height: 6px;
       width: 45px;
       background-color: $bg;
+      @include sm-block {
+        width: 34px;
+        height: 5px;
+      };
     }
   }
 }

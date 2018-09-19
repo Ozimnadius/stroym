@@ -16,6 +16,9 @@
       z-index: 10;
       bottom: -115px;
       left: -35px;
+      @include xs-block {
+        display: none;
+      };
     }
 
     .row {
@@ -29,6 +32,13 @@
     @include col;
     @include size(6);
     @include size-md(14);
+    @include size-xs(24);
+    @include xs-block {
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+      text-align: center;
+    };
   }
 
   &__logo {
@@ -84,6 +94,14 @@
     @include size(6);
     padding-top: 30px;
     @include size-md(10);
+    @include size-xs(24);
+    @include xs-block {
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+      text-align: center;
+      padding-top: 20px;
+    };
   }
 
   &__callorder {
@@ -99,6 +117,10 @@
     };
   }
 
+  &__contacts {
+
+  }
+
   &__contact {
     margin-bottom: 17px;
 
@@ -110,6 +132,9 @@
       font-weight: 700;
       display: flex;
       align-items: center;
+      @include xs-block {
+        justify-content: center;
+      };
     }
     &-svg {
       width: 20px;
@@ -119,6 +144,9 @@
     }
     &-text {
       padding-left: 30px;
+      @include xs-block {
+        padding-left: 0;
+      };
     }
   }
   /* END right */
@@ -133,12 +161,19 @@
       align-items: center;
       justify-content: space-between;
       position: relative;
+      @include xs-block {
+        flex-direction: column;
+        text-align: center;
+      };
     }
   }
 
   &__copy {
     margin: 0 auto;
     color: $bg;
+    @include xs-block {
+      margin-bottom: 20px;
+    };
   }
 
   &__vendor {
@@ -149,6 +184,9 @@
     transition: .3s;
     @include lg-block {
       right: 15px;
+    };
+    @include xs-block {
+      position: static;
     };
 
     &:hover {

@@ -54,7 +54,33 @@
     display: flex;
     align-items: center;
     justify-content: space-between;
-    padding: 13px 30px 13px 20px;
+    padding: 13px 20px;
+    position: relative;
+
+    @include xs-block {
+      flex-direction: column;
+      padding: 70px 20px  30px 20px;
+    };
+  }
+
+  &__middle {
+    display: none;
+    @include xs-block {
+      display: block;
+      padding: 25px 0;
+      border-bottom: 1px solid #e8e8e8;
+      .header__contacts {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+      }
+    };
+  }
+
+  &__addr {
+    @include xs-block {
+      margin-bottom: 10px;
+    };
   }
 
   &__close {
@@ -65,12 +91,30 @@
     display: flex;
     align-items: center;
     justify-content: center;
+    position: absolute;
+    top: 50%;
+    margin-right: -19px;
+    right: 30px;
+
+    @include xs-block {
+      top: 20px;
+      left: 50%;
+      margin-left: -19px;
+      margin-top: 0;
+    };
 
     &-svg {
       width: 18px;
       height: 18px;
       fill: $violet;
     }
+  }
+
+  &__search {
+    display: none;
+    @include xs-block{
+      display: block;
+    };
   }
 
   &__controls {
@@ -126,7 +170,11 @@
 
   &__row {
     display: flex;
+    flex-wrap: wrap;
     border-bottom: 1px solid $bg;
+    @include xs-block {
+      border: none;
+    };
 
     &:first-child {
       border-top: 1px solid $bg;
@@ -136,12 +184,23 @@
   &__item {
     width: 50%;
     display: flex;
+    flex-wrap: wrap;
     flex-direction: column;
     align-items: center;
     padding: 25px;
+    @include xs-block {
+      padding: 20px;
+      width: 100%;
+      flex-direction: row;
+      border-bottom: 1px solid $bg;
+    };
 
     &:nth-child(odd) {
       border-right: 1px solid $bg;
+      @include xs-block {
+        border-right: none;
+        border-bottom: 1px solid $bg;
+      };
     }
 
     &:hover {
@@ -164,6 +223,9 @@
       align-items: center;
       justify-content: center;
       margin-bottom: 10px;
+      @include xs-block {
+        margin-right: 15px;
+      };
     }
     &-pic {
       max-height: 100%;
