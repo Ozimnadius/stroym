@@ -825,6 +825,36 @@ $(function () {
             nextEl: '.popular__next .arrow',
             prevEl: '.popular__prev .arrow',
         },
+        pagination: {
+            el: '.popular__pagination',
+            clickable: true
+        },
+        breakpoints: {
+            // when window width is <= 575.99px
+            575.99: {
+                slidesPerView: 1,
+                spaceBetween: 30,
+                slidesPerColumn: 2
+            },
+            // when window width is <= 767.99px
+            767.99: {
+                slidesPerView: 2,
+                spaceBetween: 30,
+                slidesPerColumn: 1
+            },
+            // when window width is <= 991.99px
+            991.99: {
+                slidesPerView: 2,
+                spaceBetween: 30,
+                slidesPerColumn: 1
+            },
+            // when window width is <= 1199.99px
+            1199.99: {
+                slidesPerView: 3,
+                spaceBetween: 20,
+                slidesPerColumn: 1
+            }
+        }
     });
 
     var lookSwiper = new Swiper('.look__container', {
@@ -834,7 +864,36 @@ $(function () {
         navigation: {
             nextEl: '.look__next .arrow',
             prevEl: '.look__prev .arrow',
+        },pagination: {
+            el: '.look__pagination',
+            clickable: true
         },
+        breakpoints: {
+            // when window width is <= 575.99px
+            575.99: {
+                slidesPerView: 1,
+                spaceBetween: 30,
+                slidesPerColumn: 2
+            },
+            // when window width is <= 767.99px
+            767.99: {
+                slidesPerView: 2,
+                spaceBetween: 30,
+                slidesPerColumn: 1
+            },
+            // when window width is <= 991.99px
+            991.99: {
+                slidesPerView: 2,
+                spaceBetween: 30,
+                slidesPerColumn: 1
+            },
+            // when window width is <= 1199.99px
+            1199.99: {
+                slidesPerView: 3,
+                spaceBetween: 20,
+                slidesPerColumn: 1
+            }
+        }
     });
 
     var compareSwiper = new Swiper('.compare__container', {

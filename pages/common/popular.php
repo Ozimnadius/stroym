@@ -78,6 +78,8 @@
                     </svg>
                 </button>
             </div>
+
+            <div class="popular__pagination"></div>
         </div>
     </div>
 </div>

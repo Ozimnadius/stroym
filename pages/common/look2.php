@@ -79,6 +79,8 @@
                     </svg>
                 </button>
             </div>
+
+            <div class="look__pagination"></div>
         </div>
     </div>
 </div>

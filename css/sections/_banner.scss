@@ -209,6 +209,28 @@
   background-repeat: no-repeat;
   position: relative;
   padding-top: 55px;
+  background-size: auto 100%;
+  background-position: 0 center;
+
+
+  @include lg-block {
+    padding-top: 20px;
+    height: 265px;
+
+  };
+
+  @include md-block {
+
+  };
+
+  @include sm-block {
+    height: 204px;
+  };
+
+  &__container {
+    position: relative;
+    z-index: 30;
+  }
 
   &__bg {
     position: absolute;
@@ -219,18 +241,33 @@
     z-index: 20;
     background-position: center center;
     background-size: cover;
+
   }
 
   &__content {
     padding: 50px 45px;
-
     display: flex;
     flex-direction: column;
     align-items: flex-start;
+
+    @include lg-block {
+      padding: 0 40px;
+      padding-top: 20px;
+    };
+    @include xs-block {
+      padding: 0 20px;
+      padding-top: 40px;
+    };
   }
 
   &__img {
     margin-bottom: 60px;
+    @include lg-block {
+      margin-bottom: 0;
+    };
+    @include sm-block {
+      display: none;
+    };
   }
 
   &__svg {
@@ -243,12 +280,27 @@
 
     stroke: $bg;
     fill: transparent;
+
+    @include lg-block {
+      width: 122px;
+    };
+    @include xs-block {
+      width: 112px;
+      margin-left: 0;
+    };
   }
 
   &__desc {
     display: flex;
     align-items: flex-end;
     margin-bottom: 25px;
+    @include lg-block {
+      margin-top: 10px;
+      margin-bottom: 10px;
+    };
+    @include sm-block {
+      flex-direction: column;
+    };
   }
   &__percent {
     color: $bg;
@@ -256,16 +308,35 @@
     font-weight: 800;
     line-height: 1;
     margin-right: 20px;
+
+    @include lg-block{
+      font-size: 70px;
+    };
+    @include xs-block {
+      font-size: 51px;
+    };
   }
   &__text {
     font-size: 28px;
     font-weight: 500;
+    @include lg-block {
+      font-size: 18px;
+    };
+    @include xs-block {
+      font-size: 14px;
+    };
   }
 
   &__button {
     margin-left: 45px;
     padding-left: 30px;
     padding-right: 30px;
+    @include lg-block {
+      margin-left: 0;
+    };
+    @include sm-block {
+      display: none;
+    };
   }
 }
 

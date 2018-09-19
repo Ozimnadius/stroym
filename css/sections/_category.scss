@@ -16,4 +16,53 @@
   background: url(../images/bg/bg-tabs.jpg) center 0 no-repeat;
   background-attachment: fixed;
   background-size: 100% auto;
+
+  .cat {
+    background-size: cover;
+
+    &:nth-child(1) {
+      @include md-block {
+        order: 1;
+      };
+    }
+    &:nth-child(2) {
+      @include md-block {
+        order: 2;
+      };
+      @include size-md(12);
+      @include size-xs(24);
+    }
+    &:nth-child(3) {
+      @include md-block {
+        order: 3;
+      };
+      @include size-md(12);
+      @include size-xs(24);
+    }
+    &:nth-child(4) {
+      @include md-block {
+        order: 4;
+      };
+      @include size-md(24);
+    }
+    &:nth-child(5) {
+      @include md-block {
+        order: 5;
+      };
+      @include size-md(12);
+      @include size-xs(24);
+    }
+    &:nth-child(6) {
+      @include md-block {
+        display: block;
+        order: 6;
+      };
+      @include size-md(12);
+      @include xs-block {
+        display: none;
+      };
+    }
+
+
+  }
 }
