@@ -5,11 +5,18 @@
     border: 1px solid #cbcbcb;
     background-color: #fafafa;
     margin-bottom: 40px;
+    @include sm-block {
+      border: none;
+      margin-bottom: 30px;
+    };
   }
 
   &__head {
     border-bottom: 1px solid #cbcbcb;
     padding: 0 30px;
+    @include sm-block{
+      display: none;
+    };
   }
 
   &__col {
@@ -18,15 +25,30 @@
     }
     &-product {
       @include size(10);
+      @include size-lg(14);
+      @include size-sm(24);
     }
     &-controls {
       @include size(4);
+      @include size-lg(14);
+      @include lg-block{
+        order: 1;
+      };
+      @include size-sm(24);
     }
     &-count {
       @include size(6);
+      @include size-sm(24);
     }
     &-delete {
       @include size(4);
+      @include sm-block {
+        margin: 0;
+        width: auto;
+        position: absolute;
+        top: 20px;
+        right: 20px;
+      };
     }
   }
 
@@ -35,6 +57,16 @@
     padding: 25px 0;
     text-align: center;
 
+    @include lg-block {
+      padding: 12px 0;
+    };
+
+    &.basket__col-controls {
+      @include lg-block {
+        display: none;
+      };
+    }
+
     &_left {
       text-align: left;
     }
@@ -42,6 +74,12 @@
 
   &__body {
     padding: 30px;
+    @include lg-block {
+      padding: 20px;
+    };
+      @include sm-block {
+        padding: 0;
+      };
   }
 
   &__item {
@@ -50,6 +88,11 @@
     background-color: $bg;
     margin-bottom: 20px;
     padding: 25px 40px;
+    position: relative;
+
+    @include lg-block {
+      padding: 25px 30px;
+    };
 
     &:last-child {
       margin-bottom: 0;
@@ -63,6 +106,13 @@
   &__product {
     display: flex;
     align-items: center;
+    @include sm-block {
+      justify-content: center;
+      margin-bottom: 20px;
+    };
+    @include xs-block {
+      flex-direction: column;
+    };
 
     &-left {
       margin-right: 25px;
@@ -82,12 +132,27 @@
   &__title {
     font-weight: 700;
     margin-bottom: 15px;
+    @include xs-block {
+      margin-bottom: 0;
+      text-align: center;
+    };
   }
   &__desc {
     font-size: 14px;
+    @include xs-block {
+      text-align: center;
+    };
   }
 
   &__controls {
+    @include lg-block {
+      display: flex;
+      justify-content: center;
+      margin-top: 12px;
+    };
+    @include sm-block {
+      margin-top: 0;
+    };
     .product__control {
       background: $bg;
     }
@@ -97,6 +162,9 @@
     display: flex;
     align-items: center;
     justify-content: center;
+    @include sm-block {
+      margin-bottom: 20px;
+    };
   }
 
   &__delete {
@@ -118,6 +186,14 @@
     font-size: 24px;
     font-weight: 700;
     transition: .3s;
+
+    @include sm-block {
+      width: 280px;
+      height: 54px;
+      border-radius: 27px;
+      font-size: 20px;
+      margin: 0 auto;
+    };
 
     &:hover {
       background-color: $violet;
