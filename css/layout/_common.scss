@@ -369,6 +369,9 @@
   display: flex;
   align-items: center;
   margin-left: 30px;
+  @include sm-block {
+    display: none;
+  };
 
   &__button {
     width: 24px;

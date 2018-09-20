@@ -412,6 +412,25 @@ $(function () {
 
         filter.toggleClass('open');
     });
+
+    $('.filters__open').on('click', function (e) {
+        let button = $(this),
+            filters = $('.category__filters');
+
+        filters.addClass('active');
+    });
+
+    $('.filters__close').on('click', function (e) {
+        let button = $(this),
+            filters = $('.category__filters');
+
+        filters.removeClass('active');
+    });
+    $('.category__filters').on('click',function () {
+        if($(e.target).closest('.filters').length == 0) {
+            $(this).removeClass('active');
+        }
+    });
     /*END FILTERS*/
 
     /*CABINET*/

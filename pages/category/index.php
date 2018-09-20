@@ -15,6 +15,17 @@
                 </div>
                 <!-- END title -->
 
+                <button class="filters__open">
+                    <span class="filters__open-img">
+                        <svg class="filters__open-svg">
+                            <use xlink:href="images/icons/sprite.svg#filter"></use>
+                        </svg>
+                    </span>
+                    <span class="filters__open-text">
+                        Фильтр
+                    </span>
+                </button>
+
                 <? include 'pages/common/sort.php' ?>
 
                 <? include 'pages/common/type.php' ?>

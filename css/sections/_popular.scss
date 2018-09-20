@@ -11,6 +11,10 @@
     @include lg-block {
       padding-right: 120px;
     };
+    @include sm-block {
+      font-size: 24px;
+      padding-right: 0;
+    };
   }
 
   .item {

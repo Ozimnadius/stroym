@@ -1,6 +1,13 @@
 <!-- filters -->
 <div class="filters">
     <form action="" method="post" class="filters__form">
+
+        <div class="filters__close">
+            <svg class="filters__close-svg">
+                <use xlink:href="images/icons/sprite.svg#close"></use>
+            </svg>
+        </div>
+
         <div class="filters__list">
             <div class="filter open">
                 <div class="filter__title">
@@ -260,9 +267,12 @@
             </div>
         </div>
 
-        <button class="filters__submit button">
-            <span class="button__text">Применить фильтр</span>
-        </button>
+        <div class="filters__buttons">
+            <button class="filters__submit button">
+                <span class="button__text">Применить фильтр</span>
+            </button>
+        </div>
+
     </form>
 </div>
 <!-- END filters -->

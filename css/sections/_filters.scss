@@ -1,30 +1,196 @@
 .filters {
+  @include lg-block {
+    max-width: 474px;
+    width: 100%;
+    margin-top: 680px;
+  };
+  @include sm-block {
+    margin-top: 630px;
+  };
+
+  &__open {
+    width: 190px;
+    height: 43px;
+    border-radius: 22px;
+    background-color: $yellow;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    padding: 3px 4px;
+    position: relative;
+    @include sm-block {
+      order: 1;
+      width: 100%;
+    };
+
+
+    &-img {
+      position: absolute;
+      top: 3px;
+      left: 3px;
+      width: 37px;
+      height: 37px;
+      background-color: $bg;
+      border-radius: 50%;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+    }
+    &-svg {
+      width: 20px;
+      height: 20px;
+      fill: $yellow;
+    }
+
+    &-text {
+      color: $bg;
+      font-size: 20px;
+      font-weight: 500;
+    }
+  }
+
+  &__form {
+    position: relative;
+    @include lg-block {
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+    }
+  ;
+  }
+
+  &__close {
+    width: 48px;
+    height: 48px;
+    background-color: $bg;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    border-radius: 50%;
+    position: absolute;
+    z-index: 20;
+    left: 50%;
+    margin-left: -24px;
+    top: -28px;
+    cursor: pointer;
+    display: none;
+    @include lg-block {
+      display: flex;
+    };
+
+    &-svg {
+      width: 22px;
+      height: 22px;
+      fill: $violet;
+    }
+  }
 
   &__list {
-    border-radius: 6px;
-    background-color: $grey-white;
-    border: 1px solid #e8e8e8;
-    overflow: hidden;
     margin-bottom: 30px;
+    border-radius: 6px;
+    overflow: hidden;
+    border-bottom: 1px solid #cbcbcb;
+    @include lg-block {
+      width: 100%;
+      overflow: visible;
+      border-bottom: none;
+      margin-bottom: 0;
+    } ;
+  }
+
+  &__buttons {
+    width: 100%;
+    display: flex;
+    justify-content: center;
+
+    @include lg-block {
+      padding: 30px 0;
+      background-color: $bg;
+      border-radius: 0 0 6px 6px;
+    };
   }
 
   &__submit {
     width: 100%;
+    @include lg-block {
+      max-width: 275px;
+    }
+  ;
   }
 }
 
 .filter {
+  border-left: 1px solid #cbcbcb;
+  border-right: 1px solid #cbcbcb;
+
+  @include lg-block {
+    border-right: none;
+    border-left: none;
+  }
+;
 
   &:first-child {
+    border-radius: 6px 6px 0 0;
+    border-top: 1px solid #cbcbcb;
+    overflow: hidden;
+
+    @include lg-block {
+      border-radius: 0;
+      overflow: visible;
+      border-top: none;
+    }
+  ;
+
     .filter__title {
-      border-top: 1px solid transparent;
+
+      @include lg-block {
+        border-radius: 6px 6px 0 0;
+        background: transparent url("../images/bg/bf-filter.png") center 0 no-repeat;
+        background-size: cover;
+        border-top: none;
+      }
+    ;
+
     }
   }
 
+  &:last-child {
+    border-radius: 0 0 6px 6px;
+    border-bottom: none;
+    overflow: hidden;
+    .filter__title {
+      border-bottom: none;
+
+      @include lg-block {
+        border-bottom: 1px solid #cbcbcb;
+      };
+    }
+    @include lg-block {
+      border-bottom: none;
+      border-radius: 0;
+      border-bottom: 1px solid #cbcbcb;
+    }
+  ;
+  }
+
   &.open {
+
+    @include lg-block {
+      &.filter {
+        &:first-child {
+          .filter__title {
+            background: transparent url("../images/bg/bf-filter.png") center 0 no-repeat;
+            background-size: cover;
+          }
+        }
+      }
+    }
+  ;
+
     .filter {
+
       &__title {
-        background: transparent;
+        background: $grey-white;
         &-svg {
           transform: rotate(0deg);
         }
@@ -44,7 +210,6 @@
         }
       }
     }
-
 
   }
 

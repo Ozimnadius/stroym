@@ -51,6 +51,8 @@
   overflow: hidden;
   margin-bottom: 30px;
   transition: .3s;
+  @include size-md(12);
+  @include size-xs(24);
 
   &_6 {
     @include size(6);
