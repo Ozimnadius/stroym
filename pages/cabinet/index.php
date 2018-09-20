@@ -111,6 +111,18 @@
                                                     <!-- fields -->
                                                     <div class="personal__fields">
                                                         <div class="personal__block">
+
+                                                            <div class="personal__photo personal__photo_md">
+                                                                <label class="personal__photo-label">
+                                                                    <img class="personal__photo-img"
+                                                                         src="images/icons/photo.png"
+                                                                         alt="">
+                                                                    <input type="file" name="photo"
+                                                                           class="personal__photo-input"
+                                                                           accept="image/jpeg,image/png,image/gif,image/svg+xml">
+                                                                </label>
+                                                            </div>
+
                                                             <label class="personal__field">
                                                                 <span class="personal__label"> Ф.И.О.</span>
                                                                 <input type="text" name="name"
@@ -170,7 +182,7 @@
 
                                     <form action="" method="post" class="personal__form personal__form_password"
                                           enctype="multipart/form-data">
-                                        <div class="personal__title">
+                                        <div class="personal__title cabinet__title">
                                             Смена пароля
                                         </div>
 
@@ -199,7 +211,7 @@
 
                                             <button type="submit" class="button personal__submit">
                                             <span class="button__text">
-                                                 Сохранить изменения
+                                                 Сохранить пароль
                                             </span>
                                             </button>
 
@@ -490,26 +502,91 @@
                                                                             </a>
                                                                         </div>
                                                                     </div>
-                                                                    <div class="compare__td compare__cell">Voltega</div>
-                                                                    <div class="compare__td compare__cell">Германия
-                                                                    </div>
-                                                                    <div class="compare__td compare__cell">Simple</div>
-                                                                    <div class="compare__td compare__cell">4711</div>
-                                                                    <div class="compare__td compare__cell">85</div>
-                                                                    <div class="compare__td compare__cell">50</div>
-                                                                    <div class="compare__td compare__cell">5,5</div>
-                                                                    <div class="compare__td compare__cell">5,5</div>
-                                                                    <div class="compare__td compare__cell">2,8</div>
                                                                     <div class="compare__td compare__cell">
+                                                                        <div class="compare__td-title">
+                                                                            Бренд
+                                                                        </div>
+                                                                        Voltega
+                                                                    </div>
+                                                                    <div class="compare__td compare__cell">
+                                                                        <div class="compare__td-title">
+                                                                            Страна
+                                                                        </div>
+                                                                        Германия
+                                                                    </div>
+                                                                    <div class="compare__td compare__cell">
+                                                                        <div class="compare__td-title">
+                                                                            Коллекция
+                                                                        </div>
+                                                                        Simple</div>
+                                                                    <div class="compare__td compare__cell">
+                                                                        <div class="compare__td-title">
+                                                                            Артикул
+                                                                        </div>
+                                                                        4711</div>
+                                                                    <div class="compare__td compare__cell">
+                                                                        <div class="compare__td-title">
+                                                                            Высота, мм
+                                                                        </div>
+                                                                        85</div>
+                                                                    <div class="compare__td compare__cell">
+                                                                        <div class="compare__td-title">
+                                                                            Диаметр, мм
+                                                                        </div>
+                                                                        50</div>
+                                                                    <div class="compare__td compare__cell">
+                                                                        <div class="compare__td-title">
+                                                                            Мощность лампы, W
+                                                                        </div>
+                                                                        5,5</div>
+                                                                    <div class="compare__td compare__cell">
+                                                                        <div class="compare__td-title">
+                                                                            Общая мощность, W
+                                                                        </div>
+                                                                        5,5</div>
+                                                                    <div class="compare__td compare__cell">
+                                                                        <div class="compare__td-title">
+                                                                            Площадь
+                                                                            освещения, м2
+                                                                        </div>
+                                                                        2,8</div>
+                                                                    <div class="compare__td compare__cell">
+                                                                        <div class="compare__td-title">
+                                                                            Тип лампочки
+                                                                        </div>
                                                                         Светодиодная
                                                                     </div>
-                                                                    <div class="compare__td compare__cell">480</div>
-                                                                    <div class="compare__td compare__cell">Е14</div>
-                                                                    <div class="compare__td compare__cell">220</div>
-                                                                    <div class="compare__td compare__cell">Пластиковые
+                                                                    <div class="compare__td compare__cell">
+                                                                        <div class="compare__td-title">
+                                                                            Световой поток, lm
+                                                                        </div>
+                                                                        480</div>
+                                                                    <div class="compare__td compare__cell">
+                                                                        <div class="compare__td-title">
+                                                                            Тип цоколя
+                                                                        </div>
+                                                                        Е14</div>
+                                                                    <div class="compare__td compare__cell">
+                                                                        <div class="compare__td-title">
+                                                                            Напряжение, V
+                                                                        </div>
+                                                                        220</div>
+                                                                    <div class="compare__td compare__cell">
+                                                                        <div class="compare__td-title">
+                                                                            Виды материалов
+                                                                        </div>
+                                                                        Пластиковые
                                                                     </div>
-                                                                    <div class="compare__td compare__cell">Металл</div>
-                                                                    <div class="compare__td compare__cell">2 года</div>
+                                                                    <div class="compare__td compare__cell">
+                                                                        <div class="compare__td-title">
+                                                                            Цвет арматуры
+                                                                        </div>
+                                                                        Металл</div>
+                                                                    <div class="compare__td compare__cell">
+                                                                        <div class="compare__td-title">
+                                                                            Гарантия
+                                                                        </div>
+                                                                        2 года</div>
                                                                 </div>
                                                                 <button class="compare__button button button_yellow jsPopupOpen"
                                                                         data-action="callorder">
@@ -551,6 +628,13 @@
 
                         </div>
                         <!-- END tabs -->
+
+                        <!-- controls -->
+                        <div class="cabinet__controls cabinet__controls_lg">
+                            <a href="" class="cabinet__controls_exit">Выйти из аккаунта</a> / <a href=""
+                                                                                                 class="cabinet__controls_delete">Удалить</a>
+                        </div>
+                        <!-- END controls -->
                     </div>
                     <!-- END right -->
 

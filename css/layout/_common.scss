@@ -274,6 +274,10 @@
   align-items: center;
   margin-bottom: 30px;
 
+  @include sm-block {
+    margin-bottom: 20px;
+  };
+
   &_white {
     .breadcrumb {
       color: $bg;
@@ -361,7 +365,6 @@
     border-bottom: 1px solid $violet;
     width: 100%;
     padding-bottom: 13px;
-    margin-bottom: 25px;
   };
 }
 
@@ -571,6 +574,7 @@
   @include sm-block {
     flex-wrap: wrap;
     margin-left: 0;
+    margin-top: 25px;
   };
   @include xs-block {
     align-items: flex-start;

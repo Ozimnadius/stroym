@@ -498,7 +498,7 @@ $(function () {
     setHeight();
 
     function setHeight() {
-        if ($('#tab4').hasClass('active')) {
+        if ($('#tab4').hasClass('active') && $(window).width() > 567.99) {
             var arrayHeight = {};
 
             $('.compare__col').each(function (indx, elem) {
@@ -922,6 +922,12 @@ $(function () {
             nextEl: '.compare__next .arrow',
             prevEl: '.compare__prev .arrow',
         },
+        breakpoints: {
+            767.99: {
+                slidesPerView: 1,
+                spaceBetween: 10,
+            },
+        }
     });
 
     var certsSwiper = new Swiper('.certs__container', {

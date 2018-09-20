@@ -13,12 +13,16 @@
     height: 43px;
     border-radius: 22px;
     background-color: $yellow;
-    display: flex;
+    display: none;
     align-items: center;
     justify-content: center;
     padding: 3px 4px;
     position: relative;
+    @include lg-block {
+      display: flex;
+    };
     @include sm-block {
+
       order: 1;
       width: 100%;
     };
