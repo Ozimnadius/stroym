@@ -9,8 +9,8 @@
   cursor: pointer;
   transition: .3s;
   @include xs-block {
-    height: 30px;
-    border-radius: 15px;
+    //height: 30px;
+    //border-radius: 15px;
   };
 
   &:hover {
@@ -22,7 +22,7 @@
     font-weight: 700;
     transition: .3s;
     @include xs-block {
-      font-size: 14px;
+      //font-size: 14px;
     };
   }
 
@@ -469,6 +469,11 @@
     color: rgba($text, .6);
     line-height: 1;
 
+    @include sm-block {
+      flex-basis: auto;
+      flex-grow: 1;
+    };
+
     &:after {
       content: '';
       background: url("/images/icons/line.png") 0 0 repeat-x;
@@ -492,6 +497,9 @@
 
   &__title {
     margin-bottom: 5px;
+    @include xs-block {
+      text-align: center;
+    };
   }
 
   &__input {

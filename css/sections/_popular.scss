@@ -2,6 +2,10 @@
   background: $violet;
   padding-top: 70px;
   padding-bottom: 100px;
+  @include lg-block {
+    padding-top: 60px;
+    padding-bottom: 40px;
+  };
 
   &__title {
     color: $bg;

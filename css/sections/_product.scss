@@ -6,6 +6,15 @@
     @include size(12);
     padding: 0 70px;
     position: relative;
+    @include size-lg(24);
+    @include lg-block {
+      margin-bottom: 55px;
+    }
+  ;
+    @include xs-block {
+      padding: 0;
+    }
+  ;
   }
 
   &__avaible {
@@ -21,14 +30,18 @@
   }
 
   &__img {
-    height: 390px;
-    display: flex;
-    align-items: center;
-    justify-content: center;
     margin-bottom: 30px;
   }
   &__fancybox {
     outline: none;
+    height: 390px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    @include lg-block {
+      height: 330px;
+    }
+  ;
   }
   &__pic {
     display: block;
@@ -37,6 +50,11 @@
 
   &__previews {
     display: flex;
+
+    @include lg-block {
+      justify-content: center;
+    }
+  ;
   }
   &__preview {
     width: 120px;
@@ -48,6 +66,12 @@
     margin-right: 30px;
     outline: none;
     transition: .3s;
+    @include xs-block {
+      width: 80px;
+      height: 80px;
+      margin-right: 20px;
+    }
+  ;
 
     &.active {
       box-shadow: 0 9px 12px rgba(0, 0, 0, 0.2);
@@ -69,6 +93,11 @@
     outline: none;
     position: relative;
     cursor: pointer;
+    @include xs-block {
+      width: 80px;
+      height: 80px;
+    }
+  ;
 
     &:after {
       content: url(../images/icons/youtube.png);
@@ -88,6 +117,7 @@
   &__right {
     @include col;
     @include size(12);
+    @include size-lg(24);
   }
 
   &__title {
@@ -95,6 +125,10 @@
     font-size: 30px;
     font-weight: 700;
     margin-bottom: 20px;
+    @include xs-block {
+      font-size: 20px;
+    }
+  ;
   }
 
   &__chars {
@@ -137,6 +171,13 @@
     justify-content: space-between;
     border-bottom: 2px solid $yellow;
     margin-bottom: 20px;
+    @include lg-block {
+      justify-content: flex-start;
+    }
+    @include xs-block {
+      justify-content: space-between;
+    };
+  ;
   }
   &__switch {
     color: rgba($text, .4);
@@ -145,6 +186,20 @@
     transition: .3s;
     border-bottom: 6px solid transparent;
     padding: 15px 0;
+    @include lg-block {
+      margin-right: 100px;
+    };
+
+    @include sm-block {
+      margin-right: 50px;
+    };
+    @include xs-block {
+      margin-right: 0;
+      font-size: 15px;
+    };
+    &:last-child {
+      margin-right: 0;
+    }
 
     &.active {
       color: $yellow;
@@ -170,11 +225,26 @@
     display: flex;
     align-items: center;
     flex-wrap: wrap;
+    @include sm-block {
+      flex-direction: column;
+    }
+  ;
   }
 
   &__callorder {
     padding: 0 40px;
     margin-right: 20px;
+    @include sm-block {
+      margin-bottom: 20px;
+    }
+  ;
+  }
+
+  &__add {
+    @include sm-block {
+      margin-bottom: 20px;
+    }
+  ;
   }
 
   &__controls {
@@ -272,17 +342,46 @@
     border: 1px solid $yellow;
     padding: 25px 30px;
     margin-bottom: 30px;
+    @include sm-block {
+      padding: 25px 20px;
+    }
+  ;
 
     &-top {
       display: flex;
       flex-wrap: wrap;
       justify-content: space-between;
       margin-bottom: 6px;
+      @include xs-block {
+        justify-content: center;
+        margin-bottom: 20px;
+      }
+    ;
     }
     &-title {
       font-size: 22px;
       font-weight: 500;
       line-height: 1;
+      @include xs-block {
+        text-align: center;
+        font-size: 20px;
+      }
+    ;
+    }
+    &-ratings {
+      @include xs-block {
+        display: none;
+      }
+    ;
+      &-xs {
+        display: none;
+        justify-content: center;
+        @include xs-block {
+          display: flex;
+          margin-bottom: 25px;
+        }
+      ;
+      }
     }
 
     &-bottom {
@@ -292,6 +391,11 @@
       display: flex;
       flex-direction: column;
       margin-bottom: 25px;
+      @include xs-block {
+        font-size: 14px;
+        margin-bottom: 15px;
+      }
+    ;
     }
     &-input {
       height: 87px;
@@ -302,11 +406,20 @@
       margin: 5px 0;
       padding: 10px 15px;
       font-size: 14px;
+      @include xs-block {
+        height: 138px;
+      }
+    ;
     }
 
     &-buttons {
       display: flex;
       flex-wrap: wrap;
+      @include xs-block {
+        flex-direction: column;
+        align-items: center;
+      }
+    ;
     }
     &-submit {
       width: 158px;
@@ -319,6 +432,11 @@
       font-weight: 700;
       transition: .3s;
       margin-right: 20px;
+      @include xs-block {
+        margin-right: 0;
+        margin-bottom: 20px;
+      }
+    ;
 
       &:hover {
         background-color: $violet;
@@ -382,6 +500,10 @@
   &__rating {
     display: flex;
     margin-bottom: 25px;
+    @include xs-block {
+      justify-content: center;
+    }
+  ;
   }
   &__star {
     width: 20px;
@@ -400,12 +522,20 @@
   &__text {
     font-size: 14px;
     margin-bottom: 17px;
+    @include xs-block {
+      text-align: center;
+    }
+  ;
   }
 
   &__bottom {
     display: flex;
     align-items: center;
     justify-content: space-between;
+    @include xs-block {
+      flex-direction: column;
+    }
+  ;
   }
 
   &__author {
@@ -445,7 +575,7 @@
     &-svg {
       width: 16px;
       height: 15px;
-      fill: rgba($text,.3);
+      fill: rgba($text, .3);
       margin-left: 5px;
       position: relative;
       cursor: pointer;

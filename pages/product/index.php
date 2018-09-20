@@ -404,6 +404,32 @@
                                             </label>
                                             <!-- END label -->
 
+                                            <!-- ratings -->
+                                            <div class="coms__form-ratings coms__form-ratings-xs">
+                                                <!-- rating -->
+                                                <div class="rating">
+
+                                                    <div class="rating__title">
+                                                        Ваша оценка
+                                                    </div>
+
+                                                    <div class="rating__wrapper">
+                                                        <? for ($i = 5; $i > 0; $i--): ?>
+                                                            <input type="radio" class="rating__input"
+                                                                   id="rating-<?= $i ?>"
+                                                                   name="rating" value="<?= $i ?>">
+                                                            <label for="rating-<?= $i ?>" class="rating__star">
+                                                                <svg class="rating__star-svg" viewBox="0 0 49.94 49.94">
+                                                                    <use xlink:href="images/icons/sprite.svg#star"></use>
+                                                                </svg>
+                                                            </label>
+                                                        <? endfor; ?>
+                                                    </div>
+                                                </div>
+                                                <!-- END rating -->
+                                            </div>
+                                            <!-- END ratings -->
+
                                             <!-- buttons -->
                                             <div class="coms__form-buttons">
                                                 <input type="submit" value="Отправить" class="coms__form-submit">
