@@ -120,4 +120,7 @@ blockquote {
   letter-spacing: 0.36px;
   padding-left: 20px;
   padding-right: 100px;
+  @include xs-block {
+    padding-right: 0;
+  };
 }

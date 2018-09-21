@@ -1,9 +1,18 @@
 .partners {
 
-  &__left,&__right {
+  &__left, &__right {
     @include col;
     @include size(12);
+    @include size-md(24);
   }
+
+  &__left {
+    @include md-block {
+      margin-bottom: 35px;
+    }
+  ;
+  }
+
 }
 
 .partner {
@@ -18,5 +27,19 @@
   justify-content: center;
   margin-bottom: 30px;
   padding: 20px;
+  @include size-md(8);
+  @include md-block {
+    height: 105px;
+  };
+  @include size-xs(12);
+  @include xs-block {
+    height: 72px;
+    padding: 10px;
+    margin-bottom: 20px;
+  };
+
+  &__img {
+    max-height: 100%;
+  }
 }
 
