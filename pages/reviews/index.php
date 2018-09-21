@@ -21,7 +21,7 @@
             <div class="reviews">
                 <!-- list -->
                 <div class="reviews__list">
-                    <? for ($i=1;$i<6;$i++): ?>
+                    <? for ($i = 1; $i < 6; $i++): ?>
                         <div class="review">
                             <div class="row">
                                 <!-- left -->
@@ -59,9 +59,12 @@
 
                                     <!-- text -->
                                     <div class="review__text">
-                                        Долго выбирала хрустальную люстру и бра в интернете. Но мне помогла менеджер Елизавета, очень вежоиво
-                                        и заинтересованно меня выслушала,грамотно дала нужный совет. Спасибо огромное Вам Елизавета!!! Спасибо Кире !!!
-                                        Хочу выразить благодарность Александру, быстро доставил и установил! Очень довольна,советую всем обращаться в этот интернет магазин СПАСИБО!!!
+                                        Долго выбирала хрустальную люстру и бра в интернете. Но мне помогла менеджер
+                                        Елизавета, очень вежоиво
+                                        и заинтересованно меня выслушала,грамотно дала нужный совет. Спасибо огромное
+                                        Вам Елизавета!!! Спасибо Кире !!!
+                                        Хочу выразить благодарность Александру, быстро доставил и установил! Очень
+                                        довольна,советую всем обращаться в этот интернет магазин СПАСИБО!!!
                                     </div>
                                     <!-- END text -->
 
@@ -80,7 +83,7 @@
                                             </div>
                                             <div class="review__hands">
                                                 <!-- like -->
-                                                <button role="button" class="review__hand jsVote" data-id="<?=$i?>">
+                                                <button role="button" class="review__hand jsVote" data-id="<?= $i ?>">
                                                     <span class="review__hand-int jsVote__int">1</span>
                                                     <svg class="review__hand-svg" viewBox="0 0 49.94 49.94">
                                                         <use xlink:href="images/icons/sprite.svg#like"></use>
@@ -89,7 +92,8 @@
                                                 <!-- END like -->
 
                                                 <!-- dislike -->
-                                                <button role="button" class="review__hand review__hand_dislike jsVote" data-id="<?=$i?>">
+                                                <button role="button" class="review__hand review__hand_dislike jsVote"
+                                                        data-id="<?= $i ?>">
                                                     <span class="review__hand-int jsVote__int">3</span>
                                                     <svg class="review__hand-svg" viewBox="0 0 49.94 49.94">
                                                         <use xlink:href="images/icons/sprite.svg#dislike"></use>
@@ -116,7 +120,7 @@
                 <div class="reviews__pagination">
                     <div class="row">
                         <div class="reviews__pagination-wrapper">
-                            <? include 'pages/common/pagination.php'?>
+                            <? include 'pages/common/pagination.php' ?>
                         </div>
                     </div>
                 </div>
@@ -132,6 +136,29 @@
                         </div>
                         <!-- END title -->
 
+                        <!-- rating -->
+                        <div class="reviews__rating">
+                            <div class="rating">
+
+                                <div class="rating__title">
+                                    Ваша оценка
+                                </div>
+
+                                <div class="rating__wrapper">
+                                    <? for ($i = 5; $i > 0; $i--): ?>
+                                        <input type="radio" class="rating__input"
+                                               id="rating-<?= $i ?>"
+                                               name="rating" value="<?= $i ?>">
+                                        <label for="rating-<?= $i ?>" class="rating__star">
+                                            <svg class="rating__star-svg" viewBox="0 0 49.94 49.94">
+                                                <use xlink:href="images/icons/sprite.svg#star"></use>
+                                            </svg>
+                                        </label>
+                                    <? endfor; ?>
+                                </div>
+                            </div>
+                        </div>
+                        <!-- END rating -->
                     </div>
                     <!-- END top -->
 
@@ -144,7 +171,7 @@
                             <div class="reviews__block">
                                 <input type="email" name="email" class="reviews__input" placeholder="Ваш e-mail">
                             </div>
-                            <div class="reviews__block">
+                            <div class="reviews__block reviews__block_mdn">
                                 <!-- rating -->
                                 <div class="rating">
 
@@ -177,6 +204,30 @@
                             Все отзывы проходят модерацию
                         </label>
                         <!-- END label -->
+
+                        <!-- rating -->
+                        <div class="reviews__rating reviews__rating_xs">
+                            <div class="rating">
+
+                                <div class="rating__title">
+                                    Ваша оценка
+                                </div>
+
+                                <div class="rating__wrapper">
+                                    <? for ($i = 5; $i > 0; $i--): ?>
+                                        <input type="radio" class="rating__input"
+                                               id="rating-<?= $i ?>"
+                                               name="rating" value="<?= $i ?>">
+                                        <label for="rating-<?= $i ?>" class="rating__star">
+                                            <svg class="rating__star-svg" viewBox="0 0 49.94 49.94">
+                                                <use xlink:href="images/icons/sprite.svg#star"></use>
+                                            </svg>
+                                        </label>
+                                    <? endfor; ?>
+                                </div>
+                            </div>
+                        </div>
+                        <!-- END rating -->
 
                         <!-- buttons -->
                         <div class="reviews__form-buttons">
