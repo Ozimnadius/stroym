@@ -138,6 +138,21 @@
     @include col;
     @include size(12);
     position: relative;
+    @include size-lg(14);
+    @include size-md(24);
+    @include md-block {
+      max-height: 550px;
+      overflow: hidden;
+      margin-bottom: 35px;
+    };
+    @include sm-block {
+      max-height: 330px;
+    };
+  }
+
+  &__img {
+    width: 100%;
+
   }
 
   &__date {
@@ -156,5 +171,7 @@
   &__right {
     @include col;
     @include size(12);
+    @include size-lg(10);
+    @include size-md(24);
   }
 }
