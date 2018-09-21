@@ -29,7 +29,10 @@
                                class="events__item-img">
                                 <img src="images/content/events/events1.jpg"
                                      title="В американском аэропорту все лампы заменят на LED"
-                                     alt="В американском аэропорту все лампы заменят на LED" class="events__item-pic">
+                                     alt="В американском аэропорту все лампы заменят на LED" class="events__item-pic events__item-pic_first">
+                                <img src="images/content/events/events1-md.jpg"
+                                     title="В американском аэропорту все лампы заменят на LED"
+                                     alt="В американском аэропорту все лампы заменят на LED" class="events__item-pic events__item-pic_md">
                                 <button class="events__button">
                                     <span class="events__button-text">
                                         Подробнее

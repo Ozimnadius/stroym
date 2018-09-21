@@ -19,6 +19,7 @@
 
     &_2 {
       @include size(12);
+      @include size-md(24);
 
       .events__item-desc {
         padding-right: 30px;
@@ -26,14 +27,38 @@
     }
 
     &-img {
-      height: 316px;
+      max-height: 316px;
       overflow: hidden;
       position: relative;
+      @include md-block {
+        max-height: 261px;
+      };
+      @include xs-block {
+        max-height: 146px;
+      };
 
       &:hover {
         .events__button {
           opacity: 1;
         }
+      }
+    }
+
+    &-pic {
+      width: 100%;
+      display: block;
+
+      &_first {
+        @include md-block {
+          display: none;
+        };
+      }
+
+      &_md {
+        display: none;
+        @include md-block {
+          display: block;
+        };
       }
     }
 
@@ -48,17 +73,30 @@
       padding: 10px 15px;
       border: 1px solid $bg;
       box-shadow: 0px 0px 0px 2px $yellow;
+      @include xs-block {
+        top: 10px;
+        left: 10px;
+      };
     }
 
     &-desc {
       padding: 20px 30px;
       padding-right: 25%;
+      @include md-block {
+        padding-right: 30px;
+      };
+      @include xs-block {
+        padding: 10px 15px;
+      };
     }
 
     &-title {
       font-size: 24px;
       font-weight: 700;
       margin-bottom: 10px;
+      @include xs-block {
+        font-size: 18px;
+      };
     }
   }
 
