@@ -10,9 +10,10 @@
   border: 1px solid #c1c1c1;
   background-color: $grey-white;
   overflow: hidden;
-
   display: flex;
   flex-direction: column;
+
+  @include size-md(24);
 
   &__wrapper {
     position: relative;
@@ -49,6 +50,13 @@
     font-size: 24px;
     font-weight: 700;
     min-height: 100px;
+    @include md-block {
+      min-height: initial;
+    };
+    @include xs-block {
+      padding: 15px;
+      font-size: 18px;
+    };
   }
 }
 
