@@ -19,7 +19,7 @@
 
            <!-- contacts -->
             <div class="contacts">
-                <div class="contatcs__list">
+                <div class="contcts__list">
                     <div class="row">
                         <div class="contact">
                             <div class="contact__title">
@@ -60,7 +60,7 @@
                             </div>
                         </div>
 
-                        <div class="contact">
+                        <div class="contact contact_feed">
                             <form action="" method="post" class="feed">
                                 <div class="feed__title">
                                     Ещё остались вопросы?
@@ -108,7 +108,7 @@
                             </form>
                         </div>
 
-                        <div class="contact contact_big">
+                        <div class="contact contact_big contact_map">
                             <div class="map" id="map"></div>
                         </div>
                     </div>

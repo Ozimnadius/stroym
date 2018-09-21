@@ -1,14 +1,46 @@
 .contacts {
 
+  &__list {
+    .row {
+      align-items: flex-start;
+    }
+  }
 }
 
 .contact {
   @include col;
   @include size(8);
   margin-bottom: 30px;
+  @include size-md(12);
+  @include size-xs(24);
+  @include xs-block {
+    margin-bottom: 15px;
+    &:nth-child(1) {
+      order: -1;
+    }
+    &:nth-child(3) {
+      order: -1;
+    }
+  };
 
   &_big {
     @include size(16);
+    @include size-md(12);
+    @include size-xs(24);
+  }
+
+  &_feed {
+    @include size-md(12);
+    @include offset-md(6);
+    @include md-block {
+      order: 1;
+    };
+    @include size-sm(24);
+    @include offset-sm(0);
+  }
+
+  &_map {
+    @include size-md(24);
   }
 
   &__title {
@@ -21,10 +53,16 @@
     font-size: 28px;
     font-weight: 500;
     line-height: 1;
+    @include xs-block {
+      font-size: 24px;
+    };
 
     &_small {
       font-size: 20px;
       color: $text;
+      @include xs-block {
+        font-size: 18px;
+      };
     }
   }
 }
@@ -36,9 +74,16 @@
   padding: 30px;
   height: 100%;
 
+  @include sm-block {
+    padding: 20px;
+  };
+
   &__title {
     font-size: 24px;
     text-align: center;
+    @include xs-block {
+      font-size: 20px;
+    };
   }
   &__subtitle {
     text-align: center;
@@ -57,4 +102,10 @@
   border-radius: 6px;
   border: 6px solid $bg;
   background-color: $grey-white;
+  @include md-block {
+    height: 366px;
+  };
+  @include xs-block {
+    height: 166px;
+  };
 }
