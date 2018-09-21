@@ -241,6 +241,8 @@
                             </svg>
                         </button>
                     </div>
+
+                    <div class="certs__pagination"></div>
                 </div>
             </div>
         </div>

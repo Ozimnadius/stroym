@@ -937,6 +937,28 @@ $(function () {
             nextEl: '.certs__next .arrow',
             prevEl: '.certs__prev .arrow',
         },
+        pagination: {
+            el: '.certs__pagination',
+            clickable: true
+        },
+        breakpoints: {
+            // when window width is <= 575.99px
+            575.99: {
+                slidesPerView: 1,
+                spaceBetween: 10,
+            },
+            // when window width is <= 767.99px
+            767.99: {
+                slidesPerView: 2,
+                spaceBetween: 20,
+            },
+            // when window width is <= 991.99px
+            991.99: {
+                slidesPerView: 3,
+                spaceBetween: 30,
+            },
+
+        }
     });
     /*END SLIDERS*/
 });
