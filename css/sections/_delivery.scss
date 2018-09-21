@@ -3,14 +3,35 @@
 
   &__top {
     background-image: url(/images/bg/bg-delivery.jpg);
-    background-position: right -60px  top -140px;
     background-repeat: no-repeat;
     padding-bottom: 60px;
+    @include md-block {
+      background-size: 530px 424px;
+      background-position: right -90px bottom 20px;
+      padding-bottom: 150px;
+    };
+    @include sm-block {
+      padding-bottom: 0;
+      margin-bottom: 75px;
+      background-size: 388px 311px;
+      background-position: right -54px bottom 112px;
+    };
   }
 
   &__content {
     @include col;
     @include size(12);
+    @include size-md(24);
+  }
+
+  &__ul {
+    @include md-block {
+      max-width: 300px;
+    } ;
+    @include sm-block {
+      margin-top: 205px;
+      max-width: 100%;
+    };
   }
 
   &__li {
@@ -22,9 +43,10 @@
     }
 
     &-svg {
+      min-width: 46px;
       width: 46px;
       height: 32px;
-      fill: rgba(#858585,.5);
+      fill: rgba(#858585, .5);
       margin-right: 20px;
     }
     &-text {
@@ -37,6 +59,15 @@
     @include col;
     @include size(12);
     position: relative;
+    display: flex;
+    flex-direction: column;
+    @include size-md(24);
+    @include md-block {
+      margin-bottom: 85px;
+      &:last-child {
+        margin-bottom: 0;
+      }
+    };
   }
 
   &__title {
@@ -47,6 +78,10 @@
     border-radius: 6px 6px 0 0;
     background-color: $yellow;
     text-align: center;
+    @include xs-block {
+      line-height: 26px;
+      padding: 55px 15px 10px 15px;
+    };
   }
 
   &__icon {
@@ -76,6 +111,10 @@
     background-color: $grey-white;
     padding: 25px 30px;
     text-align: center;
+    flex-grow: 1;
+    @include sm-block {
+      padding: 20px 15px;
+    };
   }
 
   &__text {
@@ -89,7 +128,6 @@
     padding-bottom: 100px;
     border-bottom: 1px solid #9d9d9d;
   }
-
 
   &__bottom {
     display: flex;
@@ -109,15 +147,43 @@
     padding: 5px;
     padding-right: 20px;
 
+    @include md-block {
+      max-width: 591px;
+      margin: 0 auto;
+      border-radius: 43px;
+    };
+    @include xs-block {
+      border: none;
+      flex-direction: column;
+      align-items: center;
+      padding: 0;
+    };
+
     &-svg {
       width: 54px;
       height: 54px;
       fill: $yellow;
       margin-right: 20px;
+      @include md-block {
+        min-width: 73px;
+        width: 73px;
+        height: 73px;
+      };
+      @include xs-block {
+        width: 38px;
+        height: 38px;
+        margin-bottom: 10px;
+      };
     }
     &-text {
       font-size: 20px;
       font-weight: 500;
+      @include xs-block {
+        text-align: center;
+        border: 1px dashed $yellow;
+        border-radius: 32px;
+        padding: 10px;
+      };
     }
   }
 

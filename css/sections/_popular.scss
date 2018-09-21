@@ -89,6 +89,9 @@
       transition: .3s;
       margin-right: 15px;
       outline: none;
+      @include xs-block {
+        margin-right: 10px;
+      };
 
       &:last-child {
         margin-right: 0;
@@ -116,6 +119,10 @@
     @include lg-block {
       padding-right: 120px;
     };
+    @include sm-block {
+      font-size: 24px;
+      padding-right: 0;
+    };
   }
 
   &__pagination {
@@ -135,6 +142,9 @@
       transition: .3s;
       margin-right: 15px;
       outline: none;
+      @include xs-block {
+        margin-right: 10px;
+      };
 
       &:last-child {
         margin-right: 0;

@@ -19,7 +19,6 @@
 
             <!-- delivery -->
             <div class="delivery">
-                <div class="container">
 
                     <!-- top -->
                     <div class="delivery__top">
@@ -150,7 +149,6 @@
                         </div>
                     </div>
                     <!-- END bottom -->
-                </div>
             </div>
             <!-- END delivery -->
 
