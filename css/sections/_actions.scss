@@ -35,6 +35,7 @@
     width: 490px;
     height: 320px;
     overflow: hidden;
+
     @include lg-block {
       width: 252px;
       height: 52px;
