@@ -4,7 +4,9 @@
   &__top {
     background-image: url(/images/bg/bg-delivery.jpg);
     background-repeat: no-repeat;
-    padding-bottom: 60px;
+    padding-bottom: 100px;
+    background-position: right -90px bottom 60px;
+
     @include md-block {
       background-size: 530px 424px;
       background-position: right -90px bottom 20px;

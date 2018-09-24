@@ -1611,7 +1611,7 @@
 
                 <!-- main-brand__next -->
                 <div class="main-brands__next">
-                    <button role="button" class="arrow arrow_white main-brands__prev-arrow">
+                    <button role="button" class="arrow arrow_white main-brands__next-arrow">
                        <svg class="arrow__svg">
                             <use xlink:href="images/icons/sprite.svg#right"></use>
                         </svg>

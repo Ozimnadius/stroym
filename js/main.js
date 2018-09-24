@@ -456,8 +456,8 @@ $(function () {
     });
 
     $('.personal__photo-input').on('change', function (e) {
-        let img = document.querySelector('.personal__photo-img');
-        img.src = URL.createObjectURL(this.files[0]);
+        let img =$('.personal__photo-img');
+        img.attr('src',URL.createObjectURL(this.files[0]));
     });
 
     $('.personal__select').selectmenu();

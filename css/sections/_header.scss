@@ -609,6 +609,10 @@
       height: 6px;
       width: 45px;
       background-color: $bg;
+      margin-bottom: 8px;
+      &:last-child {
+        margin-bottom: 0;
+      }
       @include sm-block {
         width: 34px;
         height: 5px;
