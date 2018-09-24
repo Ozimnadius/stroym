@@ -792,8 +792,8 @@ $(function () {
         slidesPerView: 4,
         spaceBetween: 15,
         navigation: {
-            nextEl: '.main-brands__next .arrow',
-            prevEl: '.main-brands__prev .arrow',
+            nextEl: '.main-brands__next-arrow',
+            prevEl: '.main-brands__prev-arrow',
         },
         breakpoints: {
             // when window width is <= 575.99px

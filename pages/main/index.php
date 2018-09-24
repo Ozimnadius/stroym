@@ -1582,13 +1582,13 @@
             <div class="row">
 
                 <!-- main-brand__prev -->
-                <button class="main-brands__prev">
-                    <span class="arrow arrow_white">
+                <div class="main-brands__prev">
+                    <button role="button" class="arrow arrow_white main-brands__prev-arrow">
                        <svg class="arrow__svg">
                             <use xlink:href="images/icons/sprite.svg#left"></use>
                         </svg>
-                    </span>
-                </button>
+                    </button>
+                </div>
                 <!-- END main-brand__prev -->
 
                 <!-- slider -->
@@ -1610,13 +1610,13 @@
                 <!-- END slider -->
 
                 <!-- main-brand__next -->
-                <button class="main-brands__next">
-                    <span class="arrow arrow_white">
+                <div class="main-brands__next">
+                    <button role="button" class="arrow arrow_white main-brands__prev-arrow">
                        <svg class="arrow__svg">
                             <use xlink:href="images/icons/sprite.svg#right"></use>
                         </svg>
-                    </span>
-                </button>
+                    </button>
+                </div>
                 <!-- END main-brand__prev -->
 
             </div>

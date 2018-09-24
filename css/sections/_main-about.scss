@@ -1,9 +1,13 @@
 .main-about {
   //background: url(/images/bg/bg_about-main.jpg) center 0 no-repeat;
   padding: 80px 0 100px 0;
+  background: url(/images/bg/bg_about-main.jpg) center 0 no-repeat;
+  background-attachment: fixed;
+  background-size: cover;
   background: url(/images/bg/main-about1.png) left 45px top -100px no-repeat,
   url(/images/bg/main-about2.png) right 45px top -100px no-repeat,
   url(/images/bg/bg_about-main.jpg) center 0 no-repeat/ cover fixed;
+
   @include lg-block {
     background: url(/images/bg/bg_about-main.jpg) center 0 no-repeat/ cover fixed;
   }
