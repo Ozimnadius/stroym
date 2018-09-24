@@ -228,14 +228,14 @@
                     </div>
 
                     <div class="certs__prev">
-                        <button class="arrow arrow_violet">
+                        <button role="button" class="arrow arrow_violet">
                             <svg class="arrow__svg">
                                 <use xlink:href="images/icons/sprite.svg#left"></use>
                             </svg>
                         </button>
                     </div>
                     <div class="certs__next">
-                        <button class="arrow arrow_violet">
+                        <button role="button" class="arrow arrow_violet">
                             <svg class="arrow__svg">
                                 <use xlink:href="images/icons/sprite.svg#right"></use>
                             </svg>

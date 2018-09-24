@@ -25,7 +25,7 @@
                 <div class="events__list">
                     <div class="row">
                         <div class="events__item">
-                            <a href="event.php" title="В американском аэропорту все лампы заменят на LED"
+                            <a role="link" href="event.php" title="В американском аэропорту все лампы заменят на LED"
                                class="events__item-img">
                                 <img src="images/content/events/events1.jpg"
                                      title="В американском аэропорту все лампы заменят на LED"
@@ -58,7 +58,7 @@
                         </div>
                         <? for ($i=2;$i<6;$i++): ?>
                             <div class="events__item events__item_2">
-                                <a href="event.php" title="В американском аэропорту все лампы заменят на LED"
+                                <a role="link" href="event.php" title="В американском аэропорту все лампы заменят на LED"
                                    class="events__item-img">
                                     <img src="images/content/events/events<?=$i?>.jpg"
                                          title="В американском аэропорту все лампы заменят на LED"

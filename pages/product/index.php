@@ -35,14 +35,14 @@
 
                         <!-- previews -->
                         <div class="product__previews">
-                            <a href="images/content/products/product.png" class="product__preview active"
+                            <a role="button" href="images/content/products/product.png" class="product__preview active"
                                data-caption="Лампа энергосберегающая КЛЛ EST 1 1U/T4 2P 9W G23 6400К">
                                 <img src="images/content/products/product.png"
                                      alt="Лампа энергосберегающая КЛЛ EST 1 1U/T4 2P 9W G23 6400К"
                                      title="Лампа энергосберегающая КЛЛ EST 1 1U/T4 2P 9W G23 6400К"
                                      class="product__preview-pic">
                             </a>
-                            <a href="images/content/products/product2.png" class="product__preview"
+                            <a role="button" href="images/content/products/product2.png" class="product__preview"
                                data-caption="Лампа энергосберегающая3">
                                 <img src="images/content/products/product2.png"
                                      alt="Лампа энергосберегающая3"
@@ -51,7 +51,7 @@
                             </a>
 
 
-                            <a class="product__video" data-fancybox href="https://www.youtube.com/watch?v=_sI_Ps7JSEk">
+                            <a role="button" class="product__video" data-fancybox href="https://www.youtube.com/watch?v=_sI_Ps7JSEk">
                                 <img src="https://i.ytimg.com/vi/_sI_Ps7JSEk/hqdefault.jpg" alt=""
                                      class="product__video-pic">
                             </a>
@@ -529,7 +529,7 @@
 
                                     <!-- more -->
                                     <div class="coms__more">
-                                        <a href="reviews.php" class="link">
+                                        <a role="link" href="reviews.php" class="link">
                                             <span class="link__text">
                                                 Смотреть еще <b>12 отзывов</b>
                                             </span>

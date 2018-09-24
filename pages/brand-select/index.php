@@ -25,7 +25,7 @@
                 <div class="brand-select__list items">
                     <div class="row">
                         <? for ($i = 1; $i < 17; $i++): ?>
-                            <a href="product.php" title="Товар<?= $i ?>" class="item  item_6 jsItem" data-id="<?= $i ?>">
+                            <a role="link" href="product.php" title="Товар<?= $i ?>" class="item  item_6 jsItem" data-id="<?= $i ?>">
                                 <!-- img -->
                                 <span class="item__img">
                                         <img src="/images/content/products/product.png" title="Product1" alt="Product1"

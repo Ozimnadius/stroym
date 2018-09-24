@@ -27,7 +27,7 @@
                         <div class="video">
                             <div class="video__wrapper">
                                 <div class="proportion proportion_16x9"></div>
-                                <a class="video__fancy" data-fancybox href="https://www.youtube.com/watch?v=NgI4c3MnjKA">
+                                <a role="button" class="video__fancy" data-fancybox href="https://www.youtube.com/watch?v=NgI4c3MnjKA">
                                     <img src="https://i.ytimg.com/vi/NgI4c3MnjKA/maxresdefault.jpg?" alt=""
                                          class="video__img">
                                 </a>
@@ -41,7 +41,7 @@
                         <div class="video">
                             <div class="video__wrapper">
                                 <div class="proportion proportion_16x9"></div>
-                                <a class="video__fancy" data-fancybox href="https://www.youtube.com/watch?v=HSMv8tHd1ms">
+                                <a role="button" class="video__fancy" data-fancybox href="https://www.youtube.com/watch?v=HSMv8tHd1ms">
                                     <img src="https://i.ytimg.com/vi/HSMv8tHd1ms/maxresdefault.jpg?" alt=""
                                          class="video__img">
                                 </a>
@@ -55,7 +55,7 @@
                         <div class="video">
                             <div class="video__wrapper">
                                 <div class="proportion proportion_16x9"></div>
-                                <a class="video__fancy" data-fancybox href="https://www.youtube.com/watch?v=6sYKMKe5UPM">
+                                <a role="button" class="video__fancy" data-fancybox href="https://www.youtube.com/watch?v=6sYKMKe5UPM">
                                     <img src="https://i.ytimg.com/vi/6sYKMKe5UPM/maxresdefault.jpg?" alt=""
                                          class="video__img">
                                 </a>
@@ -69,7 +69,7 @@
                         <div class="video">
                             <div class="video__wrapper">
                                 <div class="proportion proportion_16x9"></div>
-                                <a class="video__fancy" data-fancybox href="https://www.youtube.com/watch?v=cVWRiIz3Nz0">
+                                <a role="button" class="video__fancy" data-fancybox href="https://www.youtube.com/watch?v=cVWRiIz3Nz0">
                                     <img src="https://i.ytimg.com/vi/cVWRiIz3Nz0/maxresdefault.jpg?" alt=""
                                          class="video__img">
                                 </a>
@@ -84,7 +84,7 @@
                         <div class="video">
                             <div class="video__wrapper">
                                 <div class="proportion proportion_16x9"></div>
-                                <a class="video__fancy" data-fancybox href="https://www.youtube.com/watch?v=_888T9wZwk4">
+                                <a role="button" class="video__fancy" data-fancybox href="https://www.youtube.com/watch?v=_888T9wZwk4">
                                     <img src="https://i.ytimg.com/vi/_888T9wZwk4/maxresdefault.jpg?" alt=""
                                          class="video__img">
                                 </a>
@@ -98,7 +98,7 @@
                         <div class="video">
                             <div class="video__wrapper">
                                 <div class="proportion proportion_16x9"></div>
-                                <a class="video__fancy" data-fancybox href="https://www.youtube.com/watch?v=OdizNqBfZN0">
+                                <a role="button" class="video__fancy" data-fancybox href="https://www.youtube.com/watch?v=OdizNqBfZN0">
                                     <img src="https://i.ytimg.com/vi/OdizNqBfZN0/maxresdefault.jpg?" alt=""
                                          class="video__img">
                                 </a>

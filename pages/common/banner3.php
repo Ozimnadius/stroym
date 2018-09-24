@@ -42,7 +42,7 @@
                     <!-- END title -->
 
                     <!-- link -->
-                    <a href="" class="banner3__link button">
+                    <a role="link" href="" title="Подробнее об акции" class="banner3__link button">
                         <span class="button__text">
                             Подробнее об акции
                         </span>

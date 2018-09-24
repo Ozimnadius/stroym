@@ -17,7 +17,7 @@
             <div class="swiper-container popular__container">
                 <div class="swiper-wrapper">
                     <? for ($i = 1; $i < 13; $i++): ?>
-                        <a href="product.php" title="Товар<?= $i ?>" class="swiper-slide item jsItem" data-id="<?= $i ?>">
+                        <a role="link" href="product.php" title="Товар<?= $i ?>" class="swiper-slide item jsItem" data-id="<?= $i ?>">
                             <!-- img -->
                             <span class="item__img">
                                     <img src="/images/content/products/product.png" title="Product1" alt="Product1"

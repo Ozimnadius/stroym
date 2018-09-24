@@ -129,8 +129,8 @@ gulp.task('build:svg', function () {
 
 // watcher
 gulp.task('watch', function () {
-    gulp.watch(tempFolder + 'scss/**/*.scss', ['sass']);
-    gulp.watch(tempFolder + 'js/*.js', ['build:js']);
+    gulp.watch(tempFolder + 'css/**/*.scss', ['sass']);
+    // gulp.watch(tempFolder + 'js/!*.js', ['build:js']);
 });
 
 // Выполнить билд проекта
@@ -145,23 +145,25 @@ gulp.task('build', function (callback) {
 });
 
 
+/*
 // default
 gulp.task('default', ['watch']);
+*/
 
 
-/*// default
-gulp.task('default', ['browser-sync', 'watch']);*/
+// default
+gulp.task('default', ['browser-sync', 'watch']);
 
 // запускаем сервер надо разбираться
 gulp.task('browser-sync', [
     'sass',
-    'build:js',
-    'vendor:jsPre',
-    'vendor:jsPost',
-    'vendor:css'
+    // 'build:js',
+    'vendor:js',
+    'vendor:css',
+    'build:svg'
 ], function () {
     browserSync.init({
-        proxy: "default"
+        proxy: "srtoym"
     });
     // наблюдаем и обновляем
     browserSync.watch(['./**/*.*', '!**/*.css'], browserSync.reload);

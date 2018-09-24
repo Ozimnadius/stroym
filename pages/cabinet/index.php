@@ -25,7 +25,7 @@
 
                         <!-- switches -->
                         <div class="cabinet__switches">
-                            <a href="#tab1" title="Профиль" class="cabinet__switch active">
+                            <a role="button" href="#tab1" title="Профиль" class="cabinet__switch active">
                                 <svg class="cabinet__switch-svg">
                                     <use xlink:href="images/icons/sprite.svg#user"></use>
                                 </svg>
@@ -33,7 +33,7 @@
                               Профиль
                             </span>
                             </a>
-                            <a href="#tab2" title="Мои заказы" class="cabinet__switch">
+                            <a role="button" href="#tab2" title="Мои заказы" class="cabinet__switch">
                                 <svg class="cabinet__switch-svg">
                                     <use xlink:href="images/icons/sprite.svg#bag"></use>
                                 </svg>
@@ -41,7 +41,7 @@
                                Мои заказы
                             </span>
                             </a>
-                            <a href="#tab3" title="Избранное" class="cabinet__switch">
+                            <a role="button" href="#tab3" title="Избранное" class="cabinet__switch">
                                 <svg class="cabinet__switch-svg">
                                     <use xlink:href="images/icons/sprite.svg#izbrznnoe"></use>
                                 </svg>
@@ -49,7 +49,7 @@
                                 Избранное
                             </span>
                             </a>
-                            <a href="#tab4" title="Сравнение" class="cabinet__switch">
+                            <a role="button" href="#tab4" title="Сравнение" class="cabinet__switch">
                                 <svg class="cabinet__switch-svg">
                                     <use xlink:href="images/icons/sprite.svg#sravnenie"></use>
                                 </svg>
@@ -62,7 +62,7 @@
 
                         <!-- controls -->
                         <div class="cabinet__controls">
-                            <a href="" class="cabinet__controls_exit">Выйти из аккаунта</a> / <a href=""
+                            <a role="link" href="" class="cabinet__controls_exit">Выйти из аккаунта</a> / <a role="link" href=""
                                                                                                  class="cabinet__controls_delete">Удалить</a>
                         </div>
                         <!-- END controls -->
@@ -239,7 +239,7 @@
 
                                                     <!-- repeat -->
                                                     <div class="order__repeat">
-                                                        <a href="" class="order__repeat-link">
+                                                        <a role="link" title="Повторить" href="" class="order__repeat-link">
                                                             Повторить
                                                         </a>
                                                     </div>
@@ -257,28 +257,28 @@
                                                             Состав:
                                                         </div>
                                                         <div class="order__products">
-                                                            <a href="product.php" class="order__product">
+                                                            <a role="link" title="Лампа светодиодная 6вт Е14 Gauss Elementary 34126" href="product.php" class="order__product">
                                                                 Лампа светодиодная 6вт
                                                                 Е14 Gauss Elementary 34126
                                                             </a>
-                                                            <a href="product.php" class="order__product">
+                                                            <a role="link" title="Лампа светодиодная 6вт Е14 Gauss Elementary 34126" href="product.php" class="order__product">
                                                                 Лампа светодиодная 6вт
                                                                 Е14 Gauss Elementary 34126
                                                             </a>
                                                             <div class="order__hidden">
                                                                 <div class="order__products">
                                                                     <? for ($i = 0; $i < 12; $i++): ?>
-                                                                        <a href="product.php" class="order__product">
+                                                                        <a role="link" title="Лампа светодиодная 6вт Е14 Gauss Elementary 34126" href="product.php" class="order__product">
                                                                             Лампа светодиодная 6вт
                                                                             Е14 Gauss Elementary 34126
                                                                         </a>
                                                                     <? endfor; ?>
                                                                 </div>
                                                             </div>
-                                                            <a role="button" class="order__more link">
-                                                        <span class="link__text">
-                                                            Смотреть еще <b>(12)</b>
-                                                        </span>
+                                                            <a role="button" title="Смотреть еще" class="order__more link">
+                                                                <span class="link__text">
+                                                                    Смотреть еще <b>(12)</b>
+                                                                </span>
                                                             </a>
                                                         </div>
                                                     </div>
@@ -344,7 +344,7 @@
 
                                                 <!-- desc -->
                                                 <div class="fav__desc">
-                                                    <a href="product.php" title="Светодиодная лампа" class="fav__title">
+                                                    <a role="link" href="product.php" title="Светодиодная лампа" class="fav__title">
                                                         Светодиодная лампа
                                                     </a>
                                                     <div class="fav__text">
@@ -409,7 +409,7 @@
                                                         <div class="compare__header-title">
                                                             Основные характеристики:
                                                         </div>
-                                                        <a href="" class="compare__header-button">
+                                                        <a role="link" title="Очистить характеристики" href="" class="compare__header-button">
                                                             Очистить характеристики
                                                         </a>
                                                     </div>
@@ -495,7 +495,7 @@
                                                                                      title="Светодиодная лампа"
                                                                                      class="compare__pic">
                                                                             </div>
-                                                                            <a href="product.php"
+                                                                            <a role="link" href="product.php"
                                                                                title="Светодиодная лампа"
                                                                                class="compare__title">
                                                                                 Светодиодная лампа<?= $i ?>
@@ -631,7 +631,7 @@
 
                         <!-- controls -->
                         <div class="cabinet__controls cabinet__controls_lg">
-                            <a href="" class="cabinet__controls_exit">Выйти из аккаунта</a> / <a href=""
+                            <a role="link" title="Выйти из аккаунта" href="" class="cabinet__controls_exit">Выйти из аккаунта</a> / <a role="link" title="Удалить" href=""
                                                                                                  class="cabinet__controls_delete">Удалить</a>
                         </div>
                         <!-- END controls -->

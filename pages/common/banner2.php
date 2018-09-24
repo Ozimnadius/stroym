@@ -27,7 +27,7 @@
                 </div>
             </div>
 
-            <a href="" title="Подробнее об акции" class="button banner2__button">
+            <a role="link" href="" title="Подробнее об акции" class="button banner2__button">
                 <span class="button__text">Подробнее об акции</span>
             </a>
         </div>

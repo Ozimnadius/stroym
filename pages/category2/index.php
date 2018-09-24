@@ -23,49 +23,49 @@
                 <div class="row">
                     <div class="cat" style="background-image: url(images/content/cats/category1.jpg);">
                         <!-- link -->
-                        <a href="" title="Светильники светодиодные" class="cat__link">
+                        <a role="link" href="" title="Светильники светодиодные" class="cat__link">
                             Светильники светодиодные
                         </a>
                         <!-- END link -->
                     </div>
                     <div class="cat" style="background-image: url(images/content/cats/category2.jpg);">
                         <!-- link -->
-                        <a href="" title="Светильники светодиодные" class="cat__link">
+                        <a role="link" href="" title="Светильники светодиодные" class="cat__link">
                             Светильники светодиодные
                         </a>
                         <!-- END link -->
                     </div>
                     <div class="cat cat_3" style="background-image: url(images/content/cats/category3.jpg);">
                         <!-- link -->
-                        <a href="" title="Светильники светодиодные" class="cat__link">
+                        <a role="link" href="" title="Светильники светодиодные" class="cat__link">
                             Лампы
                         </a>
                         <!-- END link -->
                     </div>
                     <div class="cat cat_3" style="background-image: url(images/content/cats/category4.jpg);">
                         <!-- link -->
-                        <a href="" title="Светильники светодиодные" class="cat__link">
+                        <a role="link" href="" title="Светильники светодиодные" class="cat__link">
                             Лампы
                         </a>
                         <!-- END link -->
                     </div>
                     <div class="cat cat_3" style="background-image: url(images/content/cats/category5.jpg);">
                         <!-- link -->
-                        <a href="" title="Светильники светодиодные" class="cat__link">
+                        <a role="link" href="" title="Светильники светодиодные" class="cat__link">
                             Лампы
                         </a>
                         <!-- END link -->
                     </div>
                     <div class="cat" style="background-image: url(images/content/cats/category6.jpg);">
                         <!-- link -->
-                        <a href="" title="Светильники светодиодные" class="cat__link">
+                        <a role="link" href="" title="Светильники светодиодные" class="cat__link">
                             Светильники светодиодные
                         </a>
                         <!-- END link -->
                     </div>
                     <div class="cat" style="background-image: url(images/content/cats/category7.jpg);">
                         <!-- link -->
-                        <a href="" title="Светильники светодиодные" class="cat__link">
+                        <a role="link" href="" title="Светильники светодиодные" class="cat__link">
                             Светильники светодиодные
                         </a>
                         <!-- END link -->

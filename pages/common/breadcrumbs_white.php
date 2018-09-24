@@ -1,9 +1,9 @@
 <!-- breadcrumbs -->
 <div class="breadcrumbs breadcrumbs_white">
-    <a href="catalog.php" title="Каталог" class="breadcrumb">
+    <a role="link" href="catalog.php" title="Каталог" class="breadcrumb">
         Каталог
     </a>
-    <a href="category.php" title="Категория" class="breadcrumb">
+    <a role="link" href="category.php" title="Категория" class="breadcrumb">
         Категория
     </a>
     <span title="Карточка товара" class="breadcrumb breadcrumb_selected">

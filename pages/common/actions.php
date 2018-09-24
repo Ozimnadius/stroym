@@ -1,7 +1,7 @@
 <div class="actions">
     <div class="row">
         <!-- action -->
-        <a href="" title="Светодиодные лампы" class="action" style="background-image: url(images/content/actions/action1.jpg);">
+        <a role="link" href="" title="Светодиодные лампы" class="action" style="background-image: url(images/content/actions/action1.jpg);">
 
             <!-- img -->
             <span class="action__img">
@@ -23,7 +23,7 @@
         </a>
         <!-- END action -->
         <!-- action -->
-        <a href="" title="Энергосберегающие лампы" class="action action-2" style="background-image: url(images/content/actions/action2.jpg);">
+        <a role="link" href="" title="Энергосберегающие лампы" class="action action-2" style="background-image: url(images/content/actions/action2.jpg);">
             <span class="action-2__title">
                Энергосберегающие <br>
                 лампы
@@ -34,7 +34,7 @@
         </a>
         <!-- END action -->
         <!-- action -->
-        <a href="" title="Лампы накаливания" class="action action-3" style="background-image: url(images/content/actions/action3.jpg);">
+        <a role="link" href="" title="Лампы накаливания" class="action action-3" style="background-image: url(images/content/actions/action3.jpg);">
             <svg class="action-3__percent"
                  xmlns="http://www.w3.org/2000/svg"
                  viewBox="0 0 300 90">
@@ -50,7 +50,7 @@
         </a>
         <!-- END action -->
         <!-- action -->
-        <a href="" title="Лампы люминесцентные" class="action action-4" style="background-image: url(images/content/actions/action4.jpg);">
+        <a role="link" href="" title="Лампы люминесцентные" class="action action-4" style="background-image: url(images/content/actions/action4.jpg);">
             <span class="action-4__stick">
                 Акция
             </span>
@@ -60,7 +60,7 @@
         </a>
         <!-- END action -->
         <!-- action -->
-        <a href="" title="Лампы галогенные" class="action action-5" style="background-image: url(images/content/actions/action5.jpg);">
+        <a role="link" href="" title="Лампы галогенные" class="action action-5" style="background-image: url(images/content/actions/action5.jpg);">
 
             <!-- img -->
             <span class="action-5__img">
@@ -77,7 +77,7 @@
         </a>
         <!-- END action -->
         <!-- action -->
-        <a href="" title="Прожекторы и фонари" class="action action-6" style="background-image: url(images/content/actions/action6.jpg);">
+        <a role="link" href="" title="Прожекторы и фонари" class="action action-6" style="background-image: url(images/content/actions/action6.jpg);">
             <span class="action-6__percent">
                 Акция -15%
             </span>

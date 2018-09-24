@@ -15,7 +15,7 @@
                 </div>
                 <!-- END title -->
 
-                <button class="filters__open">
+                <button role="button" class="filters__open">
                     <span class="filters__open-img">
                         <svg class="filters__open-svg">
                             <use xlink:href="images/icons/sprite.svg#filter"></use>
@@ -38,7 +38,7 @@
                     <div class="category__list items">
                         <div class="row">
                             <? for ($i = 1; $i < 13; $i++): ?>
-                                <a href="product.php" title="Товар<?= $i ?>" class="item jsItem" data-id="<?= $i ?>">
+                                <a role="link" href="product.php" title="Товар<?= $i ?>" class="item jsItem" data-id="<?= $i ?>">
                                     <!-- img -->
                                     <span class="item__img">
                                         <img src="/images/content/products/product.png" title="Product1" alt="Product1"

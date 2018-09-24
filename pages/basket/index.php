@@ -41,7 +41,7 @@
                         <div class="row">
                             <div class="basket__td basket__col-product">
                                 <!-- product -->
-                                <a href="product.php" title="Светодиодная лампа<?=$i?>" class="basket__product">
+                                <a role="link" href="product.php" title="Светодиодная лампа<?=$i?>" class="basket__product">
                                     <!-- left -->
                                     <div class="basket__product-left">
                                         <div class="basket__img">
@@ -87,13 +87,13 @@
                             <div class="basket__td basket__col-count">
                                 <div class="basket__count">
                                     <div class="count">
-                                        <button type="button" class="count__down">
+                                        <button role="button" class="count__down">
                                             <svg class="count__svg">
                                                 <use xlink:href="images/icons/sprite.svg#remove"></use>
                                             </svg>
                                         </button>
                                         <input type="number" class="count__val" value="2">
-                                        <button type="button" class="count__up">
+                                        <button role="button" class="count__up">
                                             <svg class="count__svg">
                                                 <use xlink:href="images/icons/sprite.svg#add"></use>
                                             </svg>

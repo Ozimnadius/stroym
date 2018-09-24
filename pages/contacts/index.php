@@ -33,7 +33,7 @@
                             <div class="contact__title">
                                 Адрес:
                             </div>
-                            <a target="_blank"
+                            <a role="link" target="_blank"
                                title="Россия, 125040, г. Москва, Ленинский проспект, дом 1, стр. 3"
                                href="https://yandex.ru/maps/?text=Россия, 125040, г. Москва, Ленинский проспект, дом 1, стр. 3"
                                class="contact__value contact__value_small">
