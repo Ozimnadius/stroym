@@ -791,6 +791,9 @@ $(function () {
         loop: true,
         slidesPerView: 4,
         spaceBetween: 15,
+        autoplay: {
+            delay: 5000,
+        },
         navigation: {
             nextEl: '.main-brands__next-arrow',
             prevEl: '.main-brands__prev-arrow',
