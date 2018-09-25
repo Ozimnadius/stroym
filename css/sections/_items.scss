@@ -68,6 +68,9 @@
     .item__hidden {
       display: flex;
     }
+    .item__img-hidden {
+      opacity: 1;
+    }
   }
 
   &__img {
@@ -77,9 +80,25 @@
     height: 260px;
     overflow: hidden;
     padding: 20px 30px;
+    position: relative;
+
+    &-hidden {
+      position: absolute;
+      top: 0;
+      bottom: 0;
+      left: 0;
+      right: 0;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      padding: 20px 30px;
+      opacity: 0;
+      transition: .5s;
+    }
   }
   &__pic {
     max-height: 100%;
+    transition: .3s;
   }
 
   &__desc {

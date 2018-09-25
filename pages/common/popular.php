@@ -22,6 +22,10 @@
                             <span class="item__img">
                                     <img src="/images/content/products/product.png" title="Product1" alt="Product1"
                                          class="item__pic">
+                                <span class="item__img-hidden">
+                                            <img src="/images/content/products/product-active.png" title="Product1" alt="Product1"
+                                                 class="item__pic">
+                                        </span>
                                 </span>
                             <!-- END img -->
 
