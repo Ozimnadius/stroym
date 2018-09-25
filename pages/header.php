@@ -84,12 +84,12 @@
                                     <use xlink:href="images/icons/sprite.svg#izbrznnoe"></use>
                                 </svg>
                             </a>
-                            <a href="cabinet.php" role="link" title="Избранное" class="control">
+                            <a href="cabinet.php" role="link" title="Сравнение" class="control">
                                 <svg class="control__svg">
                                     <use xlink:href="images/icons/sprite.svg#sravnenie"></use>
                                 </svg>
                             </a>
-                            <a href="basket.php" role="link" title="Избранное" class="control cart">
+                            <a href="basket.php" role="link" title="Корзина" class="control cart">
                                 <svg class="control__svg cart__svg">
                                     <use xlink:href="images/icons/sprite.svg#basket"></use>
                                 </svg>

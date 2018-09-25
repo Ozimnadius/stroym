@@ -44,35 +44,53 @@
                                 Каталог
                             </a>
                             <div class="footer__nav-list">
-                                <? for ($i=0; $i < 8; $i++): ?>
+                                <?/* for ($i=0; $i < 8; $i++): ?>
                                     <a href="" title="Раздел<?= $i ?>" class="footer__nav-item">
                                         Раздел<?= $i ?>
                                     </a>
-                                <? endfor; ?>
+                                <? endfor; */?>
                             </div>
                         </div>
                         <div class="footer__nav">
-                            <a href="" title="Каталог" class="footer__nav-title">
-                                Каталог
+                            <a href="" title="О компании" class="footer__nav-title">
+                                О компании
                             </a>
                             <div class="footer__nav-list">
-                                <? for ($i=0; $i < 8; $i++): ?>
-                                    <a href="" title="Раздел<?= $i ?>" class="footer__nav-item">
-                                        Раздел<?= $i ?>
-                                    </a>
-                                <? endfor; ?>
+                                <a href="" title="Новости" class="footer__nav-item">
+                                    Новости
+                                </a>
+                                <a href="" title="Акции" class="footer__nav-item">
+                                    Акции
+                                </a>
+                                <a href="" title="Отзывы" class="footer__nav-item">
+                                    Отзывы
+                                </a>
+                                <a href="" title="Наши бренды" class="footer__nav-item">
+                                    Наши бренды
+                                </a>
+                                <a href="" title="Контакты" class="footer__nav-item">
+                                    Контакты
+                                </a>
+                                <a href="" title="Наши партнеры" class="footer__nav-item">
+                                    Наши партнеры
+                                </a>
+                                <a href="" title="Видео" class="footer__nav-item">
+                                    Видео
+                                </a>
                             </div>
                         </div>
                         <div class="footer__nav">
-                            <a href="" title="Каталог" class="footer__nav-title">
-                                Каталог
+                            <a href="" title="Доставка" class="footer__nav-title">
+                                Доставка
                             </a>
                             <div class="footer__nav-list">
-                                <? for ($i=0; $i < 8; $i++): ?>
-                                    <a href="" title="Раздел<?= $i ?>" class="footer__nav-item">
-                                        Раздел<?= $i ?>
-                                    </a>
-                                <? endfor; ?>
+                                <a href="" title="Политика конфиденциальности" class="footer__nav-item">
+                                    Политика конфиденциальности
+                                </a>
+                                <a href="" title="Реквизиты" class="footer__nav-item">
+                                    Реквизиты
+                                </a>
+
                             </div>
                         </div>
                     </div>
