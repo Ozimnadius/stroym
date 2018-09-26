@@ -785,14 +785,19 @@ $(function () {
             nextEl: '.banner__next',
             prevEl: '.banner__prev',
         },
+        speed: 1000,
+        autoplay: {
+            delay: 3000,
+        },
     });
 
     var brandsSwiper = new Swiper('.main-brands__container', {
         loop: true,
         slidesPerView: 4,
         spaceBetween: 15,
+        speed: 700,
         autoplay: {
-            delay: 5000,
+            delay: 3000,
         },
         navigation: {
             nextEl: '.main-brands__next-arrow',
