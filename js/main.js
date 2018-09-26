@@ -288,17 +288,17 @@ $(function () {
         changeImg($(this));
     });
 
-    setInterval(function (e) {
-        var preview = $('.product__preview.active'),
-            nextPreview = preview.next('.product__preview');
-
-        if (nextPreview.length == 0) {
-            nextPreview = preview.prev('.product__preview');
-        }
-
-        changeImg(nextPreview);
-
-    }, 5000);
+    // setInterval(function (e) {
+    //     var preview = $('.product__preview.active'),
+    //         nextPreview = preview.next('.product__preview');
+    //
+    //     if (nextPreview.length == 0) {
+    //         nextPreview = preview.prev('.product__preview');
+    //     }
+    //
+    //     changeImg(nextPreview);
+    //
+    // }, 5000);
 
     function changeImg(button) {
         var preview = button,
