@@ -972,7 +972,7 @@ $(function () {
 });
 
 /*YANDEX*/
-$(function () {
+$(function ()   {
     ymaps.ready(init);
     var myMap,
         myPlacemark;
