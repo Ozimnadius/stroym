@@ -270,10 +270,17 @@
     width: 100%;
   }
   &__date {
+    margin-top: auto;
     color: #7f7f7f;
     margin-bottom: 5px;
   }
   &__title {
     font-weight: 500;
+  }
+}
+
+@media (max-width: 1800px) {
+  .main-about {
+    background: url(/images/bg/bg_about-main.jpg) center 0 no-repeat/ cover fixed;
   }
 }
