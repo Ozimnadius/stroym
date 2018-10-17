@@ -403,7 +403,7 @@
     position: absolute;
     z-index: 100;
     top: calc(100% + 25px);
-    left: -2000px;
+    left: -3000px;
     @include md-block {
       display: none;
     };
